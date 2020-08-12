@@ -1,9 +1,7 @@
 {
   "name": "template-instance",
   "version": "0.1.0",
-  "description": "A template repo for creating a SourceCred instance",
-  "repository": "git@github.com:sourcecred/template-instance.git",
-  "author": "SourceCred Team <contact@sourcecred.io>",
+  "description": "MetaGame's XP System powered by SourceCred",
   "license": "MIT",
   "private": true,
   "dependencies": {
@@ -16,6 +14,7 @@
     "graph": "sourcecred graph",
     "score": "sourcecred score",
     "site": "sourcecred site",
+    "go": "yarn graph && yarn score && yarn site && yarn serve",
     "serve": "sourcecred serve",
     "grain": "sourcecred grain"
   },

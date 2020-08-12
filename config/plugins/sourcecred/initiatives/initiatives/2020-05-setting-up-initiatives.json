@@ -1,0 +1,37 @@
+[
+  {
+    "type": "sourcecred/initiativeFile",
+    "version": "0.2.0"
+  },
+  {
+    "title": "Setting Up Initiatives/Quest Plugin",
+    "timestampIso": "2020-05-01T10:00:00.000Z",
+    "weight": {
+      "incomplete": 13,
+      "complete": 13
+    },
+    "completed": true,
+    "dependencies": {},
+    "references": {},
+    "contributions": {
+      "entries": [
+        {
+          "weight": 13,
+          "title": "Fix Initiatives Plugin and Support",
+          "timestampIso": "2020-05-01T10:00:00.000Z",
+          "contributors": [
+            "@beanow"
+          ]
+        },
+        {
+          "weight": 13,
+          "title": "Setup Initiatives",
+          "timestampIso": "2020-05-01T10:00:00.000Z",
+          "contributors": [
+            "https://forum.metagame.wtf/u/METADREAMER"
+          ]
+        }
+      ]
+    }
+  }
+]
