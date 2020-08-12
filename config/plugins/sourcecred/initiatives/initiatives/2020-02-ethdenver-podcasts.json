@@ -1,0 +1,22 @@
+[
+  {
+    "type": "sourcecred/initiativeFile",
+    "version": "0.1.0"
+  },
+  {
+    "title": "ETHDenver Recording Podcasts",
+    "timestampIso": "2020-02-14T10:00:00.000Z",
+    "weight": {
+      "incomplete": 5,
+      "complete": 5
+    },
+    "_fibonacciWeight": 5,
+    "completed": true,
+    "champions": [
+      "https://forum.metagame.wtf/u/Yalortackson"
+    ],
+    "dependencies": [],
+    "references": [],
+    "contributions": []
+  }
+]

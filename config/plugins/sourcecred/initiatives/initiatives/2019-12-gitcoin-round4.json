@@ -1,0 +1,1174 @@
+[
+  {
+    "type": "sourcecred/initiativeFile",
+    "version": "0.2.0"
+  },
+  {
+    "title": "Gitcoin Round 4 Donations",
+    "timestampIso": "2020-01-15T10:00:00.000Z",
+    "weight": {
+      "incomplete": 0,
+      "complete": 0
+    },
+    "completed": true,
+    "champions": [],
+    "dependencies": {},
+    "references": {},
+    "contributions": {
+      "entries": [
+        {
+          "weight": 0.36,
+          "title": "Gitcoin Donation (dekanbro)",
+          "timestampIso": "2020-01-11T07:00:00.000Z",
+          "contributors": [
+            "@dekanbro"
+          ]
+        },
+        {
+          "weight": 1.9,
+          "title": "Gitcoin Donation (nicolas-law)",
+          "timestampIso": "2020-02-10T07:00:00.000Z",
+          "contributors": [
+            "@nicolas-law"
+          ]
+        },
+        {
+          "weight": 0.36,
+          "title": "Gitcoin Donation (conlan)",
+          "timestampIso": "2020-01-10T07:00:00.000Z",
+          "contributors": [
+            "@conlan"
+          ]
+        },
+        {
+          "weight": 98.9504,
+          "title": "Gitcoin Donation (oovg)",
+          "timestampIso": "2020-01-08T07:00:00.000Z",
+          "contributors": [
+            "@vengist"
+          ]
+        },
+        {
+          "weight": 0.209,
+          "title": "Gitcoin Donation (shrikarparashar)",
+          "timestampIso": "2020-02-04T07:00:00.000Z",
+          "contributors": [
+            "@shrikarparashar"
+          ]
+        },
+        {
+          "weight": 0.57,
+          "title": "Gitcoin Donation (fiskantes)",
+          "timestampIso": "2020-01-26T07:00:00.000Z",
+          "contributors": [
+            "@fiskantes"
+          ]
+        },
+        {
+          "weight": 3.9238,
+          "title": "Gitcoin Donation (manualzuru)",
+          "timestampIso": "2020-01-11T07:00:00.000Z",
+          "contributors": [
+            "@manualzuru"
+          ]
+        },
+        {
+          "weight": 3.04,
+          "title": "Gitcoin Donation (jonnydubowsky)",
+          "timestampIso": "2020-01-22T07:00:00.000Z",
+          "contributors": [
+            "@jonnydubowsky"
+          ]
+        },
+        {
+          "weight": 5.698,
+          "title": "Gitcoin Donation (rhyswd)",
+          "timestampIso": "2020-01-16T07:00:00.000Z",
+          "contributors": [
+            "@rhyswd"
+          ]
+        },
+        {
+          "weight": 20,
+          "title": "Gitcoin Donation (drewharding)",
+          "timestampIso": "2020-01-09T07:00:00.000Z",
+          "contributors": [
+            "@BurningFiat"
+          ]
+        },
+        {
+          "weight": 2.62,
+          "title": "Gitcoin Donation (tweetious)",
+          "timestampIso": "2020-01-16T07:00:00.000Z",
+          "contributors": [
+            "@tweetious"
+          ]
+        },
+        {
+          "weight": 16.1,
+          "title": "Gitcoin Donation (dmvt)",
+          "timestampIso": "2020-01-13T07:00:00.000Z",
+          "contributors": [
+            "@LSDan"
+          ]
+        },
+        {
+          "weight": 0.18,
+          "title": "Gitcoin Donation (joshmelton)",
+          "timestampIso": "2020-01-21T07:00:00.000Z",
+          "contributors": [
+            "@joshmelton"
+          ]
+        },
+        {
+          "weight": 9.62616,
+          "title": "Gitcoin Donation (jesssloss)",
+          "timestampIso": "2020-01-15T07:00:00.000Z",
+          "contributors": [
+            "@jesssloss"
+          ]
+        },
+        {
+          "weight": 1,
+          "title": "Gitcoin Donation (casro)",
+          "timestampIso": "2020-01-21T07:00:00.000Z",
+          "contributors": [
+            "@casro"
+          ]
+        },
+        {
+          "weight": 0.19,
+          "title": "Gitcoin Donation (larrybird0x)",
+          "timestampIso": "2020-01-21T07:00:00.000Z",
+          "contributors": [
+            "@larrybird0x"
+          ]
+        },
+        {
+          "weight": 0.19,
+          "title": "Gitcoin Donation (dziubutkus)",
+          "timestampIso": "2020-01-21T07:00:00.000Z",
+          "contributors": [
+            "@dziubutkus"
+          ]
+        },
+        {
+          "weight": 0.2,
+          "title": "Gitcoin Donation (gitcoingranterog)",
+          "timestampIso": "2020-01-21T07:00:00.000Z",
+          "contributors": [
+            "@gitcoingranterog"
+          ]
+        },
+        {
+          "weight": 9.9,
+          "title": "Gitcoin Donation (flexthought)",
+          "timestampIso": "2020-01-21T07:00:00.000Z",
+          "contributors": [
+            "@flexthought"
+          ]
+        },
+        {
+          "weight": 0.38,
+          "title": "Gitcoin Donation (axia-callum)",
+          "timestampIso": "2020-01-20T07:00:00.000Z",
+          "contributors": [
+            "@axia-callum"
+          ]
+        },
+        {
+          "weight": 0.95,
+          "title": "Gitcoin Donation (rachblondon)",
+          "timestampIso": "2020-01-20T07:00:00.000Z",
+          "contributors": [
+            "@rachblondon"
+          ]
+        },
+        {
+          "weight": 0.2,
+          "title": "Gitcoin Donation (brendanjo)",
+          "timestampIso": "2020-01-20T07:00:00.000Z",
+          "contributors": [
+            "@brendanjo"
+          ]
+        },
+        {
+          "weight": 0.2,
+          "title": "Gitcoin Donation (paxthemax)",
+          "timestampIso": "2020-01-20T07:00:00.000Z",
+          "contributors": [
+            "@paxthemax"
+          ]
+        },
+        {
+          "weight": 2,
+          "title": "Gitcoin Donation (jordanlzg)",
+          "timestampIso": "2020-01-19T07:00:00.000Z",
+          "contributors": [
+            "@jordanlzg"
+          ]
+        },
+        {
+          "weight": 0.95,
+          "title": "Gitcoin Donation (edwardwardward)",
+          "timestampIso": "2020-01-19T07:00:00.000Z",
+          "contributors": [
+            "@edwardwardward"
+          ]
+        },
+        {
+          "weight": 3.4298,
+          "title": "Gitcoin Donation (micksabox)",
+          "timestampIso": "2020-01-14T07:00:00.000Z",
+          "contributors": [
+            "@micksabox"
+          ]
+        },
+        {
+          "weight": 0.1698,
+          "title": "Gitcoin Donation (jlwaugh)",
+          "timestampIso": "2020-01-19T07:00:00.000Z",
+          "contributors": [
+            "@jlwaugh"
+          ]
+        },
+        {
+          "weight": 4,
+          "title": "Gitcoin Donation (lililashka)",
+          "timestampIso": "2020-01-18T07:00:00.000Z",
+          "contributors": [
+            "@lililashka"
+          ]
+        },
+        {
+          "weight": 1.14,
+          "title": "Gitcoin Donation (skmiskmi)",
+          "timestampIso": "2020-01-12T07:00:00.000Z",
+          "contributors": [
+            "@skmiskmi"
+          ]
+        },
+        {
+          "weight": 1.008,
+          "title": "Gitcoin Donation (ivglavas)",
+          "timestampIso": "2020-01-18T07:00:00.000Z",
+          "contributors": [
+            "@ivglavas"
+          ]
+        },
+        {
+          "weight": 0.19,
+          "title": "Gitcoin Donation (haythem96)",
+          "timestampIso": "2020-01-18T07:00:00.000Z",
+          "contributors": [
+            "@haythem96"
+          ]
+        },
+        {
+          "weight": 8.09,
+          "title": "Gitcoin Donation (rlholmes38)",
+          "timestampIso": "2020-01-18T07:00:00.000Z",
+          "contributors": [
+            "@RHolmes"
+          ]
+        },
+        {
+          "weight": 0.19,
+          "title": "Gitcoin Donation (atomicnuclei)",
+          "timestampIso": "2020-01-18T07:00:00.000Z",
+          "contributors": [
+            "@atomicnuclei"
+          ]
+        },
+        {
+          "weight": 1.96,
+          "title": "Gitcoin Donation (experimentswithcode)",
+          "timestampIso": "2020-01-18T07:00:00.000Z",
+          "contributors": [
+            "@experimentswithcode"
+          ]
+        },
+        {
+          "weight": 0.57,
+          "title": "Gitcoin Donation (fauvealtman)",
+          "timestampIso": "2020-01-17T07:00:00.000Z",
+          "contributors": [
+            "@fauvealtman"
+          ]
+        },
+        {
+          "weight": 0.95,
+          "title": "Gitcoin Donation (trentmc)",
+          "timestampIso": "2020-01-17T07:00:00.000Z",
+          "contributors": [
+            "@trentmc"
+          ]
+        },
+        {
+          "weight": 1.4,
+          "title": "Gitcoin Donation (kinchasa)",
+          "timestampIso": "2020-01-17T07:00:00.000Z",
+          "contributors": [
+            "@kinchasa"
+          ]
+        },
+        {
+          "weight": 9.5,
+          "title": "Gitcoin Donation (eeks)",
+          "timestampIso": "2020-01-17T07:00:00.000Z",
+          "contributors": [
+            "@eeks"
+          ]
+        },
+        {
+          "weight": 0.19,
+          "title": "Gitcoin Donation (pedrouid)",
+          "timestampIso": "2020-01-17T07:00:00.000Z",
+          "contributors": [
+            "@pedrouid"
+          ]
+        },
+        {
+          "weight": 0.25402,
+          "title": "Gitcoin Donation (kinglouisxvii)",
+          "timestampIso": "2020-01-17T07:00:00.000Z",
+          "contributors": [
+            "@kinglouisxvii"
+          ]
+        },
+        {
+          "weight": 0.38,
+          "title": "Gitcoin Donation (maxstalker)",
+          "timestampIso": "2020-01-17T07:00:00.000Z",
+          "contributors": [
+            "@maxstalker"
+          ]
+        },
+        {
+          "weight": 1.0009,
+          "title": "Gitcoin Donation (orishim)",
+          "timestampIso": "2020-01-17T07:00:00.000Z",
+          "contributors": [
+            "@orishim"
+          ]
+        },
+        {
+          "weight": 0.26472,
+          "title": "Gitcoin Donation (evanvannesseth)",
+          "timestampIso": "2020-01-17T07:00:00.000Z",
+          "contributors": [
+            "@evanvannesseth"
+          ]
+        },
+        {
+          "weight": 0.19,
+          "title": "Gitcoin Donation (natcho)",
+          "timestampIso": "2020-01-17T07:00:00.000Z",
+          "contributors": [
+            "@natcho"
+          ]
+        },
+        {
+          "weight": 0.2,
+          "title": "Gitcoin Donation (owocki)",
+          "timestampIso": "2020-01-17T07:00:00.000Z",
+          "contributors": [
+            "@owocki"
+          ]
+        },
+        {
+          "weight": 0.19,
+          "title": "Gitcoin Donation (robsecord)",
+          "timestampIso": "2020-01-17T07:00:00.000Z",
+          "contributors": [
+            "@robsecord"
+          ]
+        },
+        {
+          "weight": 0.95,
+          "title": "Gitcoin Donation (deamme)",
+          "timestampIso": "2020-01-17T07:00:00.000Z",
+          "contributors": [
+            "@deamme"
+          ]
+        },
+        {
+          "weight": 9.12,
+          "title": "Gitcoin Donation (readreed)",
+          "timestampIso": "2020-01-16T07:00:00.000Z",
+          "contributors": [
+            "@readreed"
+          ]
+        },
+        {
+          "weight": 0.2,
+          "title": "Gitcoin Donation (krrisis)",
+          "timestampIso": "2020-01-16T07:00:00.000Z",
+          "contributors": [
+            "@krrisis"
+          ]
+        },
+        {
+          "weight": 0.8,
+          "title": "Gitcoin Donation (dorgjelli)",
+          "timestampIso": "2020-01-16T07:00:00.000Z",
+          "contributors": [
+            "@dorgjelli"
+          ]
+        },
+        {
+          "weight": 0.20006,
+          "title": "Gitcoin Donation (den-crypto-group)",
+          "timestampIso": "2020-01-16T07:00:00.000Z",
+          "contributors": [
+            "@den-crypto-group"
+          ]
+        },
+        {
+          "weight": 0.38,
+          "title": "Gitcoin Donation (alirezapaslar)",
+          "timestampIso": "2020-01-16T07:00:00.000Z",
+          "contributors": [
+            "@alirezapaslar"
+          ]
+        },
+        {
+          "weight": 1.20076,
+          "title": "Gitcoin Donation (aiinkiestism)",
+          "timestampIso": "2020-01-16T07:00:00.000Z",
+          "contributors": [
+            "@aiinkiestism"
+          ]
+        },
+        {
+          "weight": 1.52,
+          "title": "Gitcoin Donation (centmatthew)",
+          "timestampIso": "2020-01-16T07:00:00.000Z",
+          "contributors": [
+            "@centmatthew"
+          ]
+        },
+        {
+          "weight": 0.19,
+          "title": "Gitcoin Donation (porobov)",
+          "timestampIso": "2020-01-16T07:00:00.000Z",
+          "contributors": [
+            "@porobov"
+          ]
+        },
+        {
+          "weight": 4,
+          "title": "Gitcoin Donation (shep101)",
+          "timestampIso": "2020-01-16T07:00:00.000Z",
+          "contributors": [
+            "@shep101"
+          ]
+        },
+        {
+          "weight": 0.38,
+          "title": "Gitcoin Donation (teochiriac)",
+          "timestampIso": "2020-01-16T07:00:00.000Z",
+          "contributors": [
+            "@teochiriac"
+          ]
+        },
+        {
+          "weight": 0.38,
+          "title": "Gitcoin Donation (rossgalloway)",
+          "timestampIso": "2020-01-16T07:00:00.000Z",
+          "contributors": [
+            "@rossgalloway"
+          ]
+        },
+        {
+          "weight": 5,
+          "title": "Gitcoin Donation (yalormewn)",
+          "timestampIso": "2020-01-08T07:00:00.000Z",
+          "contributors": [
+            "@YalorMewn"
+          ]
+        },
+        {
+          "weight": 0.38,
+          "title": "Gitcoin Donation (spolrot)",
+          "timestampIso": "2020-01-15T07:00:00.000Z",
+          "contributors": [
+            "@spolrot"
+          ]
+        },
+        {
+          "weight": 0.19,
+          "title": "Gitcoin Donation (nickhollins)",
+          "timestampIso": "2020-01-15T07:00:00.000Z",
+          "contributors": [
+            "@nickhollins"
+          ]
+        },
+        {
+          "weight": 1.8,
+          "title": "Gitcoin Donation (svitekpavel)",
+          "timestampIso": "2020-01-15T07:00:00.000Z",
+          "contributors": [
+            "@svitekpavel"
+          ]
+        },
+        {
+          "weight": 2,
+          "title": "Gitcoin Donation (ceresstation)",
+          "timestampIso": "2020-01-15T07:00:00.000Z",
+          "contributors": [
+            "@ceresstation"
+          ]
+        },
+        {
+          "weight": 0.19,
+          "title": "Gitcoin Donation (excelperfection)",
+          "timestampIso": "2020-01-15T07:00:00.000Z",
+          "contributors": [
+            "@excelperfection"
+          ]
+        },
+        {
+          "weight": 1.9,
+          "title": "Gitcoin Donation (scott-sanderson)",
+          "timestampIso": "2020-01-15T07:00:00.000Z",
+          "contributors": [
+            "@scott-sanderson"
+          ]
+        },
+        {
+          "weight": 0.18,
+          "title": "Gitcoin Donation (pythonpete32)",
+          "timestampIso": "2020-01-15T07:00:00.000Z",
+          "contributors": [
+            "@aaron"
+          ]
+        },
+        {
+          "weight": 0.36,
+          "title": "Gitcoin Donation (wslyvh)",
+          "timestampIso": "2020-01-12T07:00:00.000Z",
+          "contributors": [
+            "@wslyvh"
+          ]
+        },
+        {
+          "weight": 1.4,
+          "title": "Gitcoin Donation (calchulus)",
+          "timestampIso": "2020-01-15T07:00:00.000Z",
+          "contributors": [
+            "@calchulus"
+          ]
+        },
+        {
+          "weight": 1,
+          "title": "Gitcoin Donation (nodar)",
+          "timestampIso": "2020-01-15T07:00:00.000Z",
+          "contributors": [
+            "@nodar"
+          ]
+        },
+        {
+          "weight": 0.57,
+          "title": "Gitcoin Donation (sepu85)",
+          "timestampIso": "2020-01-15T07:00:00.000Z",
+          "contributors": [
+            "@sepu85"
+          ]
+        },
+        {
+          "weight": 1.007,
+          "title": "Gitcoin Donation (thomashchsueh)",
+          "timestampIso": "2020-01-15T07:00:00.000Z",
+          "contributors": [
+            "@thomashchsueh"
+          ]
+        },
+        {
+          "weight": 0.6638,
+          "title": "Gitcoin Donation (polats)",
+          "timestampIso": "2020-01-13T07:00:00.000Z",
+          "contributors": [
+            "@polats"
+          ]
+        },
+        {
+          "weight": 0.6,
+          "title": "Gitcoin Donation (defidude)",
+          "timestampIso": "2020-01-15T07:00:00.000Z",
+          "contributors": [
+            "@DeFiDude"
+          ]
+        },
+        {
+          "weight": 0.2,
+          "title": "Gitcoin Donation (troopaloop8)",
+          "timestampIso": "2020-01-15T07:00:00.000Z",
+          "contributors": [
+            "@troopaloop8"
+          ]
+        },
+        {
+          "weight": 0.637298,
+          "title": "Gitcoin Donation (mzargham)",
+          "timestampIso": "2020-01-13T07:00:00.000Z",
+          "contributors": [
+            "@mZ"
+          ]
+        },
+        {
+          "weight": 0.18,
+          "title": "Gitcoin Donation (benoxmo)",
+          "timestampIso": "2020-01-14T07:00:00.000Z",
+          "contributors": [
+            "@benoxmo"
+          ]
+        },
+        {
+          "weight": 0.4,
+          "title": "Gitcoin Donation (kamescg)",
+          "timestampIso": "2020-01-14T07:00:00.000Z",
+          "contributors": [
+            "@kamescg"
+          ]
+        },
+        {
+          "weight": 0.19,
+          "title": "Gitcoin Donation (nklipa13)",
+          "timestampIso": "2020-01-14T07:00:00.000Z",
+          "contributors": [
+            "@nklipa13"
+          ]
+        },
+        {
+          "weight": 0.38,
+          "title": "Gitcoin Donation (ryry79261)",
+          "timestampIso": "2020-01-14T07:00:00.000Z",
+          "contributors": [
+            "@ryry79261"
+          ]
+        },
+        {
+          "weight": 0.38,
+          "title": "Gitcoin Donation (markosullivan94)",
+          "timestampIso": "2020-01-14T07:00:00.000Z",
+          "contributors": [
+            "@markosullivan94"
+          ]
+        },
+        {
+          "weight": 0.495,
+          "title": "Gitcoin Donation (olivercarding)",
+          "timestampIso": "2020-01-14T07:00:00.000Z",
+          "contributors": [
+            "@olivercarding"
+          ]
+        },
+        {
+          "weight": 0.19,
+          "title": "Gitcoin Donation (parrachia)",
+          "timestampIso": "2020-01-14T07:00:00.000Z",
+          "contributors": [
+            "@parrachia"
+          ]
+        },
+        {
+          "weight": 0.38,
+          "title": "Gitcoin Donation (siftal)",
+          "timestampIso": "2020-01-14T07:00:00.000Z",
+          "contributors": [
+            "@siftal"
+          ]
+        },
+        {
+          "weight": 0.38,
+          "title": "Gitcoin Donation (abramsymons)",
+          "timestampIso": "2020-01-14T07:00:00.000Z",
+          "contributors": [
+            "@abramsymons"
+          ]
+        },
+        {
+          "weight": 0.2,
+          "title": "Gitcoin Donation (jzstern)",
+          "timestampIso": "2020-01-14T07:00:00.000Z",
+          "contributors": [
+            "@jzstern"
+          ]
+        },
+        {
+          "weight": 0.19,
+          "title": "Gitcoin Donation (ethereumkev)",
+          "timestampIso": "2020-01-14T07:00:00.000Z",
+          "contributors": [
+            "@ethereumkev"
+          ]
+        },
+        {
+          "weight": 0.19,
+          "title": "Gitcoin Donation (lkngtn)",
+          "timestampIso": "2020-01-13T07:00:00.000Z",
+          "contributors": [
+            "@lkngtn"
+          ]
+        },
+        {
+          "weight": 0.2,
+          "title": "Gitcoin Donation (stellarmagnet)",
+          "timestampIso": "2020-01-13T07:00:00.000Z",
+          "contributors": [
+            "@stellarmagnet"
+          ]
+        },
+        {
+          "weight": 1.9,
+          "title": "Gitcoin Donation (scottrepreneur)",
+          "timestampIso": "2020-01-13T07:00:00.000Z",
+          "contributors": [
+            "@scottrepreneur"
+          ]
+        },
+        {
+          "weight": 0.95,
+          "title": "Gitcoin Donation (jrmoreau)",
+          "timestampIso": "2020-01-13T07:00:00.000Z",
+          "contributors": [
+            "@jrmoreau"
+          ]
+        },
+        {
+          "weight": 1,
+          "title": "Gitcoin Donation (luukdao)",
+          "timestampIso": "2020-01-13T07:00:00.000Z",
+          "contributors": [
+            "@luukdao"
+          ]
+        },
+        {
+          "weight": 2.0007,
+          "title": "Gitcoin Donation (nealmcb)",
+          "timestampIso": "2020-01-13T07:00:00.000Z",
+          "contributors": [
+            "@nealmcb"
+          ]
+        },
+        {
+          "weight": 0.2,
+          "title": "Gitcoin Donation (ericwchung)",
+          "timestampIso": "2020-01-13T07:00:00.000Z",
+          "contributors": [
+            "@ericwchung"
+          ]
+        },
+        {
+          "weight": 0.19,
+          "title": "Gitcoin Donation (rnbwd)",
+          "timestampIso": "2020-01-13T07:00:00.000Z",
+          "contributors": [
+            "@rnbwd"
+          ]
+        },
+        {
+          "weight": 0.4,
+          "title": "Gitcoin Donation (auryn-macmillan)",
+          "timestampIso": "2020-01-13T07:00:00.000Z",
+          "contributors": [
+            "@auryn"
+          ]
+        },
+        {
+          "weight": 0.95,
+          "title": "Gitcoin Donation (carlosgj94)",
+          "timestampIso": "2020-01-13T07:00:00.000Z",
+          "contributors": [
+            "@carlosgj94"
+          ]
+        },
+        {
+          "weight": 1.8,
+          "title": "Gitcoin Donation (critesjosh)",
+          "timestampIso": "2020-01-13T07:00:00.000Z",
+          "contributors": [
+            "@critesjosh"
+          ]
+        },
+        {
+          "weight": 0.19,
+          "title": "Gitcoin Donation (kozmian)",
+          "timestampIso": "2020-01-13T07:00:00.000Z",
+          "contributors": [
+            "@kozmian"
+          ]
+        },
+        {
+          "weight": 0.38,
+          "title": "Gitcoin Donation (nelsonmckey)",
+          "timestampIso": "2020-01-13T07:00:00.000Z",
+          "contributors": [
+            "@nelsonmckey"
+          ]
+        },
+        {
+          "weight": 0.2,
+          "title": "Gitcoin Donation (mex20)",
+          "timestampIso": "2020-01-13T07:00:00.000Z",
+          "contributors": [
+            "@mex20"
+          ]
+        },
+        {
+          "weight": 0.6,
+          "title": "Gitcoin Donation (okduncan)",
+          "timestampIso": "2020-01-12T07:00:00.000Z",
+          "contributors": [
+            "@okduncan"
+          ]
+        },
+        {
+          "weight": 0.19,
+          "title": "Gitcoin Donation (kikipluche)",
+          "timestampIso": "2020-01-12T07:00:00.000Z",
+          "contributors": [
+            "@kikipluche"
+          ]
+        },
+        {
+          "weight": 0.2,
+          "title": "Gitcoin Donation (wendydv1989)",
+          "timestampIso": "2020-01-12T07:00:00.000Z",
+          "contributors": [
+            "@wendydv1989"
+          ]
+        },
+        {
+          "weight": 0.2,
+          "title": "Gitcoin Donation (karsrhyder)",
+          "timestampIso": "2020-01-12T07:00:00.000Z",
+          "contributors": [
+            "@karsrhyder"
+          ]
+        },
+        {
+          "weight": 0.19,
+          "title": "Gitcoin Donation (kingflurkel)",
+          "timestampIso": "2020-01-12T07:00:00.000Z",
+          "contributors": [
+            "@kingflurkel"
+          ]
+        },
+        {
+          "weight": 0.19,
+          "title": "Gitcoin Donation (sb777)",
+          "timestampIso": "2020-01-12T07:00:00.000Z",
+          "contributors": [
+            "@sb777"
+          ]
+        },
+        {
+          "weight": 5.95,
+          "title": "Gitcoin Donation (daneok1)",
+          "timestampIso": "2020-01-12T07:00:00.000Z",
+          "contributors": [
+            "@daneok1"
+          ]
+        },
+        {
+          "weight": 2.85,
+          "title": "Gitcoin Donation (geleeroyale)",
+          "timestampIso": "2020-01-12T07:00:00.000Z",
+          "contributors": [
+            "@geleeroyale"
+          ]
+        },
+        {
+          "weight": 0.57,
+          "title": "Gitcoin Donation (krisjpi)",
+          "timestampIso": "2020-01-12T07:00:00.000Z",
+          "contributors": [
+            "@krisjpi"
+          ]
+        },
+        {
+          "weight": 0.76,
+          "title": "Gitcoin Donation (pi0neerpat)",
+          "timestampIso": "2020-01-12T07:00:00.000Z",
+          "contributors": [
+            "@pi0neerpat"
+          ]
+        },
+        {
+          "weight": 0.19,
+          "title": "Gitcoin Donation (wmpea)",
+          "timestampIso": "2020-01-11T07:00:00.000Z",
+          "contributors": [
+            "@wmpea"
+          ]
+        },
+        {
+          "weight": 0.207,
+          "title": "Gitcoin Donation (triteanderivative)",
+          "timestampIso": "2020-01-11T07:00:00.000Z",
+          "contributors": [
+            "@triteanderivative"
+          ]
+        },
+        {
+          "weight": 0.95,
+          "title": "Gitcoin Donation (heychristopher)",
+          "timestampIso": "2020-01-11T07:00:00.000Z",
+          "contributors": [
+            "@heychristopher"
+          ]
+        },
+        {
+          "weight": 0.207,
+          "title": "Gitcoin Donation (exhumans)",
+          "timestampIso": "2020-01-11T07:00:00.000Z",
+          "contributors": [
+            "@exhumans"
+          ]
+        },
+        {
+          "weight": 1.9,
+          "title": "Gitcoin Donation (alexeyakhunov)",
+          "timestampIso": "2020-01-11T07:00:00.000Z",
+          "contributors": [
+            "@alexeyakhunov"
+          ]
+        },
+        {
+          "weight": 1,
+          "title": "Gitcoin Donation (coopahtroopanew)",
+          "timestampIso": "2020-01-11T07:00:00.000Z",
+          "contributors": [
+            "@coopahtroopanew"
+          ]
+        },
+        {
+          "weight": 0.19,
+          "title": "Gitcoin Donation (harmonylion)",
+          "timestampIso": "2020-01-11T07:00:00.000Z",
+          "contributors": [
+            "@harmonylion"
+          ]
+        },
+        {
+          "weight": 2.85,
+          "title": "Gitcoin Donation (akpunia)",
+          "timestampIso": "2020-01-10T07:00:00.000Z",
+          "contributors": [
+            "@akpunia"
+          ]
+        },
+        {
+          "weight": 0.19,
+          "title": "Gitcoin Donation (jeff-emmett)",
+          "timestampIso": "2020-01-10T07:00:00.000Z",
+          "contributors": [
+            "@jeff-emmett"
+          ]
+        },
+        {
+          "weight": 0.95,
+          "title": "Gitcoin Donation (artignatyev)",
+          "timestampIso": "2020-01-10T07:00:00.000Z",
+          "contributors": [
+            "@artignatyev"
+          ]
+        },
+        {
+          "weight": 0.95,
+          "title": "Gitcoin Donation (vrortvedt)",
+          "timestampIso": "2020-01-10T07:00:00.000Z",
+          "contributors": [
+            "@vrortvedt"
+          ]
+        },
+        {
+          "weight": 1.9,
+          "title": "Gitcoin Donation (andersonmmi)",
+          "timestampIso": "2020-01-10T07:00:00.000Z",
+          "contributors": [
+            "@andersonmmi"
+          ]
+        },
+        {
+          "weight": 1.9,
+          "title": "Gitcoin Donation (eddy-fi)",
+          "timestampIso": "2020-01-10T07:00:00.000Z",
+          "contributors": [
+            "@eddy-fi"
+          ]
+        },
+        {
+          "weight": 0.19,
+          "title": "Gitcoin Donation (zeframlou)",
+          "timestampIso": "2020-01-10T07:00:00.000Z",
+          "contributors": [
+            "@zeframlou"
+          ]
+        },
+        {
+          "weight": 1.9,
+          "title": "Gitcoin Donation (axia-labs)",
+          "timestampIso": "2020-01-09T07:00:00.000Z",
+          "contributors": [
+            "@axia-labs"
+          ]
+        },
+        {
+          "weight": 0.2,
+          "title": "Gitcoin Donation (alexmasmej)",
+          "timestampIso": "2020-01-09T07:00:00.000Z",
+          "contributors": [
+            "@AlexMasmej"
+          ]
+        },
+        {
+          "weight": 1,
+          "title": "Gitcoin Donation (jonathanpdunne)",
+          "timestampIso": "2020-01-09T07:00:00.000Z",
+          "contributors": [
+            "@jonathanpdunne"
+          ]
+        },
+        {
+          "weight": 0.2952,
+          "title": "Gitcoin Donation (flanagansteve)",
+          "timestampIso": "2020-01-09T07:00:00.000Z",
+          "contributors": [
+            "@flanagansteve"
+          ]
+        },
+        {
+          "weight": 1.9,
+          "title": "Gitcoin Donation (col3)",
+          "timestampIso": "2020-01-09T07:00:00.000Z",
+          "contributors": [
+            "@col3"
+          ]
+        },
+        {
+          "weight": 1.9,
+          "title": "Gitcoin Donation (wip-abramson)",
+          "timestampIso": "2020-01-09T07:00:00.000Z",
+          "contributors": [
+            "@wip-abramson"
+          ]
+        },
+        {
+          "weight": 2.85,
+          "title": "Gitcoin Donation (davidutro)",
+          "timestampIso": "2020-01-09T07:00:00.000Z",
+          "contributors": [
+            "@davidutro"
+          ]
+        },
+        {
+          "weight": 0.3318,
+          "title": "Gitcoin Donation (ahoffaxiom)",
+          "timestampIso": "2020-01-09T07:00:00.000Z",
+          "contributors": [
+            "@ahoffaxiom"
+          ]
+        },
+        {
+          "weight": 0.97,
+          "title": "Gitcoin Donation (jmartinez-43)",
+          "timestampIso": "2020-01-09T07:00:00.000Z",
+          "contributors": [
+            "@jmartinez-43"
+          ]
+        },
+        {
+          "weight": 2,
+          "title": "Gitcoin Donation (darrenrm)",
+          "timestampIso": "2020-01-09T07:00:00.000Z",
+          "contributors": [
+            "@darrenrm"
+          ]
+        },
+        {
+          "weight": 1.26,
+          "title": "Gitcoin Donation (viarnes)",
+          "timestampIso": "2020-01-09T07:00:00.000Z",
+          "contributors": [
+            "@viarnes"
+          ]
+        },
+        {
+          "weight": 27.9,
+          "title": "Gitcoin Donation (peth-yursick)",
+          "timestampIso": "2020-01-09T07:00:00.000Z",
+          "contributors": [
+            "@peth-yursick"
+          ]
+        },
+        {
+          "weight": 0.19,
+          "title": "Gitcoin Donation (thowar2)",
+          "timestampIso": "2020-01-09T07:00:00.000Z",
+          "contributors": [
+            "@thowar2"
+          ]
+        },
+        {
+          "weight": 26,
+          "title": "Gitcoin Donation (hammadj)",
+          "timestampIso": "2020-01-09T07:00:00.000Z",
+          "contributors": [
+            "@hammadj"
+          ]
+        },
+        {
+          "weight": 2,
+          "title": "Gitcoin Donation (artified)",
+          "timestampIso": "2020-01-08T07:00:00.000Z",
+          "contributors": [
+            "@artified"
+          ]
+        },
+        {
+          "weight": 0.2375,
+          "title": "Gitcoin Donation (proofoftom)",
+          "timestampIso": "2020-01-08T07:00:00.000Z",
+          "contributors": [
+            "@proofoftom"
+          ]
+        },
+        {
+          "weight": 0.95,
+          "title": "Gitcoin Donation (adamstallard)",
+          "timestampIso": "2020-01-08T07:00:00.000Z",
+          "contributors": [
+            "@adamstallard"
+          ]
+        },
+        {
+          "weight": 1.9,
+          "title": "Gitcoin Donation (mccallj57)",
+          "timestampIso": "2020-01-08T07:00:00.000Z",
+          "contributors": [
+            "@mccallj57"
+          ]
+        },
+        {
+          "weight": 80.928,
+          "title": "Gitcoin Donation (pet3r-pan)",
+          "timestampIso": "2020-01-08T07:00:00.000Z",
+          "contributors": [
+            "@pet3rpan"
+          ]
+        },
+        {
+          "weight": 6.4,
+          "title": "Gitcoin Donation (nidea4u)",
+          "timestampIso": "2019-12-28T07:00:00.000Z",
+          "contributors": [
+            "@nidea4u"
+          ]
+        }
+      ]
+    }
+  }
+]

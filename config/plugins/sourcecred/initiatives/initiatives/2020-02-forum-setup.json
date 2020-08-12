@@ -1,0 +1,22 @@
+[
+  {
+    "type": "sourcecred/initiativeFile",
+    "version": "0.1.0"
+  },
+  {
+    "title": "Forums: Setup and Migration",
+    "timestampIso": "2020-02-15T10:00:00.000Z",
+    "weight": {
+      "incomplete": 8,
+      "complete": 8
+    },
+    "_fibonacciWeight": 8,
+    "completed": true,
+    "champions": [
+      "https://github.com/hammadj"
+    ],
+    "dependencies": [],
+    "references": [],
+    "contributions": []
+  }
+]

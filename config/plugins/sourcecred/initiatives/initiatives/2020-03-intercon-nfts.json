@@ -1,0 +1,27 @@
+[
+  {
+    "type": "sourcecred/initiativeFile",
+    "version": "0.2.0"
+  },
+  {
+    "title": "Intercon: Making NFT Badges",
+    "timestampIso": "2020-03-18T10:00:00.000Z",
+    "weight": {
+      "incomplete": 5,
+      "complete": 5
+    },
+    "completed": true,
+    "dependencies": {},
+    "references": {},
+    "contributions": {
+      "entries": [{
+        "weight": 5,
+        "title": "Making and Distributing Intercon Badges",
+        "timestampIso": "2020-03-18T10:00:00.000Z",
+        "contributors": [
+          "@DeFiDude"
+        ]
+      }]
+    }
+  }
+]

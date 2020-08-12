@@ -1,0 +1,21 @@
+[
+  {
+    "type": "sourcecred/initiativeFile",
+    "version": "0.1.0"
+  },
+  {
+    "title": "Intercon: Editing Videos",
+    "timestampIso": "2020-03-18T10:00:00.000Z",
+    "weight": {
+      "incomplete": 8,
+      "complete": 8
+    },
+    "completed": true,
+    "champions": [
+      "https://forum.metagame.wtf/u/c0mput3rxz"
+    ],
+    "dependencies": ["https://github.com/MetaFam/TheSource/tree/master/initiatives/2020-03-intercon-streaming.json"],
+    "references": [],
+    "contributions": []
+  }
+]
