@@ -1,0 +1,37 @@
+[
+  {
+    "type": "sourcecred/initiativeFile",
+    "version": "0.2.0"
+  },
+  {
+    "title": "DAO Setup",
+    "timestampIso": "2020-01-20T10:00:00.000Z",
+    "weight": {
+      "incomplete": 8,
+      "complete": 8
+    },
+    "completed": true,
+    "dependencies": {},
+    "references": {},
+    "contributions": {
+      "entries": [
+        {
+          "weight": 8,
+          "title": "Setup Aragon DAO",
+          "timestampIso": "2020-01-20T10:00:00.000Z",
+          "contributors": [
+            "https://forum.metagame.wtf/u/burrrata"
+          ]
+        },
+        {
+          "weight": 5,
+          "title": "Fix DAO configuration",
+          "timestampIso": "2020-01-20T10:00:00.000Z",
+          "contributors": [
+            "@aaron"
+          ]
+        }
+      ]
+    }
+  }
+]
