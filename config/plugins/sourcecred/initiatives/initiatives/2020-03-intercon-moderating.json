@@ -1,0 +1,73 @@
+[
+  {
+    "type": "sourcecred/initiativeFile",
+    "version": "0.2.0"
+  },
+  {
+    "title": "Intercon: Moderating",
+    "timestampIso": "2020-03-18T10:00:00.000Z",
+    "weight": {
+      "incomplete": 8,
+      "complete": 8
+    },
+    "completed": true,
+    "dependencies": {
+      "urls": [
+        "https://github.com/MetaFam/TheSource/tree/master/initiatives/2020-03-intercon-mod-recruit.json"
+      ]
+    },
+    "references": {},
+    "contributions": {
+      "entries": [
+        {
+          "weight": 8,
+          "title": "Penguin Intercon Moderating",
+          "timestampIso": "2020-03-18T10:00:00.000Z",
+          "contributors": [
+            "https://forum.metagame.wtf/u/c0mput3rxz"
+          ]
+        },
+        {
+          "weight": 5,
+          "title": "Yalor Intercon Moderating",
+          "timestampIso": "2020-03-18T10:00:00.000Z",
+          "contributors": [
+            "https://forum.metagame.wtf/u/Yalortackson"
+          ]
+        },
+        {
+          "weight": 5,
+          "title": "Burrata Intercon Moderating",
+          "timestampIso": "2020-03-18T10:00:00.000Z",
+          "contributors": [
+            "https://forum.metagame.wtf/u/burrrata"
+          ]
+        },
+        {
+          "weight": 8,
+          "title": "Polycarp Intercon Moderating",
+          "timestampIso": "2020-03-18T10:00:00.000Z",
+          "contributors": [
+            "https://forum.metagame.wtf/u/Polycarp"
+          ]
+        },
+        {
+          "weight": 5,
+          "title": "Felipe Intercon Moderating",
+          "timestampIso": "2020-03-18T10:00:00.000Z",
+          "contributors": [
+            "@felipeduarte"
+          ]
+        },
+        {
+          "weight": 8,
+          "title": "DeFiDude Intercon Moderating",
+          "timestampIso": "2020-03-18T10:00:00.000Z",
+          "contributors": [
+            "@DeFiDude"
+          ]
+        }
+      ]
+    }
+  }
+]

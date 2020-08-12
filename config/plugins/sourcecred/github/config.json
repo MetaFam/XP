@@ -1,1 +1,11 @@
-{"repositories": ["sourcecred-test/example-github"]}
+{
+  "repositories": [
+    "MetaFam/metagame-web",
+    "MetaFam/interspace.chat",
+    "MetaFam/MetaGameWebsite",
+    "MetaFam/metagame-wiki",
+    "MetaFam/Manifesto",
+    "MetaFam/XP",
+    "MetaFam/TheGame"
+  ]
+}
