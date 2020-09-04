@@ -1,0 +1,24 @@
+[
+  {
+    "type": "sourcecred/initiativeFile",
+    "version": "0.2.0"
+  },
+  {
+    "title": "MetaGame Birthday Party Organization",
+    "timestampIso": "2020-08-25T10:00:00.000Z",
+    "weight": {
+      "incomplete": 13,
+      "complete": 13
+    },
+    "completed": true,
+    "champions": [
+      "@shep",
+      "https://github.com/Vanilladelphia",
+      "https://forum.metagame.wtf/u/METADREAMER",
+      "@peth-yursick"
+    ],
+    "dependencies": {},
+    "references": {},
+    "contributions": {}
+  }
+]

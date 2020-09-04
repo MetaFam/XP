@@ -1,0 +1,21 @@
+[
+  {
+    "type": "sourcecred/initiativeFile",
+    "version": "0.2.0"
+  },
+  {
+    "title": "Discord Improvements / Moderation",
+    "timestampIso": "2020-08-01T10:00:00.000Z",
+    "completed": false,
+    "weight": {
+      "incomplete": 5,
+      "complete": 13
+    },
+    "champions": [
+      "https://github.com/Vanilladelphia"
+    ],
+    "dependencies": {},
+    "references": {},
+    "contributions": {}
+  }
+]
