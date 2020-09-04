@@ -4,15 +4,15 @@
     "version": "0.2.0"
   },
   {
-    "title": "MyMeta Profile Designs",
-    "timestampIso": "2020-07-01T10:00:00.000Z",
+    "title": "MetaMaps",
+    "timestampIso": "2020-08-10T10:00:00.000Z",
+    "completed": false,
     "weight": {
-      "incomplete": 21,
-      "complete": 21
+      "incomplete": 5,
+      "complete": 13
     },
-    "completed": true,
     "champions": [
-      "https://forum.metagame.wtf/u/markop"
+      "https://forum.metagame.wtf/u/theloneronin"
     ],
     "dependencies": {},
     "references": {},

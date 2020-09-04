@@ -4,15 +4,15 @@
     "version": "0.2.0"
   },
   {
-    "title": "MyMeta Profile Designs",
-    "timestampIso": "2020-07-01T10:00:00.000Z",
+    "title": "Friend Finder Coordination",
+    "timestampIso": "2020-08-01T10:00:00.000Z",
     "weight": {
-      "incomplete": 21,
-      "complete": 21
+      "incomplete": 5,
+      "complete": 8
     },
-    "completed": true,
+    "completed": false,
     "champions": [
-      "https://forum.metagame.wtf/u/markop"
+      "@mprime"
     ],
     "dependencies": {},
     "references": {},
