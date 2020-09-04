@@ -1,0 +1,21 @@
+[
+  {
+    "type": "sourcecred/initiativeFile",
+    "version": "0.2.0"
+  },
+  {
+    "title": "MetaGame Trailer Video",
+    "timestampIso": "2020-08-20T10:00:00.000Z",
+    "weight": {
+      "incomplete": 8,
+      "complete": 8
+    },
+    "completed": true,
+    "champions": [
+      "@shep"
+    ],
+    "dependencies": {},
+    "references": {},
+    "contributions": {}
+  }
+]

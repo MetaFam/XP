@@ -1,0 +1,32 @@
+[
+  {
+    "type": "sourcecred/initiativeFile",
+    "version": "0.2.0"
+  },
+  {
+    "title": "Fork The World",
+    "timestampIso": "2020-08-01T10:00:00.000Z",
+    "completed": true,
+    "weight": {
+      "incomplete": 13,
+      "complete": 13
+    },
+    "champions": [
+      "@peth-yursick"
+    ],
+    "dependencies": {},
+    "references": {},
+    "contributions": {
+      "entries": [
+        {
+          "weight": 8,
+          "title": "Coordination for Fork The World",
+          "timestampIso": "2020-08-01T07:00:00.000Z",
+          "contributors": [
+            "https://forum.metagame.wtf/u/Yalortackson"
+          ]
+        }
+      ]
+    }
+  }
+]
