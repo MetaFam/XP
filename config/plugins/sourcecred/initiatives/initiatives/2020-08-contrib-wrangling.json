@@ -1,0 +1,23 @@
+[
+  {
+    "type": "sourcecred/initiativeFile",
+    "version": "0.2.0"
+  },
+  {
+    "title": "Contributor Wrangling / PM",
+    "timestampIso": "2020-08-09T10:00:00.000Z",
+    "completed": true,
+    "weight": {
+      "incomplete": 8,
+      "complete": 8
+    },
+    "champions": [
+      "@peth-yursick"
+    ],
+    "dependencies": {},
+    "references": {},
+    "contributions": {
+      "entries": []
+    }
+  }
+]
