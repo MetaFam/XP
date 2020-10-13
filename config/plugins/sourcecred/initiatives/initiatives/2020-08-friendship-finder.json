@@ -8,9 +8,9 @@
     "timestampIso": "2020-08-01T10:00:00.000Z",
     "weight": {
       "incomplete": 5,
-      "complete": 8
+      "complete": 5
     },
-    "completed": false,
+    "completed": true,
     "champions": [
       "@mprime"
     ],

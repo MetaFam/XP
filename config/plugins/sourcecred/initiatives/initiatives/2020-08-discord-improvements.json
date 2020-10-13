@@ -6,10 +6,10 @@
   {
     "title": "Discord Improvements / Moderation",
     "timestampIso": "2020-08-01T10:00:00.000Z",
-    "completed": false,
+    "completed": true,
     "weight": {
       "incomplete": 5,
-      "complete": 13
+      "complete": 10
     },
     "champions": [
       "https://github.com/Vanilladelphia"
