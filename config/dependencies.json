@@ -9,5 +9,16 @@
                 "weight": 0.05
             }
         ]
+    },
+    {
+        "autoActivateOnIdentityCreation": true,
+        "id": "tyZ49zRqcVU4dHbgr9pkvg",
+        "name": "MetaFamDAO",
+        "periods": [
+            {
+                "startTime": "2020-01-01T08:45:34.676Z",
+                "weight": 0.025
+            }
+        ]
     }
 ]
