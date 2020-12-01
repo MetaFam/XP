@@ -169,4 +169,3 @@ function deductSeedsAlreadyMinted(accounts, ledger) {
   
   await fs.writeFile(LEDGER_PATH, ledger.serialize())
 })()
-
