@@ -97,6 +97,62 @@
           "contributors": [
             "@peth-yursick"
           ]
+        },
+        {
+          "weight": 5,
+          "title": "Meta #31 - WTF is MyMeta",
+          "timestampIso": "2020-10-15T07:00:00.000Z",
+          "contributors": [
+            "@peth-yursick"
+          ]
+        },
+        {
+          "weight": 5,
+          "title": "Meta #32 - How To Play MetaGame",
+          "timestampIso": "2020-10-22T07:00:00.000Z",
+          "contributors": [
+            "@peth-yursick"
+          ]
+        },
+        {
+          "weight": 5,
+          "title": "Meta #33 - Phases of MetaGame",
+          "timestampIso": "2020-10-29T07:00:00.000Z",
+          "contributors": [
+            "@peth-yursick"
+          ]
+        },
+        {
+          "weight": 5,
+          "title": "Meta #34 - XP & Seeds",
+          "timestampIso": "2020-11-05T07:00:00.000Z",
+          "contributors": [
+            "@peth-yursick"
+          ]
+        },
+        {
+          "weight": 5,
+          "title": "Meta #35 - Seeds Pump",
+          "timestampIso": "2020-11-12T07:00:00.000Z",
+          "contributors": [
+            "@peth-yursick"
+          ]
+        },
+        {
+          "weight": 5,
+          "title": "Meta #36 - State of Raids",
+          "timestampIso": "2020-11-19T07:00:00.000Z",
+          "contributors": [
+            "@peth-yursick"
+          ]
+        },
+        {
+          "weight": 5,
+          "title": "Meta #37 - MetaManifesto 2.0",
+          "timestampIso": "2020-11-26T07:00:00.000Z",
+          "contributors": [
+            "@peth-yursick"
+          ]
         }
       ]
     }

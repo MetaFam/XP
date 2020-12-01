@@ -1167,6 +1167,14 @@
           "contributors": [
             "@nidea4u"
           ]
+        },
+        {
+          "weight": 24.8,
+          "title": "Gitcoin Donation (JamesRT)",
+          "timestampIso": "2019-12-28T07:00:00.000Z",
+          "contributors": [
+            "@jamesrt"
+          ]
         }
       ]
     }
