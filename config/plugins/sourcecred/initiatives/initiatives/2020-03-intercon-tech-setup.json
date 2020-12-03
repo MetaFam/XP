@@ -16,7 +16,7 @@
     ],
     "dependencies": {
       "urls": [
-        "https://github.com/MetaFam/TheSource/tree/master/initiatives/2020-03-intercon-servers.json"
+        "https://github.com/MetaFam/XP/tree/master/config/plugins/sourcecred/initiatives/initiatives/2020-03-intercon-servers.json"
       ]
     },
     "references": {},
