@@ -17,7 +17,7 @@
       "https://forum.metagame.wtf/u/METADREAMER"
     ],
     "dependencies": [
-      "https://github.com/MetaFam/TheSource/tree/master/initiatives/2020-02-forum-setup.json"
+      "https://github.com/MetaFam/XP/tree/master/config/plugins/sourcecred/initiatives/initiatives/2020-02-forum-setup.json"
     ],
     "references": [],
     "contributions": []
