@@ -5,12 +5,13 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
-    "sourcecred": "0.7.3"
+    "sourcecred": "0.7.4"
   },
   "scripts": {
     "clean": "rimraf cache site",
     "clean-all": "yarn clean && rimraf output",
     "load": "dotenv sourcecred load",
+    "go": "dotenv sourcecred go",
     "start": "dotenv -- sourcecred go --no-load && sourcecred serve",
     "grain": "sourcecred grain"
   },

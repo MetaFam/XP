@@ -4,14 +4,14 @@
     "version": "0.2.0"
   },
   {
-    "title": "Project Leading (shilling, grant getting, PM, community management)",
-    "timestampIso": "2020-11-01T10:00:00.000Z",
+    "title": "DeepWork Design Workshop",
+    "timestampIso": "2020-12-01T10:00:00.000Z",
     "completed": true,
     "weight": {
-      "incomplete": 34,
-      "complete": 34
+      "incomplete": 13,
+      "complete": 13
     },
-    "champions": ["@peth-yursick"],
+    "champions": ["@andrejberlin", "@abcxd", "@dawg"],
     "dependencies": {},
     "references": {},
     "contributions": {

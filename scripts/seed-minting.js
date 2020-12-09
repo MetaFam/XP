@@ -151,21 +151,20 @@ function deductSeedsAlreadyMinted(accounts, ledger) {
     ...dep,
   }))
   
-  deductSeedsAlreadyMinted([...discordAccWithAddress, ...depAccounts], ledger);
+  // deductSeedsAlreadyMinted([...discordAccWithAddress, ...depAccounts], ledger);
+  // await fs.writeFile(LEDGER_PATH, ledger.serialize())
   
-  //
-  // const newMintAmounts = [];
-  // discordAccWithAddress.forEach(acc => {
-  //   const amountToMint = G.format(acc.balance, 4, '');
-  //   newMintAmounts.push([acc.identity.name, acc.ethAddress, amountToMint]);
-  // })
-  //
-  // DEPENDENCY_ACCOUNTS.forEach(dep => {
-  //   const acc = ledger.account(dep.identity.id);
-  //   const amountToMint = G.format(acc.balance, 4, '');
-  //   newMintAmounts.push([dep.name, dep.ethAddress, amountToMint]);
-  // })
-  // console.log(newMintAmounts.map(e => e.join(",")).join("\n"));
+  const newMintAmounts = [];
+  discordAccWithAddress.forEach(acc => {
+    const amountToMint = G.format(acc.balance, 4, '');
+    newMintAmounts.push([acc.identity.name, acc.ethAddress, amountToMint]);
+  })
+
+  DEPENDENCY_ACCOUNTS.forEach(dep => {
+    const acc = ledger.account(dep.identity.id);
+    const amountToMint = G.format(acc.balance, 4, '');
+    newMintAmounts.push([dep.name, dep.ethAddress, amountToMint]);
+  })
+  console.log(newMintAmounts.map(e => e.join(",")).join("\n"));
   
-  await fs.writeFile(LEDGER_PATH, ledger.serialize())
 })()
