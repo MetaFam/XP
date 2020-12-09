@@ -8,23 +8,14 @@
     "timestampIso": "2020-11-01T10:00:00.000Z",
     "completed": true,
     "weight": {
-      "incomplete": 21,
-      "complete": 21
+      "incomplete": 34,
+      "complete": 34
     },
     "champions": ["@peth-yursick"],
     "dependencies": {},
     "references": {},
     "contributions": {
-      "entries": [
-        {
-          "weight": 5,
-          "title": "Discord Revamp and Bot Work",
-          "timestampIso": "2020-11-01T07:00:00.000Z",
-          "contributors": [
-            "https://github.com/Vanilladelphia"
-          ]
-        }
-      ]
+      "entries": []
     }
   }
 ]
