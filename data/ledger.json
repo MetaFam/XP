@@ -3503,3 +3503,5 @@
 {"action":{"identityId":"AXD66jcgX8medHQesOlxiA","type":"TOGGLE_ACTIVATION"},"ledgerTimestamp":1609148551875,"uuid":"5hOJzTXqodKFd9cBvz54Fw","version":"1"}
 {"action":{"base":"MD3VMqOOJJespH9faOP3wQ","target":"raVeOt7oQ63XKs0fJsMTXw","type":"MERGE_IDENTITIES"},"ledgerTimestamp":1609148566086,"uuid":"roVnsbjonTj2q1XBPPXrHQ","version":"1"}
 {"action":{"identityId":"MD3VMqOOJJespH9faOP3wQ","type":"TOGGLE_ACTIVATION"},"ledgerTimestamp":1609148567479,"uuid":"lgWL0CwXuyat9Ge8YRgIvw","version":"1"}
+{"action":{"identity":{"address":"N\u0000sourcecred\u0000core\u0000IDENTITY\u0000OfG8TRPDjPjhD32ygOZ5ZA\u0000","aliases":[],"id":"OfG8TRPDjPjhD32ygOZ5ZA","name":"thjnhreus99","subtype":"USER"},"type":"CREATE_IDENTITY"},"ledgerTimestamp":1609201698225,"uuid":"jzVbnqBQ6ZAUV1l5mQaZRg","version":"1"}
+{"action":{"alias":{"address":"N\u0000sourcecred\u0000discord\u0000MEMBER\u0000user\u0000583318038435069975\u0000","description":"discord/thjnhreus99#7553"},"identityId":"OfG8TRPDjPjhD32ygOZ5ZA","type":"ADD_ALIAS"},"ledgerTimestamp":1609201698226,"uuid":"AIDlnP3eTALMp2n6dkXKWQ","version":"1"}
