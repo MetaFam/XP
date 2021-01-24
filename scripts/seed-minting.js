@@ -1,4 +1,4 @@
-const sc = require('sourcecred').default;
+const sc = require('sourcecred-publish-test');
 const fs = require("fs-extra")
 const _ = require('lodash');
 const fetch = require('node-fetch');
@@ -11,6 +11,7 @@ const NodeAddress = sc.core.address.makeAddressModule({
   nonce: "N",
   otherNonces: new Map().set("E", "EdgeAddress"),
 });
+
 
 // Original Distribution TX Hash: https://etherscan.io/tx/0x6969d6dbaae8db0abc62d7efb1ba23bcbd371cd9b2d6263137975e87bfd431dc
 // Second Distribution TX Hash: https://etherscan.io/tx/0x32026b7e0321b22e6cfb4a2cf35c21e5be1198638d404ab2756b9d58b3d1b84f
