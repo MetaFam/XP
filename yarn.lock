@@ -368,19 +368,6 @@ autosuggest-highlight@^3.1.1:
   dependencies:
     diacritic "0.0.2"
 
-babel-plugin-syntax-flow@^6.18.0:
-  version "6.18.0"
-  resolved "https://registry.yarnpkg.com/babel-plugin-syntax-flow/-/babel-plugin-syntax-flow-6.18.0.tgz#4c3ab20a2af26aa20cd25995c398c4eb70310c8d"
-  integrity sha1-TDqyCiryaqIM0lmVw5jE63AxDI0=
-
-babel-plugin-transform-flow-strip-types@^6.22.0:
-  version "6.22.0"
-  resolved "https://registry.yarnpkg.com/babel-plugin-transform-flow-strip-types/-/babel-plugin-transform-flow-strip-types-6.22.0.tgz#84cb672935d43714fdc32bce84568d87441cf7cf"
-  integrity sha1-hMtnKTXUNxT9wyvOhFaNh0Qc988=
-  dependencies:
-    babel-plugin-syntax-flow "^6.18.0"
-    babel-runtime "^6.22.0"
-
 babel-runtime@^6.22.0:
   version "6.26.0"
   resolved "https://registry.yarnpkg.com/babel-runtime/-/babel-runtime-6.26.0.tgz#965c7058668e82b55d7bfe04ff2337bc8b5647fe"
@@ -2785,14 +2772,13 @@ source-map@^0.6.1:
   resolved "https://registry.yarnpkg.com/source-map/-/source-map-0.6.1.tgz#74722af32e9614e9c287a8d0bbde48b5e2f1a263"
   integrity sha512-UjgapumWlbMhkBgzT7Ykc5YXUT46F0iKu8SGXq0bcwP5dz/h0Plj6enJqjz1Zbq2l5WaqYnrVbwWOWMyF3F47g==
 
-sourcecred-publish-test@0.7.20:
-  version "0.7.20"
-  resolved "https://registry.yarnpkg.com/sourcecred-publish-test/-/sourcecred-publish-test-0.7.20.tgz#70904bf72285b20f0d966f9c82c9301eb2ca6629"
-  integrity sha512-CH7kkK70BZtzaKU/8zTC5dMM7jAUl1IawH+1te813xkJeXG6py3z9XabTq2Hrscki7rxgu0Cd+4H08oNtmXeCQ==
+sourcecred@0.7.6:
+  version "0.7.6"
+  resolved "https://registry.yarnpkg.com/sourcecred/-/sourcecred-0.7.6.tgz#9d2e90ceb73aecf788ed5d70221d56f785c76cae"
+  integrity sha512-flW4xol9T6tZhdzumwqW8WujVbKwQn5vX3/n0zIFj9NuJe55utRxrOjW4YJrVstx6jCYN2GCdn8qrGCLl9AzJg==
   dependencies:
     "@material-ui/lab" "^4.0.0-alpha.56"
     aphrodite "^2.4.0"
-    babel-plugin-transform-flow-strip-types "^6.22.0"
     base-64 "^1.0.0"
     base64url "^3.0.1"
     better-sqlite3 "^7.0.0"
