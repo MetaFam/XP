@@ -1,4 +1,4 @@
-const sc = require('sourcecred-publish-test');
+const sc = require('sourcecred');
 const fs = require("fs-extra")
 const _ = require('lodash');
 const fetch = require('node-fetch');
@@ -72,10 +72,15 @@ const address_book_file = "https://raw.githubusercontent.com/MetaFam/TheSource/m
     if (linkedAccount) {
       return;
     }
-    
-    const identityId = sc.ledger.utils.ensureIdentityExists(ledger, identityProposal)
-    ledger.mergeIdentities({ base: acc.identity.id, target: identityId })
+  
+    const ethAlias = {
+      address: addressUtils.nodeAddressForEthAddress(ethAddress),
+      description: ethAddress,
+    };
+  
+    ledger.addAlias(acc.identity.id, ethAlias);
   })
+  
   
   await fs.writeFile(LEDGER_PATH, ledger.serialize())
   
