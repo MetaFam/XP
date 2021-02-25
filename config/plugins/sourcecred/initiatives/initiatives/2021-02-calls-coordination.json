@@ -1,0 +1,21 @@
+[
+  {
+    "type": "sourcecred/initiativeFile",
+    "version": "0.2.0"
+  },
+  {
+    "title": "Community Call Coordination",
+    "timestampIso": "2021-02-01T10:00:00.000Z",
+    "weight": {
+      "incomplete": 8,
+      "complete": 8
+    },
+    "completed": true,
+    "champions": [
+      "@mprime"
+    ],
+    "dependencies": {},
+    "references": {},
+    "contributions": {}
+  }
+]
