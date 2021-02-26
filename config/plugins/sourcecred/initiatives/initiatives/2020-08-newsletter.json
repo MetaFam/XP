@@ -194,6 +194,54 @@
           "contributors": [
             "@peth-yursick"
           ]
+        },
+        {
+          "weight": 5,
+          "title": "Meta #43 - The Great Flood of 2021",
+          "timestampIso": "2021-01-10T07:00:00.000Z",
+          "contributors": [
+            "@peth-yursick"
+          ]
+        },
+        {
+          "weight": 5,
+          "title": "Meta #44 - Octo's Odd Odyssey Part I",
+          "timestampIso": "2021-01-20T07:00:00.000Z",
+          "contributors": [
+            "@peth-yursick"
+          ]
+        },
+        {
+          "weight": 5,
+          "title": "Meta #45 - Wat Do Sir?",
+          "timestampIso": "2021-01-29T07:00:00.000Z",
+          "contributors": [
+            "@peth-yursick"
+          ]
+        },
+        {
+          "weight": 5,
+          "title": "Meta #46 - Meme Driven Organizations",
+          "timestampIso": "2021-02-04T07:00:00.000Z",
+          "contributors": [
+            "@peth-yursick"
+          ]
+        },
+        {
+          "weight": 5,
+          "title": "Meta #47 - Wait, WTF is a MetaFest",
+          "timestampIso": "2021-02-12T07:00:00.000Z",
+          "contributors": [
+            "@peth-yursick"
+          ]
+        },
+        {
+          "weight": 5,
+          "title": "Meta #48 - The Purge Is Near",
+          "timestampIso": "2021-02-19T07:00:00.000Z",
+          "contributors": [
+            "@peth-yursick"
+          ]
         }
       ]
     }
