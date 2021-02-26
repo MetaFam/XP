@@ -4578,3 +4578,5 @@
 {"action":{"base":"Zb9p8lhEBPTl87lrd0m1NA","target":"93bP5BgPLZbC1U4a0b4d1w","type":"MERGE_IDENTITIES"},"ledgerTimestamp":1614237809065,"uuid":"kyl9KfB5hOQTjEeOXDn59w","version":"1"}
 {"action":{"base":"Zb9p8lhEBPTl87lrd0m1NA","target":"YNot7w8qzRxF08Fk6ogcXQ","type":"MERGE_IDENTITIES"},"ledgerTimestamp":1614237817169,"uuid":"fz1ZVArQNapvrxKNf0L22g","version":"1"}
 {"action":{"identityId":"Zb9p8lhEBPTl87lrd0m1NA","newName":"Gnomeski","type":"RENAME_IDENTITY"},"ledgerTimestamp":1614237859575,"uuid":"i6s20DAOyKu7oKwtm9jKJw","version":"1"}
+{"action":{"identityId":"o8D4XfeegC4KWBVCA90DcQ","newType":"BOT","type":"CHANGE_IDENTITY_TYPE"},"ledgerTimestamp":1614317169262,"uuid":"cEnJQ2Fv0fXgPjUoEjWmUg","version":"1"}
+{"action":{"identityId":"F6faFVJPXAMeZl5uaaPYMA","newType":"BOT","type":"CHANGE_IDENTITY_TYPE"},"ledgerTimestamp":1614317169263,"uuid":"HozinPspe1PwdJbrsDFlTg","version":"1"}
