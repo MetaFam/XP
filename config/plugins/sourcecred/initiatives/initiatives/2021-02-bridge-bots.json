@@ -1,0 +1,21 @@
+[
+  {
+    "type": "sourcecred/initiativeFile",
+    "version": "0.2.0"
+  },
+  {
+    "title": "Setting up BridgeBots",
+    "timestampIso": "2021-01-15T10:00:00.000Z",
+    "weight": {
+      "incomplete": 0,
+      "complete": 2
+    },
+    "completed": true,
+    "champions": [
+      "https://forum.metagame.wtf/u/geleeroyale"
+    ],
+    "dependencies": {},
+    "references": {},
+    "contributions": {}
+  }
+]

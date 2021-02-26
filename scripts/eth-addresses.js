@@ -1,4 +1,4 @@
-const sc = require('sourcecred-publish-test');
+const sc = require('sourcecred').sourcecred;
 const fs = require("fs-extra")
 const _ = require('lodash');
 const fetch = require('node-fetch');
@@ -65,16 +65,20 @@ const address_book_file = "https://raw.githubusercontent.com/MetaFam/TheSource/m
   
   discordAccWithAddress.forEach(acc => {
     const ethAddress = addressUtils.parseAddress(acc.ethAddress);
-    const identityProposal = sc.plugins.ethereum.utils.identity.createIdentity(ethAddress);
+    const baseIdentityId = acc.identity.id;
+    const ethAlias = {
+      address: addressUtils.nodeAddressForEthAddress(ethAddress),
+      description: ethAddress,
+    };
     
-    const linkedAccount = ledger.accountByAddress(identityProposal.alias.address);
+    const linkedAccount = ledger.accountByAddress(ethAlias.address);
     
     if (linkedAccount) {
       return;
     }
-    
-    const identityId = sc.ledger.utils.ensureIdentityExists(ledger, identityProposal)
-    ledger.mergeIdentities({ base: acc.identity.id, target: identityId })
+  
+    ledger.addAlias(baseIdentityId, ethAlias);
+    ledger.activate(baseIdentityId);
   })
   
   await fs.writeFile(LEDGER_PATH, ledger.serialize())
