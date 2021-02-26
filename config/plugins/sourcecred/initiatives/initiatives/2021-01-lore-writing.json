@@ -7,10 +7,10 @@
     "title": "Writing MetaGame Lore",
     "timestampIso": "2021-01-31T10:00:00.000Z",
     "weight": {
-      "incomplete": 5,
+      "incomplete": 3,
       "complete": 5
     },
-    "completed": true,
+    "completed": false,
     "champions": [
       "https://forum.metagame.wtf/u/Gnomeski"
     ],
