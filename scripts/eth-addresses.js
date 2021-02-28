@@ -48,11 +48,13 @@ const address_book_file = "https://raw.githubusercontent.com/MetaFam/TheSource/m
     
     discordAliases.forEach(alias => {
       discordId = NodeAddress.toParts(alias.address)[4];
+      
       if (AddressMap[discordId]) {
         user = AddressMap[discordId]
       }
     })
-    
+  
+  
     return {
       ...a,
       discordId,
@@ -65,6 +67,7 @@ const address_book_file = "https://raw.githubusercontent.com/MetaFam/TheSource/m
   
   discordAccWithAddress.forEach(acc => {
     const ethAddress = addressUtils.parseAddress(acc.ethAddress);
+    if (acc.ethAddress === '0x95e61633f4e1425ff0f79f1131207949fab2bc09') console.log('Anallesese1!!')
     const baseIdentityId = acc.identity.id;
     const ethAlias = {
       address: addressUtils.nodeAddressForEthAddress(ethAddress),
@@ -81,6 +84,6 @@ const address_book_file = "https://raw.githubusercontent.com/MetaFam/TheSource/m
     ledger.activate(baseIdentityId);
   })
   
-  await fs.writeFile(LEDGER_PATH, ledger.serialize())
+  // await fs.writeFile(LEDGER_PATH, ledger.serialize())
   
 })()
