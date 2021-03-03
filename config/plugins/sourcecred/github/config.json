@@ -6,6 +6,7 @@
     "MetaFam/metagame-wiki",
     "MetaFam/Manifesto",
     "MetaFam/XP",
-    "MetaFam/TheGame"
+    "MetaFam/TheGame",
+    "MetaFam/SeedGraph",
   ]
 }
