@@ -1,4 +1,4 @@
-const sc = require('sourcecred-publish-test').sourcecred;
+const sc = require('sourcecred').sourcecred;
 const fs = require("fs-extra")
 const _ = require('lodash');
 const fetch = require('node-fetch');
