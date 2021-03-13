@@ -1,4 +1,4 @@
-const sc = require('sourcecred-publish-test');
+const sc = require('sourcecred-publish-test').sourcecred;
 const fs = require("fs-extra")
 const _ = require('lodash');
 const fetch = require('node-fetch');
@@ -16,8 +16,9 @@ const NodeAddress = sc.core.address.makeAddressModule({
 // Original Distribution TX Hash: https://etherscan.io/tx/0x6969d6dbaae8db0abc62d7efb1ba23bcbd371cd9b2d6263137975e87bfd431dc
 // Second Distribution TX Hash: https://etherscan.io/tx/0x32026b7e0321b22e6cfb4a2cf35c21e5be1198638d404ab2756b9d58b3d1b84f
 // Third Distribution TX Hash: https://etherscan.io/tx/0x69fef3f55bd7f561be76c1b86f3a3914f87aed1c4c0a04d387053d17b8d0c12e
-const MINT_TX_HASH = "https://etherscan.io/tx/0xca3b6a5291e249a9bf63dc384a0b697f38f9a03f37ad01fdfed0b25ded8b87d9"
-const MINT_DATE = "Jan 11, 2020"
+// Fourth Distribution TX Hash: https://etherscan.io/tx/0xca3b6a5291e249a9bf63dc384a0b697f38f9a03f37ad01fdfed0b25ded8b87d9
+const MINT_TX_HASH = ""
+const MINT_DATE = ""
 
 const LAST_MINTING = [
   { address: "0x9453B4eF4806D718c3ABa920FbE3C07f3D6e6086", amount: 0.1080 },
@@ -186,11 +187,17 @@ function deductSeedsAlreadyMinted(accounts, ledger) {
       const parts = NodeAddress.toParts(alias.address);
       return parts.indexOf('discord') > 0;
     })
+  
+    const ethAliases = a.identity.aliases.filter(alias => {
+      const parts = NodeAddress.toParts(alias.address);
+      return parts.indexOf('ethereum') > 0;
+    })
     
-    if (!discordAliases.length) return null;
+    if (!discordAliases.length && !ethAliases.length) return null;
     
     let user = null;
     let discordId = null;
+    let ethAddress = null;
     
     discordAliases.forEach(alias => {
       discordId = NodeAddress.toParts(alias.address)[4];
@@ -198,12 +205,18 @@ function deductSeedsAlreadyMinted(accounts, ledger) {
         user = AddressMap[discordId]
       }
     })
+  
+    ethAliases.forEach(alias => {
+      ethAddress = NodeAddress.toParts(alias.address)[2];
+      console.log({ ethAddress });
+    })
+  
     
     return {
       ...a,
       discordId,
       cred: credAcc.totalCred,
-      ethAddress: user && user.address,
+      ethAddress: ethAddress || (user && user.address),
     }
   }).filter(Boolean);
   
@@ -214,23 +227,24 @@ function deductSeedsAlreadyMinted(accounts, ledger) {
     ...dep,
   }))
   
-  deductSeedsAlreadyMinted([...discordAccWithAddress, ...depAccounts], ledger);
-  await fs.writeFile(LEDGER_PATH, ledger.serialize())
-  //
-  // const newMintAmounts = [];
-  // let total = 0;
-  // discordAccWithAddress.forEach(acc => {
-  //   const amountToMint = G.format(acc.balance, 4, '');
-  //   newMintAmounts.push([acc.ethAddress, amountToMint]);
-  //   total += parseFloat(amountToMint);
-  // })
-  //
-  // DEPENDENCY_ACCOUNTS.forEach(dep => {
-  //   const acc = ledger.account(dep.identity.id);
-  //   const amountToMint = G.format(acc.balance, 4, '');
-  //   newMintAmounts.push([dep.ethAddress, amountToMint]);
-  //   total += parseFloat(amountToMint);
-  // })
-  // console.log(total);
+  // deductSeedsAlreadyMinted([...discordAccWithAddress, ...depAccounts], ledger);
+  // await fs.writeFile(LEDGER_PATH, ledger.serialize())
+  const newMintAmounts = [];
+  let total = 0;
+  discordAccWithAddress.forEach(acc => {
+    const amountToMint = G.format(acc.balance, 4, '');
+    newMintAmounts.push([acc.ethAddress, amountToMint]);
+    total += parseFloat(amountToMint);
+  })
+
+  DEPENDENCY_ACCOUNTS.forEach(dep => {
+    const acc = ledger.account(dep.identity.id);
+    const amountToMint = G.format(acc.balance, 4, '');
+    newMintAmounts.push([dep.ethAddress, amountToMint]);
+    total += parseFloat(amountToMint);
+  })
+  
+  console.log(newMintAmounts.map(([address, amount]) => `${address},${amount}`).join('\n'));
+  console.log({ total });
   
 })()
