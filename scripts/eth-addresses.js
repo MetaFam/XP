@@ -67,7 +67,6 @@ const address_book_file = "https://raw.githubusercontent.com/MetaFam/TheSource/m
   
   discordAccWithAddress.forEach(acc => {
     const ethAddress = addressUtils.parseAddress(acc.ethAddress);
-    if (acc.ethAddress === '0x95e61633f4e1425ff0f79f1131207949fab2bc09') console.log('Anallesese1!!')
     const baseIdentityId = acc.identity.id;
     const ethAlias = {
       address: addressUtils.nodeAddressForEthAddress(ethAddress),
