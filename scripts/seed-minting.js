@@ -1,16 +1,23 @@
 const sc = require('sourcecred').sourcecred;
 const fs = require("fs-extra")
+const Web3 = require('web3')
+const isValidAddress = require('web3-utils').isAddress
 const _ = require('lodash');
 const fetch = require('node-fetch');
 
 const Ledger = sc.ledger.ledger.Ledger;
 const G = sc.ledger.grain;
 
+const web3 = new Web3(new Web3.providers.HttpProvider('https://mainnet.infura.io/v3/43dd12c4245b4924b4a29cea5afa18ef:8545'));
+
+
 const NodeAddress = sc.core.address.makeAddressModule({
   name: "NodeAddress",
   nonce: "N",
   otherNonces: new Map().set("E", "EdgeAddress"),
 });
+
+const numberToWei = (n) => web3.utils.toWei(parseFloat(n).toFixed(9), 'ether');
 
 
 // Original Distribution TX Hash: https://etherscan.io/tx/0x6969d6dbaae8db0abc62d7efb1ba23bcbd371cd9b2d6263137975e87bfd431dc
@@ -229,22 +236,27 @@ function deductSeedsAlreadyMinted(accounts, ledger) {
   
   // deductSeedsAlreadyMinted([...discordAccWithAddress, ...depAccounts], ledger);
   // await fs.writeFile(LEDGER_PATH, ledger.serialize())
-  const newMintAmounts = [];
+  const newMintAmounts = {};
   let total = 0;
   discordAccWithAddress.forEach(acc => {
-    const amountToMint = G.format(acc.balance, 4, '');
-    newMintAmounts.push([acc.ethAddress, amountToMint]);
-    total += parseFloat(amountToMint);
+    const amountToMint = G.format(acc.balance, 9, '');
+    newMintAmounts[acc.ethAddress] = amountToMint;
+    if (!isValidAddress(acc.ethAddress)) {
+      console.log('INVALID ADD for acc: ', acc)
+    }
+    
+      total += parseFloat(amountToMint);
   })
 
   DEPENDENCY_ACCOUNTS.forEach(dep => {
     const acc = ledger.account(dep.identity.id);
-    const amountToMint = G.format(acc.balance, 4, '');
-    newMintAmounts.push([dep.ethAddress, amountToMint]);
+    const amountToMint = G.format(acc.balance, 9, '');
+    newMintAmounts[dep.ethAddress] =  amountToMint;
     total += parseFloat(amountToMint);
   })
   
-  console.log(newMintAmounts.map(([address, amount]) => `${address},${amount}`).join('\n'));
+  // console.log(newMintAmounts.map(([address, amount]) => `${address},${numberToWei(amount)}`).join('\n'));
   console.log({ total });
   
+  fs.writeFile('./scripts/toMint5Merkle.json', JSON.stringify(newMintAmounts));
 })()
