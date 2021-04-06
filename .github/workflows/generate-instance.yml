@@ -11,6 +11,9 @@ on:
 jobs:
   GenerateCredInstance:
     runs-on: ubuntu-latest
+    timeout-minutes: 720
+    env:
+      NODE_OPTIONS: --max_old_space_size=8192
     steps:
       - uses: actions/checkout@v2
         with:
@@ -28,7 +31,7 @@ jobs:
       - name: Load Data and Compute Cred 🧮
         run: yarn sourcecred go
         env:
-          SOURCECRED_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SOURCECRED_GITHUB_TOKEN: ${{ secrets.SOURCECRED_GITHUB_TOKEN }}
           SOURCECRED_DISCORD_TOKEN: ${{ secrets.SOURCECRED_DISCORD_TOKEN }}
 
       - name: Generate Frontend 🏗
