@@ -4,15 +4,17 @@
     "version": "0.2.0"
   },
   {
-    "title": "Community Call Coordination",
+    "title": "Redesign Onboarding Flow",
     "timestampIso": "2021-02-10T10:00:00.000Z",
     "weight": {
-      "incomplete": 8,
-      "complete": 8
+      "incomplete": 5,
+      "complete": 5
     },
     "completed": true,
     "champions": [
-      "@mprime"
+      "@St4rgarden",
+      "@discord/DecentralizeMe777#3178",
+      "@MaseDC3LR"
     ],
     "dependencies": {},
     "references": {},
