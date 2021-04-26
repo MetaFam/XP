@@ -4107,10 +4107,10 @@ source-map@^0.6.1:
   resolved "https://registry.yarnpkg.com/source-map/-/source-map-0.6.1.tgz#74722af32e9614e9c287a8d0bbde48b5e2f1a263"
   integrity sha512-UjgapumWlbMhkBgzT7Ykc5YXUT46F0iKu8SGXq0bcwP5dz/h0Plj6enJqjz1Zbq2l5WaqYnrVbwWOWMyF3F47g==
 
-sourcecred@0.8.2:
-  version "0.8.2"
-  resolved "https://registry.yarnpkg.com/sourcecred/-/sourcecred-0.8.2.tgz#9bc910e505d93c147f90abae10622553fcea4c18"
-  integrity sha512-8m9or3MvbWBhrOjf5fG0Orh09dZu5hF6q1oAOgorSdaA7aQxKhLphYybZwEyrue0p4oPvI/bBcMeq/U3SYcgtg==
+sourcecred@0.8.4:
+  version "0.8.4"
+  resolved "https://registry.yarnpkg.com/sourcecred/-/sourcecred-0.8.4.tgz#b830b5cf8145185d8c56ea2273bffcf9ec8769fa"
+  integrity sha512-OauCj0lqJnRpYoWQcuc48zq4L7s1XBWXnFeCeY4mBLDsalaSZjxxPQabjixIXxxKp1CfgWxCcB/pFzW9d3t31g==
   dependencies:
     "@material-ui/lab" "^4.0.0-alpha.56"
     aphrodite "^2.4.0"
