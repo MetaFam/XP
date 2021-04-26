@@ -1,9 +1,9 @@
 {
-  "main.js": "static/js/main.ed896d15.js",
-  "main.js.map": "static/js/main.ed896d15.js.map",
-  "ssr.js": "static/js/ssr.20e064bc.js",
-  "ssr.js.map": "static/js/ssr.20e064bc.js.map",
-  "src/assets/logo/rasterized/logo_32.png": "favicon.png",
+  "main.js": "static/js/main.dd1940ad.js",
+  "main.js.map": "static/js/main.dd1940ad.js.map",
+  "ssr.js": "static/js/ssr.9b9f4020.js",
+  "ssr.js.map": "static/js/ssr.9b9f4020.js.map",
+  "logo_32.png": "favicon.png",
   "index.html": "index.html",
-  "src/ui/server-info.json": "static/server-info.json"
+  "static/server-info.json": "static/server-info.json"
 }
