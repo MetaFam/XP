@@ -5879,3 +5879,7 @@
 {"action":{"identityId":"iJl1nlYRNt9nZX2rtqPu8g","type":"TOGGLE_ACTIVATION"},"ledgerTimestamp":1619461026851,"uuid":"4nZIQrkdLZp1C5ktbIjEOg","version":"1"}
 {"action":{"alias":{"address":"N\u0000sourcecred\u0000ethereum\u00000xdc0CAA9E054b66d38B12BD654F6CAeca371acDd8\u0000","description":"0xdc0CAA9E054b66d38B12BD654F6CAeca371acDd8"},"identityId":"35D02WpqZ7NUo9m67AKPpQ","type":"ADD_ALIAS"},"ledgerTimestamp":1619461026851,"uuid":"EnZKgikAbY2Xda4Sm4tkog","version":"1"}
 {"action":{"identityId":"35D02WpqZ7NUo9m67AKPpQ","type":"TOGGLE_ACTIVATION"},"ledgerTimestamp":1619461026851,"uuid":"YMPTblrtOwHknDE9LxqLUA","version":"1"}
+{"action":{"identity":{"address":"N\u0000sourcecred\u0000core\u0000IDENTITY\u0000uJM6wkakgfQFLXt7IqvS6w\u0000","aliases":[],"id":"uJM6wkakgfQFLXt7IqvS6w","name":"Wick","subtype":"BOT"},"type":"CREATE_IDENTITY"},"ledgerTimestamp":1619463979199,"uuid":"YzdzveOgxRd1HRS9Gp8VTw","version":"1"}
+{"action":{"alias":{"address":"N\u0000sourcecred\u0000discord\u0000MEMBER\u0000bot\u0000536991182035746816\u0000","description":"discord/Wick#3938"},"identityId":"uJM6wkakgfQFLXt7IqvS6w","type":"ADD_ALIAS"},"ledgerTimestamp":1619463979200,"uuid":"ynZbZ0dhZpC4KjL1C41wZw","version":"1"}
+{"action":{"base":"qocj8TAhJ5MHkI7xTrPJlQ","target":"a7amuR9Hg3nYOXsn6RC1FA","type":"MERGE_IDENTITIES"},"ledgerTimestamp":1619464978661,"uuid":"gTGfRNvabJ3TRsWH6OEyxQ","version":"1"}
+{"action":{"base":"yqfpjJSxxNWBH6ndvfncdg","target":"IqNQeH2Y6ivf1tvEJ61oMg","type":"MERGE_IDENTITIES"},"ledgerTimestamp":1619470813908,"uuid":"mPxsnmZkdYTQTJA1J55H2w","version":"1"}
