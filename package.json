@@ -15,6 +15,7 @@
     "load": "dotenv sourcecred load",
     "go": "dotenv sourcecred go",
     "start": "dotenv -- sourcecred go --no-load && sourcecred serve",
+    "serve": "sourcecred serve",
     "grain": "sourcecred grain"
   },
   "devDependencies": {

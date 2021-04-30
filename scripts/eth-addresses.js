@@ -23,7 +23,6 @@ const address_book_file = "https://raw.githubusercontent.com/MetaFam/TheSource/m
   const AddressBook = (await (await fetch(address_book_file)).json());
   const AddressMap = _.keyBy(AddressBook, 'discordId');
   
-  
   const ledger = Ledger.parse(ledgerJSON);
   const accounts = ledger.accounts();
   
@@ -47,7 +46,6 @@ const address_book_file = "https://raw.githubusercontent.com/MetaFam/TheSource/m
         user = AddressMap[discordId]
       }
     })
-  
     
     return {
       ...a,
