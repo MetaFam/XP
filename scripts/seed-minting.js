@@ -29,9 +29,12 @@ const numberToWei = (n) => web3.utils.toWei(parseFloat(n).toFixed(9), 'ether');
 // Fifth Distribution (Merkle):
 //      TX: https://etherscan.io/tx/0xb748b1a74155bab8734c340935e54025c0e48f4c22ad8233c5efe4ccb9f3a628
 //      Merkle Root: https://storageapi.fleek.co/hammadj-team-bucket/seed-claim/seedMerkle1.json
+// Sixth Distribution (Merkle):
+//      TX: https://etherscan.io/tx/0xb748b1a74155bab8734c340935e54025c0e48f4c22ad8233c5efe4ccb9f3a628
+//      Merkle Root: https://storageapi.fleek.co/hammadj-team-bucket/seed-claim/seedMerkle2.json
 
-const MINT_TX_HASH = "https://etherscan.io/tx/0xb748b1a74155bab8734c340935e54025c0e48f4c22ad8233c5efe4ccb9f3a628";
-const MINT_DATE = "Mar 18 2021";
+const MINT_TX_HASH = "0x5aef9bc067f42202963b09ed043d57fe1980f8023439b816feef8f848c878d17";
+const MINT_DATE = "May 2 2021";
 
 const LAST_MINTING = {
   "0x8F942ECED007bD3976927B7958B50Df126FEeCb5": "154.425909886",
@@ -340,7 +343,7 @@ function deductSeedsAlreadyMinted(accounts, ledger) {
   }));
   
   deductSeedsAlreadyMinted([...discordAccWithAddress, ...depAccounts], ledger);
-  // await fs.writeFile(LEDGER_PATH, ledger.serialize())
+  await fs.writeFile(LEDGER_PATH, ledger.serialize())
   
   const newMintAmounts = {};
   let total = 0;
