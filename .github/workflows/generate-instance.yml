@@ -34,6 +34,9 @@ jobs:
           SOURCECRED_GITHUB_TOKEN: ${{ secrets.SOURCECRED_GITHUB_TOKEN }}
           SOURCECRED_DISCORD_TOKEN: ${{ secrets.SOURCECRED_DISCORD_TOKEN }}
 
+      - name: Generate Analysis Files (accounts.json)
+        run: yarn sourcecred analysis
+
       - name: Generate Frontend 🏗
         run: |
           yarn sourcecred site
