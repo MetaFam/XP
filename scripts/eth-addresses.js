@@ -18,22 +18,15 @@ const address_book_file = "https://raw.githubusercontent.com/MetaFam/TheSource/m
 
 
 (async function() {
-  
   const ledgerJSON = (await fs.readFile(LEDGER_PATH)).toString();
-  const accountsJSON = JSON.parse((await fs.readFile('output/accounts.json')).toString());
   
   const AddressBook = (await (await fetch(address_book_file)).json());
   const AddressMap = _.keyBy(AddressBook, 'discordId');
-  
-  const activeAccounts = accountsJSON.accounts.filter(acc => acc.totalCred > 5);
-  const activeUserMap = _.keyBy(activeAccounts, 'account.identity.id');
   
   const ledger = Ledger.parse(ledgerJSON);
   const accounts = ledger.accounts();
   
   const discordAcc = accounts.map(a => {
-    const credAcc = activeUserMap[a.identity.id];
-    if (!credAcc) return null;
     if (a.identity.subtype !== 'USER') return null;
     
     const discordAliases = a.identity.aliases.filter(alias => {
@@ -53,12 +46,10 @@ const address_book_file = "https://raw.githubusercontent.com/MetaFam/TheSource/m
         user = AddressMap[discordId]
       }
     })
-  
-  
+    
     return {
       ...a,
       discordId,
-      cred: credAcc.totalCred,
       ethAddress: user && user.address,
     }
   }).filter(Boolean);
@@ -83,6 +74,6 @@ const address_book_file = "https://raw.githubusercontent.com/MetaFam/TheSource/m
     ledger.activate(baseIdentityId);
   })
   
-  // await fs.writeFile(LEDGER_PATH, ledger.serialize())
+  await fs.writeFile(LEDGER_PATH, ledger.serialize())
   
 })()

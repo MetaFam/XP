@@ -242,6 +242,70 @@
           "contributors": [
             "@peth-yursick"
           ]
+        },
+        {
+          "weight": 5,
+          "title": "Meta #49 - Why Patron?",
+          "timestampIso": "2021-03-05T07:00:00.000Z",
+          "contributors": [
+            "@peth-yursick"
+          ]
+        },
+        {
+          "weight": 5,
+          "title": "MetaSpecial - MetaFest Is aLive!",
+          "timestampIso": "2021-03-09T07:00:00.000Z",
+          "contributors": [
+            "@peth-yursick"
+          ]
+        },
+        {
+          "weight": 5,
+          "title": "INTERMISSION - MetaFest Enters Week 2",
+          "timestampIso": "2021-03-14T07:00:00.000Z",
+          "contributors": [
+            "@peth-yursick"
+          ]
+        },
+        {
+          "weight": 5,
+          "title": "INTERMISSION MetaFest 3/4 Week of Workshops Starting TODAY!",
+          "timestampIso": "2021-03-22T07:00:00.000Z",
+          "contributors": [
+            "@peth-yursick"
+          ]
+        },
+        {
+          "weight": 5,
+          "title": "Come Hack Along!",
+          "timestampIso": "2021-03-28T07:00:00.000Z",
+          "contributors": [
+            "@peth-yursick"
+          ]
+        },
+        {
+          "weight": 5,
+          "title": "MetaFest Closed!",
+          "timestampIso": "2021-04-09T07:00:00.000Z",
+          "contributors": [
+            "@peth-yursick"
+          ]
+        },
+        {
+          "weight": 5,
+          "title": "Anon, you're late!",
+          "timestampIso": "2021-04-15T07:00:00.000Z",
+          "contributors": [
+            "@peth-yursick"
+          ]
+        },
+        {
+          "weight": 5,
+          "title": "Open Roles & Raids and A Vague Roadmap",
+          "timestampIso": "2021-04-25T07:00:00.000Z",
+          "contributors": [
+            "@peth-yursick"
+          ]
         }
       ]
     }
