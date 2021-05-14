@@ -1,0 +1,806 @@
+[
+  {
+    "type": "sourcecred/initiativeFile",
+    "version": "0.2.0"
+  },
+  {
+    "title": "MetaFest",
+    "timestampIso": "2021-03-03T10:00:00.000Z",
+    "weight": {
+      "incomplete": 34,
+      "complete": 34
+    },
+    "completed": true,
+    "champions": [],
+    "dependencies": {},
+    "references": {},
+    "contributions": {
+      "entries": [
+        {
+          "weight": 8,
+          "title": "Update MetaFest Interspace - geleeroyale",
+          "timestampIso": "2021-03-03T10:00:00.000Z",
+          "contributors": [
+            "@geleeroyale"
+          ]
+        },
+        {
+          "weight": 8,
+          "title": "Update MetaFest Interspace - Misanth",
+          "timestampIso": "2021-03-03T10:00:00.000Z",
+          "contributors": [
+            "@Misanth"
+          ]
+        },
+        {
+          "weight": 3,
+          "title": "Update MetaFest Interspace - penguin",
+          "timestampIso": "2021-03-03T10:00:00.000Z",
+          "contributors": [
+            "@penguin"
+          ]
+        },
+        {
+          "weight": 5,
+          "title": "Update MetaFest Interspace - charingane",
+          "timestampIso": "2021-03-03T10:00:00.000Z",
+          "contributors": [
+            "@charingane"
+          ]
+        },
+        {
+          "weight": 5,
+          "title": "Ceremony Agenda - peth-yursick",
+          "timestampIso": "2021-03-19T10:00:00.000Z",
+          "contributors": [
+            "@peth-yursick"
+          ]
+        },
+        {
+          "weight": 2,
+          "title": "Ceremony Agenda - sho",
+          "timestampIso": "2021-03-19T10:00:00.000Z",
+          "contributors": [
+            "@sho"
+          ]
+        },
+        {
+          "weight": 1,
+          "title": "Ceremony Agenda - penguin",
+          "timestampIso": "2021-03-19T10:00:00.000Z",
+          "contributors": [
+            "@penguin"
+          ]
+        },
+        {
+          "weight": 2,
+          "title": "Monoform",
+          "timestampIso": "2021-02-26T10:00:00.000Z",
+          "contributors": [
+            "@penguin"
+          ]
+        },
+        {
+          "weight": 2,
+          "title": "Decentralized Factory Keynote",
+          "timestampIso": "2021-03-08T10:00:00.000Z",
+          "contributors": [
+            "@penguin"
+          ]
+        },
+        {
+          "weight": 3,
+          "title": "Concert Session - alibyte",
+          "timestampIso": "2021-03-20T10:00:00.000Z",
+          "contributors": [
+            "@alibyte---array"
+          ]
+        },
+        {
+          "weight": 2,
+          "title": "Concert Session - vandal-eth",
+          "timestampIso": "2021-03-20T10:00:00.000Z",
+          "contributors": [
+            "@vandal-eth"
+          ]
+        },
+        {
+          "weight": 3,
+          "title": "Concert Session - wonfiddy",
+          "timestampIso": "2021-03-20T10:00:00.000Z",
+          "contributors": [
+            "@wonfiddy"
+          ]
+        },
+        {
+          "weight": 2,
+          "title": "Introduce Guilds to MG - penguin",
+          "timestampIso": "2021-03-04T10:00:00.000Z",
+          "contributors": [
+            "@penguin"
+          ]
+        },
+        {
+          "weight": 5,
+          "title": "Introduce Guilds to MG - peth",
+          "timestampIso": "2021-03-04T10:00:00.000Z",
+          "contributors": [
+            "@peth-yursick"
+          ]
+        },
+        {
+          "weight": 13,
+          "title": "Live Streaming - geleeroyale",
+          "timestampIso": "2021-03-04T10:00:00.000Z",
+          "contributors": [
+            "@geleeroyale"
+          ]
+        },
+        {
+          "weight": 13,
+          "title": "Live Streaming - Misanth",
+          "timestampIso": "2021-03-04T10:00:00.000Z",
+          "contributors": [
+            "@Misanth"
+          ]
+        },
+        {
+          "weight": 5,
+          "title": "Live Streaming - penguin",
+          "timestampIso": "2021-03-04T10:00:00.000Z",
+          "contributors": [
+            "@penguin"
+          ]
+        },
+        {
+          "weight": 5,
+          "title": "CV Treasure Hunt - Bagholder",
+          "timestampIso": "2021-03-09T10:00:00.000Z",
+          "contributors": [
+            "@Bagholder-McFomo-III"
+          ]
+        },
+        {
+          "weight": 2,
+          "title": "CV Treasure Hunt - penguin",
+          "timestampIso": "2021-03-07T10:00:00.000Z",
+          "contributors": [
+            "@penguin"
+          ]
+        },
+        {
+          "weight": 1,
+          "title": "CV Treasure Hunt - Sparrow",
+          "timestampIso": "2021-03-07T10:00:00.000Z",
+          "contributors": [
+            "@Sparrow"
+          ]
+        },
+        {
+          "weight": 1,
+          "title": "ART JAM - penguin",
+          "timestampIso": "2021-03-07T10:00:00.000Z",
+          "contributors": [
+            "@penguin"
+          ]
+        },
+        {
+          "weight": 1,
+          "title": "ART JAM - Bagholder",
+          "timestampIso": "2021-03-07T10:00:00.000Z",
+          "contributors": [
+            "@Bagholder-McFomo-III"
+          ]
+        },
+        {
+          "weight": 1,
+          "title": "ART JAM - MLIBTY",
+          "timestampIso": "2021-03-07T10:00:00.000Z",
+          "contributors": [
+            "@MLIBTY"
+          ]
+        },
+        {
+          "weight": 1,
+          "title": "ART JAM - peth",
+          "timestampIso": "2021-03-07T10:00:00.000Z",
+          "contributors": [
+            "@peth-yursick"
+          ]
+        },
+        {
+          "weight": 1,
+          "title": "ART JAM - tomi",
+          "timestampIso": "2021-03-07T10:00:00.000Z",
+          "contributors": [
+            "@tomi"
+          ]
+        },
+        {
+          "weight": 1,
+          "title": "ART JAM - Misanth",
+          "timestampIso": "2021-03-07T10:00:00.000Z",
+          "contributors": [
+            "@Misanth"
+          ]
+        },
+        {
+          "weight": 1,
+          "title": "ART JAM - metaverde",
+          "timestampIso": "2021-03-07T10:00:00.000Z",
+          "contributors": [
+            "@metaverde"
+          ]
+        },
+        {
+          "weight": 8,
+          "title": "Project Talks -penguin",
+          "timestampIso": "2021-03-10T10:00:00.000Z",
+          "contributors": [
+            "@penguin"
+          ]
+        },
+        {
+          "weight": 8,
+          "title": "Project Talks -peth",
+          "timestampIso": "2021-03-10T10:00:00.000Z",
+          "contributors": [
+            "@peth-yursick"
+          ]
+        },
+        {
+          "weight": 8,
+          "title": "Project Talks -Sparrow",
+          "timestampIso": "2021-03-10T10:00:00.000Z",
+          "contributors": [
+            "@Sparrow"
+          ]
+        },
+        {
+          "weight": 3,
+          "title": "Project Talks -mprime",
+          "timestampIso": "2021-03-10T10:00:00.000Z",
+          "contributors": [
+            "@mprime"
+          ]
+        },
+        {
+          "weight": 1,
+          "title": "Location - geleeroyale",
+          "timestampIso": "2021-02-20T10:00:00.000Z",
+          "contributors": [
+            "@geleeroyale"
+          ]
+        },
+        {
+          "weight": 1,
+          "title": "Location - penguin",
+          "timestampIso": "2021-02-20T10:00:00.000Z",
+          "contributors": [
+            "@penguin"
+          ]
+        },
+        {
+          "weight": 2,
+          "title": "Skill Trees Workshop",
+          "timestampIso": "2021-03-26T10:00:00.000Z",
+          "contributors": [
+            "@mz"
+          ]
+        },
+        {
+          "weight": 2,
+          "title": "MetaSys Workshop",
+          "timestampIso": "2021-03-15T10:00:00.000Z",
+          "contributors": [
+            "peth-yursick"
+          ]
+        },
+        {
+          "weight": 13,
+          "title": "Schedule - penguin",
+          "timestampIso": "2021-03-10T10:00:00.000Z",
+          "contributors": [
+            "@penguin"
+          ]
+        },
+        {
+          "weight": 8,
+          "title": "Schedule - peth",
+          "timestampIso": "2021-03-10T10:00:00.000Z",
+          "contributors": [
+            "@peth-yursick"
+          ]
+        },
+        {
+          "weight": 5,
+          "title": "Schedule - Sparrow",
+          "timestampIso": "2021-03-10T10:00:00.000Z",
+          "contributors": [
+            "@Sparrow"
+          ]
+        },
+        {
+          "weight": 3,
+          "title": "Schedule - tomi",
+          "timestampIso": "2021-03-10T10:00:00.000Z",
+          "contributors": [
+            "@tomi"
+          ]
+        },
+        {
+          "weight": 5,
+          "title": "Schedule - mprime",
+          "timestampIso": "2021-03-10T10:00:00.000Z",
+          "contributors": [
+            "@mprime"
+          ]
+        },
+        {
+          "weight": 5,
+          "title": "Promotion Plan - Misanth",
+          "timestampIso": "2021-03-15T10:00:00.000Z",
+          "contributors": [
+            "@Misanth"
+          ]
+        },
+        {
+          "weight": 1,
+          "title": "Promotion Plan - penguin",
+          "timestampIso": "2021-03-15T10:00:00.000Z",
+          "contributors": [
+            "@penguin"
+          ]
+        },
+        {
+          "weight": 3,
+          "title": "Promotion Plan - peth",
+          "timestampIso": "2021-03-15T10:00:00.000Z",
+          "contributors": [
+            "@peth-yursick"
+          ]
+        },
+        {
+          "weight": 5,
+          "title": "Promotion Plan - SadBirdsClub",
+          "timestampIso": "2021-03-15T10:00:00.000Z",
+          "contributors": [
+            "@SadBirdsClub"
+          ]
+        },
+        {
+          "weight": 3,
+          "title": "Promotion Plan - tomi",
+          "timestampIso": "2021-03-15T10:00:00.000Z",
+          "contributors": [
+            "@tomi"
+          ]
+        },
+        {
+          "weight": 2,
+          "title": "Promotion Plan - Bagholder",
+          "timestampIso": "2021-03-15T10:00:00.000Z",
+          "contributors": [
+            "@Bagholder-McFomo-III"
+          ]
+        },
+        {
+          "weight": 2,
+          "title": "MyMeta Workshop",
+          "timestampIso": "2021-03-25T10:00:00.000Z",
+          "contributors": [
+            "@METADREAMER"
+          ]
+        },
+        {
+          "weight": 1,
+          "title": "MetaFest Onboarding- calvbore",
+          "timestampIso": "2021-03-04T10:00:00.000Z",
+          "contributors": [
+            "@calvbore"
+          ]
+        },
+        {
+          "weight": 1,
+          "title": "MetaFest Onboarding- luxumbra",
+          "timestampIso": "2021-03-04T10:00:00.000Z",
+          "contributors": [
+            "@luxumbra"
+          ]
+        },
+        {
+          "weight": 5,
+          "title": "MetaFest Onboarding- Michiel",
+          "timestampIso": "2021-03-21T10:00:00.000Z",
+          "contributors": [
+            "@Michiel"
+          ]
+        },
+        {
+          "weight": 2,
+          "title": "MetaFest Onboarding- Bagholder",
+          "timestampIso": "2021-03-11T10:00:00.000Z",
+          "contributors": [
+            "@Bagholder-McFomo-III"
+          ]
+        },
+        {
+          "weight": 2,
+          "title": "MetaFest Onboarding- Misanth",
+          "timestampIso": "2021-03-04T10:00:00.000Z",
+          "contributors": [
+            "@Misanth"
+          ]
+        },
+        {
+          "weight": 1,
+          "title": "MetaFest Onboarding- Tatey180",
+          "timestampIso": "2021-03-27T10:00:00.000Z",
+          "contributors": [
+            "@Tatey180"
+          ]
+        },
+        {
+          "weight": 5,
+          "title": "MetaFest Onboarding- tomi",
+          "timestampIso": "2021-03-04T10:00:00.000Z",
+          "contributors": [
+            "@tomi"
+          ]
+        },
+        {
+          "weight": 3,
+          "title": "MetaFest Onboarding- Jzjallday",
+          "timestampIso": "2021-03-07T10:00:00.000Z",
+          "contributors": [
+            "@Jzjallday"
+          ]
+        },
+        {
+          "weight": 5,
+          "title": "Video Production - b0gie",
+          "timestampIso": "2021-02-24T10:00:00.000Z",
+          "contributors": [
+            "@b0gie"
+          ]
+        },
+        {
+          "weight": 8,
+          "title": "Video Production - Misanth",
+          "timestampIso": "2021-02-24T10:00:00.000Z",
+          "contributors": [
+            "@Misanth"
+          ]
+        },
+        {
+          "weight": 3,
+          "title": "Video Production - penguin",
+          "timestampIso": "2021-02-24T10:00:00.000Z",
+          "contributors": [
+            "@penguin"
+          ]
+        },
+        {
+          "weight": 5,
+          "title": "Video Production - tomi",
+          "timestampIso": "2021-02-24T10:00:00.000Z",
+          "contributors": [
+            "@tomi"
+          ]
+        },
+        {
+          "weight": 1,
+          "title": "Speakers - mz",
+          "timestampIso": "2021-03-15T10:00:00.000Z",
+          "contributors": [
+            "@mz"
+          ]
+        },
+        {
+          "weight": 1,
+          "title": "Speakers - vengist",
+          "timestampIso": "2021-03-10T10:00:00.000Z",
+          "contributors": [
+            "@vengist"
+          ]
+        },
+        {
+          "weight": 3,
+          "title": "Speakers - solsista",
+          "timestampIso": "2021-03-15T10:00:00.000Z",
+          "contributors": [
+            "@solsista"
+          ]
+        },
+        {
+          "weight": 3,
+          "title": "Speakers - decentralion",
+          "timestampIso": "2021-03-15T10:00:00.000Z",
+          "contributors": [
+            "@decentralion"
+          ]
+        },
+        {
+          "weight": 1,
+          "title": "Speakers - alibyte",
+          "timestampIso": "2021-03-15T10:00:00.000Z",
+          "contributors": [
+            "@alibyte---array"
+          ]
+        },
+        {
+          "weight": 1,
+          "title": "Speakers - TheLoneRonin",
+          "timestampIso": "2021-03-15T10:00:00.000Z",
+          "contributors": [
+            "@The-Lone-R-nin"
+          ]
+        },
+        {
+          "weight": 1,
+          "title": "Speakers - mprime",
+          "timestampIso": "2021-03-15T10:00:00.000Z",
+          "contributors": [
+            "@mprime"
+          ]
+        },
+        {
+          "weight": 1,
+          "title": "Speakers - 0xJoshua",
+          "timestampIso": "2021-03-16T10:00:00.000Z",
+          "contributors": [
+            "@0xJoshua"
+          ]
+        },
+        {
+          "weight": 3,
+          "title": "Speakers - peth",
+          "timestampIso": "2021-03-04T10:00:00.000Z",
+          "contributors": [
+            "@peth-yursick"
+          ]
+        },
+        {
+          "weight": 1,
+          "title": "Speakers - yalormewn",
+          "timestampIso": "2021-03-16T10:00:00.000Z",
+          "contributors": [
+            "@yalormewn"
+          ]
+        },
+        {
+          "weight": 1,
+          "title": "Speakers - magenta",
+          "timestampIso": "2021-03-16T10:00:00.000Z",
+          "contributors": [
+            "@magenta"
+          ]
+        },
+        {
+          "weight": 3,
+          "title": "Speakers - penguin",
+          "timestampIso": "2021-03-05T10:00:00.000Z",
+          "contributors": [
+            "@penguin"
+          ]
+        },
+        {
+          "weight": 3,
+          "title": "Speakers - sho",
+          "timestampIso": "2021-03-20T10:00:00.000Z",
+          "contributors": [
+            "@sho"
+          ]
+        },
+        {
+          "weight": 3,
+          "title": "Speakers - metaverde",
+          "timestampIso": "2021-03-24T10:00:00.000Z",
+          "contributors": [
+            "@metaverde"
+          ]
+        },
+        {
+          "weight": 3,
+          "title": "Speakers - burningFiat",
+          "timestampIso": "2021-03-15T10:00:00.000Z",
+          "contributors": [
+            "@burningFiat"
+          ]
+        },
+        {
+          "weight": 1,
+          "title": "Speakers - andrejberlin",
+          "timestampIso": "2021-03-18T10:00:00.000Z",
+          "contributors": [
+            "@andrejberlin"
+          ]
+        },
+        {
+          "weight": 1,
+          "title": "Speakers - MLIBTY",
+          "timestampIso": "2021-03-22T10:00:00.000Z",
+          "contributors": [
+            "@MLIBTY"
+          ]
+        },
+        {
+          "weight": 3,
+          "title": "Speakers - Sparrow",
+          "timestampIso": "2021-03-22T10:00:00.000Z",
+          "contributors": [
+            "@Sparrow"
+          ]
+        },
+        {
+          "weight": 8,
+          "title": "Moderator - metaverde",
+          "timestampIso": "2021-03-11T10:00:00.000Z",
+          "contributors": [
+            "@metaverde"
+          ]
+        },
+        {
+          "weight": 3,
+          "title": "Moderator - Michiel",
+          "timestampIso": "2021-03-21T10:00:00.000Z",
+          "contributors": [
+            "@Michiel"
+          ]
+        },
+        {
+          "weight": 13,
+          "title": "Moderator - penguin",
+          "timestampIso": "2021-03-04T10:00:00.000Z",
+          "contributors": [
+            "@penguin"
+          ]
+        },
+        {
+          "weight": 8,
+          "title": "Moderator - tomi",
+          "timestampIso": "2021-03-11T10:00:00.000Z",
+          "contributors": [
+            "@tomi"
+          ]
+        },
+        {
+          "weight": 8,
+          "title": "Moderator - Sparrow",
+          "timestampIso": "2021-03-11T10:00:00.000Z",
+          "contributors": [
+            "@Sparrow"
+          ]
+        },
+        {
+          "weight": 5,
+          "title": "Moderator - peth",
+          "timestampIso": "2021-03-04T10:00:00.000Z",
+          "contributors": [
+            "@peth-yursick"
+          ]
+        },
+        {
+          "weight": 13,
+          "title": "Moderator - Misanth",
+          "timestampIso": "2021-03-04T10:00:00.000Z",
+          "contributors": [
+            "@Misanth"
+          ]
+        },
+        {
+          "weight": 5,
+          "title": "CryptoVoxels - MLIBTY",
+          "timestampIso": "2021-02-11T10:00:00.000Z",
+          "contributors": [
+            "@MLIBTY"
+          ]
+        },
+        {
+          "weight": 2,
+          "title": "CryptoVoxels - Bagholder",
+          "timestampIso": "2021-03-09T10:00:00.000Z",
+          "contributors": [
+            "@Bagholder-McFomo-III"
+          ]
+        },
+        {
+          "weight": 3,
+          "title": "TokenSmart WIP - Sparrow",
+          "timestampIso": "2021-03-11T10:00:00.000Z",
+          "contributors": [
+            "@Sparrow"
+          ]
+        },
+        {
+          "weight": 3,
+          "title": "TokenSmart WIP - penguin",
+          "timestampIso": "2021-03-11T10:00:00.000Z",
+          "contributors": [
+            "@penguin"
+          ]
+        },
+        {
+          "weight": 8,
+          "title": "TokenSmart WIP - sho",
+          "timestampIso": "2021-03-11T10:00:00.000Z",
+          "contributors": [
+            "@sho"
+          ]
+        },
+        {
+          "weight": 13,
+          "title": "NFT - Misanth",
+          "timestampIso": "2021-02-08T10:00:00.000Z",
+          "contributors": [
+            "@Misanth"
+          ]
+        },
+        {
+          "weight": 13,
+          "title": "NFT - penguin",
+          "timestampIso": "2021-02-08T10:00:00.000Z",
+          "contributors": [
+            "@penguin"
+          ]
+        },
+        {
+          "weight": 8,
+          "title": "NFT - Manu",
+          "timestampIso": "2021-02-08T10:00:00.000Z",
+          "contributors": [
+            "@Manu"
+          ]
+        },
+        {
+          "weight": 3,
+          "title": "NFT - Vanilladelphia",
+          "timestampIso": "2021-02-08T10:00:00.000Z",
+          "contributors": [
+            "@Vanilladelphia"
+          ]
+        },
+        {
+          "weight": 3,
+          "title": "NFT - luxumbra",
+          "timestampIso": "2021-02-08T10:00:00.000Z",
+          "contributors": [
+            "@luxumbra"
+          ]
+        },
+        {
+          "weight": 5,
+          "title": "NFT - charingane",
+          "timestampIso": "2021-02-08T10:00:00.000Z",
+          "contributors": [
+            "@charingane"
+          ]
+        },
+        {
+          "weight": 5,
+          "title": "NFT - MLIBTY",
+          "timestampIso": "2021-02-08T10:00:00.000Z",
+          "contributors": [
+            "@MLIBTY"
+          ]
+        },
+        {
+          "weight": 2,
+          "title": "NFT - wonfiddy",
+          "timestampIso": "2021-03-20T10:00:00.000Z",
+          "contributors": [
+            "@wonfiddy"
+          ]
+        },
+        {
+          "weight": 5,
+          "title": "Setting up MetaFest Initiatives",
+          "timestampIso": "2021-03-20T10:00:00.000Z",
+          "contributors": [
+            "@METADREAMER"
+          ]
+        }
+      ]
+    }
+  }
+]
