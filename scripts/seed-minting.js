@@ -1,4 +1,4 @@
-const sc = require('sourcecred-publish-test').sourcecred;
+const sc = require('sourcecred').sourcecred;
 const fs = require("fs-extra");
 const Web3 = require('web3');
 const isValidAddress = require('web3-utils').isAddress;
@@ -37,6 +37,8 @@ const MINT_TX_HASH = "0x5aef9bc067f42202963b09ed043d57fe1980f8023439b816feef8f84
 const MINT_DATE = "May 2 2021";
 
 const LAST_MINTING = {
+  "0x9453B4eF4806D718c3ABa920FbE3C07f3D6e6086": "0.106197757",
+  "0x701d0ECB3BA780De7b2b36789aEC4493A426010a": "138.670151057",
   "0x8F942ECED007bD3976927B7958B50Df126FEeCb5": "154.425909886",
   "0x66b1De0f14a0ce971F7f248415063D44CAF19398": "6.681421379",
   "0x4F104B730C517FEB4C4863742D655cF690F85eeE": "0.106650185",
@@ -344,28 +346,28 @@ function deductSeedsAlreadyMinted(accounts, ledger) {
   
   deductSeedsAlreadyMinted([...discordAccWithAddress, ...depAccounts], ledger);
   await fs.writeFile(LEDGER_PATH, ledger.serialize())
-  
-  const newMintAmounts = {};
-  let total = 0;
-  discordAccWithAddress.forEach(acc => {
-    const amountToMint = G.format(acc.balance, 9, '');
-    newMintAmounts[acc.ethAddress] = amountToMint;
-    if (!isValidAddress(acc.ethAddress)) {
-      console.log('INVALID ADD for acc: ', acc);
-    }
-    
-    total += parseFloat(amountToMint);
-  });
-  
-  DEPENDENCY_ACCOUNTS.forEach(dep => {
-    const acc = ledger.account(dep.identity.id);
-    const amountToMint = G.format(acc.balance, 9, '');
-    newMintAmounts[dep.ethAddress] = amountToMint;
-    total += parseFloat(amountToMint);
-  });
-  
-  // console.log(newMintAmounts.map(([address, amount]) => `${address},${numberToWei(amount)}`).join('\n'));
-  console.log({ total });
-  
+  //
+  // const newMintAmounts = {};
+  // let total = 0;
+  // discordAccWithAddress.forEach(acc => {
+  //   const amountToMint = G.format(acc.balance, 9, '');
+  //   newMintAmounts[acc.ethAddress] = amountToMint;
+  //   if (!isValidAddress(acc.ethAddress)) {
+  //     console.log('INVALID ADD for acc: ', acc);
+  //   }
+  //
+  //   total += parseFloat(amountToMint);
+  // });
+  //
+  // DEPENDENCY_ACCOUNTS.forEach(dep => {
+  //   const acc = ledger.account(dep.identity.id);
+  //   const amountToMint = G.format(acc.balance, 9, '');
+  //   newMintAmounts[dep.ethAddress] = amountToMint;
+  //   total += parseFloat(amountToMint);
+  // });
+  //
+  // // console.log(newMintAmounts.map(([address, amount]) => `${address},${numberToWei(amount)}`).join('\n'));
+  // console.log({ total });
+  //
   // fs.writeFile('./scripts/toMint6Merkle.json', JSON.stringify(newMintAmounts));
 })();
