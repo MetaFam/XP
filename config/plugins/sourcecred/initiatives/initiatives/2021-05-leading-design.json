@@ -1,0 +1,21 @@
+[
+  {
+    "type": "sourcecred/initiativeFile",
+    "version": "0.2.0"
+  },
+  {
+    "title": "Leading UI/UX efforts",
+    "timestampIso": "2021-05-01T10:00:00.000Z",
+    "weight": {
+      "incomplete": 8,
+      "complete": 8
+    },
+    "completed": true,
+    "champions": ["@Davor"],
+    "dependencies": {},
+    "references": {},
+    "contributions": {
+      "entries": []
+    }
+  }
+]
