@@ -152,11 +152,11 @@ function deductSeedsAlreadyMinted(accounts, ledger) {
     total += parseFloat(amountToMint);
   });
 
-  // console.log(Object.entries(newMintAmounts).map(([address, amount]) => {
-  //   const acc = addressAccounts[address];
-  //
-  //   return `${acc && acc.identity.name},${address},${amount}`
-  // }).join('\n'));
+  console.log(Object.entries(newMintAmounts).map(([address, amount]) => {
+    const acc = addressAccounts[address];
+
+    return `${acc && acc.identity.name},${address},${amount}`
+  }).join('\n'));
   console.log({ total });
 
   fs.writeFile('./scripts/toMint7Merkle.json', JSON.stringify(newMintAmounts));
