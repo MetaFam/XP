@@ -7,6 +7,10 @@
             {
                 "startTime": "2019-12-24T08:45:34.676Z",
                 "weight": 0.05
+            },
+            {
+                "startTime": "2021-04-01T08:45:34.676Z",
+                "weight": 0.005
             }
         ]
     },
@@ -14,6 +18,17 @@
         "autoActivateOnIdentityCreation": true,
         "id": "tyZ49zRqcVU4dHbgr9pkvg",
         "name": "MetaFamDAO",
+        "periods": [
+            {
+                "startTime": "2020-01-01T08:45:34.676Z",
+                "weight": 0.025
+            }
+        ]
+    },
+    {
+        "autoActivateOnIdentityCreation": true,
+        "id": "nhVgZ0aeaIEbFkdRIBBZyg",
+        "name": "DoinGudFund",
         "periods": [
             {
                 "startTime": "2020-01-01T08:45:34.676Z",
