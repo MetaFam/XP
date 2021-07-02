@@ -1,0 +1,21 @@
+[
+  {
+    "type": "sourcecred/initiativeFile",
+    "version": "0.2.0"
+  },
+  {
+    "title": "Tribute to MetaCartel for initial grant",
+    "timestampIso": "2021-05-01T10:00:00.000Z",
+    "weight": {
+      "incomplete": 55,
+      "complete": 55
+    },
+    "completed": true,
+    "champions": ["@metacartel"],
+    "dependencies": {},
+    "references": {},
+    "contributions": {
+      "entries": []
+    }
+  }
+]

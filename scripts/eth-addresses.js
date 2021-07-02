@@ -75,5 +75,4 @@ const address_book_file = "https://raw.githubusercontent.com/MetaFam/TheSource/m
   })
   
   await fs.writeFile(LEDGER_PATH, ledger.serialize())
-  
 })()
