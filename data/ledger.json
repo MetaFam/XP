@@ -6949,3 +6949,5 @@
 {"action":{"alias":{"address":"N\u0000sourcecred\u0000discord\u0000MEMBER\u0000user\u0000443120198577291295\u0000","description":"discord/tenfinney#8529"},"identityId":"mbKaDPkKsEgevSnn5G24Eg","type":"ADD_ALIAS"},"ledgerTimestamp":1625502605100,"uuid":"cOvujtBdbMJgM03xTpK8TA","version":"1"}
 {"action":{"alias":{"address":"N\u0000sourcecred\u0000ethereum\u00000x7B035331967075a168471DfBD23eD977f048f61E\u0000","description":"0x7B035331967075a168471DfBD23eD977f048f61E"},"identityId":"mbKaDPkKsEgevSnn5G24Eg","type":"ADD_ALIAS"},"ledgerTimestamp":1625502605100,"uuid":"CDH1Vpn3CVWtEqi8ugbQpQ","version":"1"}
 {"action":{"identityId":"mbKaDPkKsEgevSnn5G24Eg","type":"TOGGLE_ACTIVATION"},"ledgerTimestamp":1625502605101,"uuid":"i4O9ppNyB79ULWb6blsr4w","version":"1"}
+{"action":{"identityId":"aZz2zez8OnAxRyG0Ewx6lw","newType":"ORGANIZATION","type":"CHANGE_IDENTITY_TYPE"},"ledgerTimestamp":1625849469709,"uuid":"dtKHpPtdOC557f1zSaNQ1w","version":"1"}
+{"action":{"identityId":"tafeS3C5YMW2JfMoF94BvA","newType":"ORGANIZATION","type":"CHANGE_IDENTITY_TYPE"},"ledgerTimestamp":1625849469709,"uuid":"qdalZkw8g5MT6MrX0v6eFA","version":"1"}
