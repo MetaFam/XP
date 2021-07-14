@@ -7600,3 +7600,5 @@
 {"action":{"identityId":"H8CL8dLMgCyXXa8ozeJ3Ww","type":"TOGGLE_ACTIVATION"},"ledgerTimestamp":1626193317610,"uuid":"R8PWqq1tQgTwIn1FAdzKfQ","version":"1"}
 {"action":{"alias":{"address":"N\u0000sourcecred\u0000ethereum\u00000xc52ec2Aea5E8d58841A37c338834Cd0BBeaDC99E\u0000","description":"0xc52ec2Aea5E8d58841A37c338834Cd0BBeaDC99E"},"identityId":"uzfwqrNpSZX49yFzvRBJfg","type":"ADD_ALIAS"},"ledgerTimestamp":1626193547712,"uuid":"VqzOzzmlbrB75jJuW4kSZg","version":"1"}
 {"action":{"identityId":"uzfwqrNpSZX49yFzvRBJfg","type":"TOGGLE_ACTIVATION"},"ledgerTimestamp":1626193547713,"uuid":"DVR4cP6rGBte8ggRl5ZGsg","version":"1"}
+{"action":{"alias":{"address":"N\u0000sourcecred\u0000ethereum\u00000xa3bb988e1B551dF71C1e785415acB5d02043f934\u0000","description":"0xa3bb988e1B551dF71C1e785415acB5d02043f934"},"identityId":"YR3eZz02uP0mO9BaWoa6ZQ","type":"ADD_ALIAS"},"ledgerTimestamp":1626238065749,"uuid":"BnwKLBLFqdIJOlVcyzHkWQ","version":"1"}
+{"action":{"identityId":"YR3eZz02uP0mO9BaWoa6ZQ","type":"TOGGLE_ACTIVATION"},"ledgerTimestamp":1626238065750,"uuid":"oUWcxYpDtgXPvv9uGlCbsQ","version":"1"}
