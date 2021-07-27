@@ -1,7 +1,7 @@
 [
   {
     "channelWeightConfig": {
-      "defaultWeight": 1,
+      "defaultWeight": 0.1,
       "weights": {
         "629411717704712192": 2,
         "641711490059206656": 0.25,
