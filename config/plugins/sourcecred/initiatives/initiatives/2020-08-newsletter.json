@@ -306,6 +306,38 @@
           "contributors": [
             "@peth-yursick"
           ]
+        },
+        {
+          "weight": 3,
+          "title": "10 Days to Go...",
+          "timestampIso": "2021-05-11T07:00:00.000Z",
+          "contributors": [
+            "@peth-yursick"
+          ]
+        },
+        {
+          "weight": 3,
+          "title": "MetaGame Island & The Planting Season",
+          "timestampIso": "2021-05-18T07:00:00.000Z",
+          "contributors": [
+            "@peth-yursick"
+          ]
+        },
+        {
+          "weight": 3,
+          "title": "What's up: Season3 Open ",
+          "timestampIso": "2021-05-25T07:00:00.000Z",
+          "contributors": [
+            "@peth-yursick"
+          ]
+        },
+        {
+          "weight": 3,
+          "title": "Meta S3W2 - Just a Smol Status Update",
+          "timestampIso": "2021-06-02T07:00:00.000Z",
+          "contributors": [
+            "@peth-yursick"
+          ]
         }
       ]
     }
