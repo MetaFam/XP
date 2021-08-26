@@ -38,32 +38,17 @@ const numberToWei = (n) => web3.utils.toWei(parseFloat(n).toFixed(9), 'ether');
 // Eighth Distribution (Merkle):
 //      TX: https://etherscan.io/tx/0xa83db2454404f2f11035abefa129c71c4dc9f078a2a28a69af2355f2a8139159
 //      Merkle Root: https://storageapi.fleek.co/hammadj-team-bucket/seed-claim/seedMerkle4.json
+// Ninth Distribution (Merkle):
+//      TX: https://etherscan.io/tx/0x07a2eb5e57a09f7228cc610c5dc2f102c1f7451007a625b8c366c6603cd4c31e
+//      Merkle Root: https://storageapi.fleek.co/hammadj-team-bucket/seed-claim/seedMerkle5.json
 
 
 
-const MINT_TX_HASH = "https://etherscan.io/tx/0xa83db2454404f2f11035abefa129c71c4dc9f078a2a28a69af2355f2a8139159";
-const MINT_DATE = "July 16 2021";
-
-const DEPENDENCY_ACCOUNTS = [
-  {
-    name: "SourceCred",
-    ethAddress: "0x59B917a9e10ECe44faE8b651F8C351ef2647dccA",
-    identity: { id: "f2ezOIpbLmbDTmQ7QrD7Ig" },
-  },
-  {
-    name: "MetaFam DAO",
-    ethAddress: "0x3455FbB4D34C6b47999B66c83aA7BD8FDDade638",
-    identity: { id: "tyZ49zRqcVU4dHbgr9pkvg" },
-  },
-  {
-    "name": "DoinGudFund",
-    ethAddress: "0x32aF096d6d479e3d022caAF3603A7306706D10A8",
-    identity: { id: "nhVgZ0aeaIEbFkdRIBBZyg" },
-  }
-];
+const MINT_TX_HASH = "https://etherscan.io/tx/0x07a2eb5e57a09f7228cc610c5dc2f102c1f7451007a625b8c366c6603cd4c31e";
+const MINT_DATE = "Aug 26 2021";
 
 const LEDGER_PATH = 'data/ledger.json';
-const LAST_MINTING_PATH = 'scripts/toMint8Merkle.json';
+const LAST_MINTING_PATH = 'scripts/toMint9Merkle.json';
 const ETH_MAIN_NET_IDENTITY_ID = "igdEDIOoos50r4YUKKRQxg";
 
 async function deductSeedsAlreadyMinted(accounts, ledger) {
@@ -127,41 +112,41 @@ async function deductSeedsAlreadyMinted(accounts, ledger) {
     };
   }).filter(Boolean);
 
-  const depAccounts = DEPENDENCY_ACCOUNTS.map(dep => ({
-    ...(ledger.account(dep.identity.id)),
-    ...dep,
-  }));
+  // const depAccounts = DEPENDENCY_ACCOUNTS.map(dep => ({
+  //   ...(ledger.account(dep.identity.id)),
+  //   ...dep,
+  // }));
   
-  await deductSeedsAlreadyMinted([...accountsWithAddress, ...depAccounts], ledger);
-  await fs.writeFile(LEDGER_PATH, ledger.serialize())
+  // await deductSeedsAlreadyMinted([...accountsWithAddress], ledger);
+  // await fs.writeFile(LEDGER_PATH, ledger.serialize())
   //
   // //
-  // const addressAccounts = _.keyBy(accountsWithAddress, 'ethAddress')
-  // const newMintAmounts = {};
-  // let total = 0;
-  // accountsWithAddress.forEach(acc => {
-  //   const amountToMint = G.format(acc.balance, 9, '');
-  //   newMintAmounts[acc.ethAddress] = amountToMint;
-  //   if (!isValidAddress(acc.ethAddress)) {
-  //     console.log('INVALID ADD for acc: ', acc);
-  //   }
-  //
-  //   total += parseFloat(amountToMint);
-  // });
-  //
+  const addressAccounts = _.keyBy(accountsWithAddress, 'ethAddress')
+  const newMintAmounts = {};
+  let total = 0;
+  accountsWithAddress.forEach(acc => {
+    const amountToMint = G.format(acc.balance, 9, '');
+    newMintAmounts[acc.ethAddress] = amountToMint;
+    if (!isValidAddress(acc.ethAddress)) {
+      console.log('INVALID ADD for acc: ', acc);
+    }
+
+    total += parseFloat(amountToMint);
+  });
+
   // DEPENDENCY_ACCOUNTS.forEach(dep => {
   //   const acc = ledger.account(dep.identity.id);
   //   const amountToMint = G.format(acc.balance, 9, '');
   //   newMintAmounts[dep.ethAddress] = amountToMint;
   //   total += parseFloat(amountToMint);
   // });
+
+  console.log(Object.entries(newMintAmounts).map(([address, amount]) => {
+    const acc = addressAccounts[address];
+
+    return `${acc && acc.identity.name},${address},${amount}`
+  }).join('\n'));
+  console.log({ total });
   //
-  // console.log(Object.entries(newMintAmounts).map(([address, amount]) => {
-  //   const acc = addressAccounts[address];
-  //
-  //   return `${acc && acc.identity.name},${address},${amount}`
-  // }).join('\n'));
-  // console.log({ total });
-  //
-  // fs.writeFile('./scripts/toMint8Merkle.json', JSON.stringify(newMintAmounts));
+  fs.writeFile('./scripts/toMint9Merkle.json', JSON.stringify(newMintAmounts));
 })();
