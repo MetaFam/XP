@@ -14,6 +14,13 @@
             "N\u0000sourcecred\u0000github\u0000REPO\u0000": 4,
             "N\u0000sourcecred\u0000github\u0000REVIEW\u0000": 2,
 
+            "N\u0000sourcecred\u0000github\u0000COMMENT\u0000MetaFam\u0000assets\u0000": 0.0125,
+            "N\u0000sourcecred\u0000github\u0000COMMIT\u0000MetaFam\u0000assets\u0000": 0.025,
+            "N\u0000sourcecred\u0000github\u0000ISSUE\u0000MetaFam\u0000assets\u0000": 0.025,
+            "N\u0000sourcecred\u0000github\u0000PULL\u0000MetaFam\u0000assets\u0000": 0.4,
+            "N\u0000sourcecred\u0000github\u0000REPO\u0000MetaFam\u0000assets\u0000": 0.1,
+            "N\u0000sourcecred\u0000github\u0000REVIEW\u0000MetaFam\u0000assets\u0000": 0.05,
+
             "N\u0000sourcecred\u0000github\u0000": 2.5,
             "N\u0000sourcecred\u0000discord\u0000": 0.8,
             "N\u0000sourcecred\u0000initiatives\u0000initiative\u0000": 20,
