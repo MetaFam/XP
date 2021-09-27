@@ -48,9 +48,9 @@
 ## D. Deducting minted SEEDs from ledger
 
 1. In the XP repo, make the following changes to the `scripts/seed-minting.js` file:
-   i. set `MINT_TX_HASH` to the etherscan link for the `seedAllocations` transaction from step C.10 above.
-   ii. set `MINT_DATE` to the date of the said transaction
-   iii. Uncomment the lines that call `deductSeedsAlreadyMinted` (currently lines 116 and 117).
+   1. set `MINT_TX_HASH` to the etherscan link for the `seedAllocations` transaction from step C.10 above.
+   2. set `MINT_DATE` to the date of the said transaction 
+   3. Uncomment the lines that call `deductSeedsAlreadyMinted` (currently lines 116 and 117).
 2. Run `node ./scripts/seed-minting.js` again and ensure there's no major errors or large "Extra SEED Balance" messages logged.
 3. Ensure that the `toMintXMerkle.json` file for the current distribution did not have any changes. This ensures that the on chain distribution exactly matches the ledger state.
 4. Run `yarn serve` and double check that the current balance in SEED Accounts is 0 for people in the distribution. 
