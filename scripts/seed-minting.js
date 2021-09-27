@@ -48,11 +48,11 @@ const MINT_TX_HASH = "https://etherscan.io/tx/0x07a2eb5e57a09f7228cc610c5dc2f102
 const MINT_DATE = "Aug 26 2021";
 
 const LEDGER_PATH = 'data/ledger.json';
-const LAST_MINTING_PATH = 'scripts/toMint9Merkle.json';
+const MINT_AMOUNTS_PATH = './scripts/toMint9Merkle.json';
 const ETH_MAIN_NET_IDENTITY_ID = "igdEDIOoos50r4YUKKRQxg";
 
 async function deductSeedsAlreadyMinted(accounts, ledger) {
-  const LAST_MINTING =  JSON.parse(await fs.readFile(LAST_MINTING_PATH));
+  const LAST_MINTING =  JSON.parse(await fs.readFile(MINT_AMOUNTS_PATH));
   
   for (const address in LAST_MINTING) {
     
@@ -112,15 +112,9 @@ async function deductSeedsAlreadyMinted(accounts, ledger) {
     };
   }).filter(Boolean);
 
-  // const depAccounts = DEPENDENCY_ACCOUNTS.map(dep => ({
-  //   ...(ledger.account(dep.identity.id)),
-  //   ...dep,
-  // }));
-  
   // await deductSeedsAlreadyMinted([...accountsWithAddress], ledger);
   // await fs.writeFile(LEDGER_PATH, ledger.serialize())
-  //
-  // //
+  
   const addressAccounts = _.keyBy(accountsWithAddress, 'ethAddress')
   const newMintAmounts = {};
   let total = 0;
@@ -134,19 +128,12 @@ async function deductSeedsAlreadyMinted(accounts, ledger) {
     total += parseFloat(amountToMint);
   });
 
-  // DEPENDENCY_ACCOUNTS.forEach(dep => {
-  //   const acc = ledger.account(dep.identity.id);
-  //   const amountToMint = G.format(acc.balance, 9, '');
-  //   newMintAmounts[dep.ethAddress] = amountToMint;
-  //   total += parseFloat(amountToMint);
-  // });
-
   console.log(Object.entries(newMintAmounts).map(([address, amount]) => {
     const acc = addressAccounts[address];
 
     return `${acc && acc.identity.name},${address},${amount}`
   }).join('\n'));
   console.log({ total });
-  //
-  fs.writeFile('./scripts/toMint9Merkle.json', JSON.stringify(newMintAmounts));
+  
+  fs.writeFile(MINT_AMOUNTS_PATH, JSON.stringify(newMintAmounts));
 })();
