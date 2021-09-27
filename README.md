@@ -1,14 +1,8 @@
-# SourceCred Template Instance
+# MetaGame XP Instance
 
-This repository contains a template for running a SourceCred instance.
+This repository contains MetaGame's SourceCred instance.
 
-New users of SourceCred are encouraged to fork this repo to start their own
-instance.
-
-This repo comes with a GitHub action configured that will run SourceCred automatically
-every 6 hours, as well as any time you change the configuration.
-
-# About SourceCred Instances
+## About SourceCred Instances
 
 SourceCred is organized around "instances". Every instance must have a
 `sourcecred.json` file at root, which specifies which plugins are active in the
@@ -35,7 +29,7 @@ Generated Data:
   stored in the instance.
 
 
-# Setup and Usage
+## Setup and Usage
 
 Using this instance as a starting point, you can update the config to include
 just the plugins you want, pointing at the data you care about. We recommend setting up
@@ -78,16 +72,16 @@ If you want to restart from a clean slate and remove all the generated graphs, y
 Run `yarn clean-all` if the `yarn graph` command fails due to a change in the config or breaking changes in a new version of SourceCred.
 **Warning**: If you don't have credentials for every plugin, you might not be able to regenerate parts of the graph.
 
-### Publishing on GitHub pages
+#### Publishing on GitHub pages
 
 Once you've got the instance configured to your satisfaction (see instructions on plugins below),
 commit and push your changes to master (or make a pull request). The Github Action will then generate the frontend
 and deploy it to GitHub Pages. To enable GitHub Pages for your instance, check out [this guide](https://docs.github.com/en/github/working-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site).
 Make sure you select `gh-pages` as the branch to publish from. 
 
-# Supported Plugins
+## Supported Plugins
 
-## GitHub
+### GitHub
 
 The GitHub plugin loads GitHub repositories.
 
@@ -102,12 +96,12 @@ the key needs access to your private repositories).
 
 You can generate a GitHub API key [here](https://github.com/settings/tokens).
 
-## Discourse
+### Discourse
 
 The Discourse plugin loads Discourse forums; currently, only one forum can be loaded in any single instance. This does not require any special API
 keys or permissions. You just need to set the server url in `config/plugins/sourcecred/discourse/config.json`.
 
-## Discord
+### Discord
 
 The Discord plugin loads Discord servers, and mints cred on Discord reactions.
 
@@ -172,7 +166,7 @@ reaction weights file as `$EMOJI_NAME:$EMOJI_ID`, as in:
 `"sourcecred:678399364418502669": 10` to give some server's custom SourceCred
 emoji a weight of 10.
 
-# Removing plugins
+## Removing plugins
 
 To deactivate a plugin, just remove it from the `bundledPlugins` array in the `sourcecred.json` file.
 You can also remove its `config/plugins/OWNER/NAME` directory for good measure.
