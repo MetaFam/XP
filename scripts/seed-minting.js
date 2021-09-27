@@ -112,6 +112,7 @@ async function deductSeedsAlreadyMinted(accounts, ledger) {
     };
   }).filter(Boolean);
 
+  // Uncomment these two lines below and rerun script after distribution is on chain and MINT_TX_HASH + MINT_DATE is updated.
   // await deductSeedsAlreadyMinted([...accountsWithAddress], ledger);
   // await fs.writeFile(LEDGER_PATH, ledger.serialize())
   

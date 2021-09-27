@@ -44,3 +44,14 @@
 10. Once the `seedAllocations` transaction has executed, upload the `snapshot.json` to the Fleek storage.
 11. The distribution should now be claimable. Test out if it works by going to [claim.metagame.wtf](https://claim.metagame.wtf). You might need to force refresh the page if the latest distribution doesnt show up right away (SHIFT + click refresh).
 12. Commit and push these changes to master.
+
+## D. Deducting minted SEEDs from ledger
+
+1. In the XP repo, make the following changes to the `scripts/seed-minting.js` file:
+   i. set `MINT_TX_HASH` to the etherscan link for the `seedAllocations` transaction from step C.10 above.
+   ii. set `MINT_DATE` to the date of the said transaction
+   iii. Uncomment the lines that call `deductSeedsAlreadyMinted` (currently lines 116 and 117).
+2. Run `node ./scripts/seed-minting.js` again and ensure there's no major errors or large "Extra SEED Balance" messages logged.
+3. Ensure that the `toMintXMerkle.json` file for the current distribution did not have any changes. This ensures that the on chain distribution exactly matches the ledger state.
+4. Run `yarn serve` and double check that the current balance in SEED Accounts is 0 for people in the distribution. 
+5. Commit the updates to `ledger.json` and push them to master with a PR.
