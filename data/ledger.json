@@ -9199,3 +9199,5 @@
 {"action":{"base":"tjgulKJMweHdRM0sl4IOLA","target":"bGyFwlvBUX9cODkWlO9POQ","type":"MERGE_IDENTITIES"},"ledgerTimestamp":1633225702058,"uuid":"YUGryeMjqgN0RRUKvWqbqw","version":"1"}
 {"action":{"identityId":"tjgulKJMweHdRM0sl4IOLA","newName":"DeBilder","type":"RENAME_IDENTITY"},"ledgerTimestamp":1633225744194,"uuid":"1Wim3wIPjrDNo2MJoCBOjw","version":"1"}
 {"action":{"base":"SBB7hWK69eM0QHVPrgsx3A","target":"uRVqVkKofae4KHvE1eQv4g","type":"MERGE_IDENTITIES"},"ledgerTimestamp":1633225802717,"uuid":"WiRGWgDcwt5bZQr3zykwHg","version":"1"}
+{"action":{"identity":{"address":"N\u0000sourcecred\u0000core\u0000IDENTITY\u0000qboPPxUxe0WGVjqsjUeBGQ\u0000","aliases":[],"id":"qboPPxUxe0WGVjqsjUeBGQ","name":"elderorb","subtype":"USER"},"type":"CREATE_IDENTITY"},"ledgerTimestamp":1633275850600,"uuid":"nhQxx17Qsv1QKf6lWuy25g","version":"1"}
+{"action":{"alias":{"address":"N\u0000sourcecred\u0000discord\u0000MEMBER\u0000user\u0000399134390598238208\u0000","description":"discord/elderorb#2177"},"identityId":"qboPPxUxe0WGVjqsjUeBGQ","type":"ADD_ALIAS"},"ledgerTimestamp":1633275850600,"uuid":"QxfbSMuPakpxDoIAjODsnw","version":"1"}
