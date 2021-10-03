@@ -9196,3 +9196,6 @@
 {"action":{"identity":{"address":"N\u0000sourcecred\u0000core\u0000IDENTITY\u0000n0Zqgg2BmfxxvwJzP6NLSA\u0000","aliases":[],"id":"n0Zqgg2BmfxxvwJzP6NLSA","name":"MahaRadja","subtype":"USER"},"type":"CREATE_IDENTITY"},"ledgerTimestamp":1633215385415,"uuid":"Gdk9OWXS92y7DEQrNkNE9Q","version":"1"}
 {"action":{"alias":{"address":"N\u0000sourcecred\u0000discord\u0000MEMBER\u0000user\u0000893686722435620924\u0000","description":"discord/MahaRadja#9261"},"identityId":"n0Zqgg2BmfxxvwJzP6NLSA","type":"ADD_ALIAS"},"ledgerTimestamp":1633215385415,"uuid":"8Wfom3f74HLRSlUmB4Q1rA","version":"1"}
 {"action":{"base":"OaCGZwXzgZIyCXWrcoxuZw","target":"SRqIvM06NU6SqFL4oTBZVg","type":"MERGE_IDENTITIES"},"ledgerTimestamp":1633215762529,"uuid":"2YP9ProH5vK6wHpQEZHPJQ","version":"1"}
+{"action":{"base":"tjgulKJMweHdRM0sl4IOLA","target":"bGyFwlvBUX9cODkWlO9POQ","type":"MERGE_IDENTITIES"},"ledgerTimestamp":1633225702058,"uuid":"YUGryeMjqgN0RRUKvWqbqw","version":"1"}
+{"action":{"identityId":"tjgulKJMweHdRM0sl4IOLA","newName":"DeBilder","type":"RENAME_IDENTITY"},"ledgerTimestamp":1633225744194,"uuid":"1Wim3wIPjrDNo2MJoCBOjw","version":"1"}
+{"action":{"base":"SBB7hWK69eM0QHVPrgsx3A","target":"uRVqVkKofae4KHvE1eQv4g","type":"MERGE_IDENTITIES"},"ledgerTimestamp":1633225802717,"uuid":"WiRGWgDcwt5bZQr3zykwHg","version":"1"}
