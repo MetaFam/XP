@@ -9201,3 +9201,5 @@
 {"action":{"base":"SBB7hWK69eM0QHVPrgsx3A","target":"uRVqVkKofae4KHvE1eQv4g","type":"MERGE_IDENTITIES"},"ledgerTimestamp":1633225802717,"uuid":"WiRGWgDcwt5bZQr3zykwHg","version":"1"}
 {"action":{"alias":{"address":"N\u0000sourcecred\u0000ethereum\u00000x79bE4e987D616855F0894611d92f2632B4A9EA38\u0000","description":"0x79bE4e987D616855F0894611d92f2632B4A9EA38"},"identityId":"rl9NPp938H0Qh1K8EcVSdA","type":"ADD_ALIAS"},"ledgerTimestamp":1633294439965,"uuid":"OBvDViKMLNdXO5jG0R1Nkw","version":"1"}
 {"action":{"identityId":"rl9NPp938H0Qh1K8EcVSdA","type":"TOGGLE_ACTIVATION"},"ledgerTimestamp":1633294439966,"uuid":"RbVDhWBJPHN9NKYULb8CYw","version":"1"}
+{"action":{"alias":{"address":"N\u0000sourcecred\u0000ethereum\u00000xE73a198e7C07c418D7dcFd42f5E953074aBbD125\u0000","description":"0xE73a198e7C07c418D7dcFd42f5E953074aBbD125"},"identityId":"nVuKji9K82LQdtGcatOs1g","type":"ADD_ALIAS"},"ledgerTimestamp":1634056275178,"uuid":"LTJCn223PMc3camMYSB0KA","version":"1"}
+{"action":{"identityId":"nVuKji9K82LQdtGcatOs1g","type":"TOGGLE_ACTIVATION"},"ledgerTimestamp":1634056275184,"uuid":"vVlE19ys0j4VEsb7JXh5Gg","version":"1"}
