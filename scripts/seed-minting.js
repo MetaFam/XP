@@ -45,10 +45,10 @@ const numberToWei = (n) => web3.utils.toWei(parseFloat(n).toFixed(9), 'ether');
 
 
 const MINT_TX_HASH = "https://etherscan.io/tx/0x07a2eb5e57a09f7228cc610c5dc2f102c1f7451007a625b8c366c6603cd4c31e";
-const MINT_DATE = "Aug 26 2021";
+const MINT_DATE = "Oct 3 2021";
 
 const LEDGER_PATH = 'data/ledger.json';
-const MINT_AMOUNTS_PATH = './scripts/toMint9Merkle.json';
+const MINT_AMOUNTS_PATH = './scripts/toMint10Merkle.json';
 const ETH_MAIN_NET_IDENTITY_ID = "igdEDIOoos50r4YUKKRQxg";
 
 async function deductSeedsAlreadyMinted(accounts, ledger) {
