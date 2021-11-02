@@ -44,8 +44,8 @@ const numberToWei = (n) => web3.utils.toWei(parseFloat(n).toFixed(9), 'ether');
 
 
 
-const MINT_TX_HASH = "https://etherscan.io/tx/0x07a2eb5e57a09f7228cc610c5dc2f102c1f7451007a625b8c366c6603cd4c31e";
-const MINT_DATE = "Oct 3 2021";
+const MINT_TX_HASH = "https://etherscan.io/tx/0x70b99bd0e456af39865b7b441f05da53a14aeaf8692d15896acda55d0fcae420";
+const MINT_DATE = "Oct 10 2021";
 
 const LEDGER_PATH = 'data/ledger.json';
 const MINT_AMOUNTS_PATH = './scripts/toMint10Merkle.json';
@@ -113,8 +113,8 @@ async function deductSeedsAlreadyMinted(accounts, ledger) {
   }).filter(Boolean);
 
   // Uncomment these two lines below and rerun script after distribution is on chain and MINT_TX_HASH + MINT_DATE is updated.
-  // await deductSeedsAlreadyMinted([...accountsWithAddress], ledger);
-  // await fs.writeFile(LEDGER_PATH, ledger.serialize())
+  await deductSeedsAlreadyMinted([...accountsWithAddress], ledger);
+  await fs.writeFile(LEDGER_PATH, ledger.serialize())
   
   const addressAccounts = _.keyBy(accountsWithAddress, 'ethAddress')
   const newMintAmounts = {};
