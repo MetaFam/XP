@@ -45,7 +45,7 @@ const numberToWei = (n) => web3.utils.toWei(parseFloat(n).toFixed(9), 'ether');
 
 
 const MINT_TX_HASH = "https://etherscan.io/tx/0x70b99bd0e456af39865b7b441f05da53a14aeaf8692d15896acda55d0fcae420";
-const MINT_DATE = "Nov 7 2021";
+const MINT_DATE = "Nov 8 2021";
 
 const LEDGER_PATH = 'data/ledger.json';
 const MINT_AMOUNTS_PATH = './scripts/toMint11Merkle.json';
