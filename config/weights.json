@@ -6,13 +6,13 @@
     {
         "edgeWeights": {},
         "nodeWeights": {
-            "N\u0000sourcecred\u0000github\u0000COMMENT\u0000": 0.5,
+            "N\u0000sourcecred\u0000github\u0000COMMENT\u0000": 0.25,
             "N\u0000sourcecred\u0000github\u0000COMMIT\u0000": 1,
             "N\u0000sourcecred\u0000github\u0000ISSUE\u0000": 1,
             "N\u0000sourcecred\u0000github\u0000PULL\u0000": 16,
             "N\u0000sourcecred\u0000github\u0000PULL\u0000MetaFam\u0000metagame-wiki\u0000": 0.6,
             "N\u0000sourcecred\u0000github\u0000REPO\u0000": 4,
-            "N\u0000sourcecred\u0000github\u0000REVIEW\u0000": 2,
+            "N\u0000sourcecred\u0000github\u0000REVIEW\u0000": 4,
 
             "N\u0000sourcecred\u0000github\u0000COMMENT\u0000MetaFam\u0000assets\u0000": 0.0125,
             "N\u0000sourcecred\u0000github\u0000COMMIT\u0000MetaFam\u0000assets\u0000": 0.025,
