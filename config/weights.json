@@ -6,8 +6,8 @@
     {
         "edgeWeights": {},
         "nodeWeights": {
-            "N\u0000sourcecred\u0000github\u0000COMMENT\u0000": 0.25,
-            "N\u0000sourcecred\u0000github\u0000COMMIT\u0000": 1,
+            "N\u0000sourcecred\u0000github\u0000COMMENT\u0000": 0.5,
+            "N\u0000sourcecred\u0000github\u0000COMMIT\u0000": 0.5,
             "N\u0000sourcecred\u0000github\u0000ISSUE\u0000": 1,
             "N\u0000sourcecred\u0000github\u0000PULL\u0000": 16,
             "N\u0000sourcecred\u0000github\u0000PULL\u0000MetaFam\u0000metagame-wiki\u0000": 0.6,
