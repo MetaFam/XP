@@ -44,8 +44,8 @@ const numberToWei = (n) => web3.utils.toWei(parseFloat(n).toFixed(9), 'ether');
 
 
 
-const MINT_TX_HASH = "https://etherscan.io/tx/0x70b99bd0e456af39865b7b441f05da53a14aeaf8692d15896acda55d0fcae420";
-const MINT_DATE = "Nov 8 2021";
+const MINT_TX_HASH = "https://polygonscan.com/tx/0xc67d316e622245603ebfaec12794e86d88016e25f367ae22366c4c5e4494d371";
+const MINT_DATE = "Nov 22 2021";
 
 const LEDGER_PATH = 'data/ledger.json';
 const MINT_AMOUNTS_PATH = './scripts/toMint11Merkle.json';
@@ -74,13 +74,15 @@ async function deductSeedsAlreadyMinted(accounts, ledger) {
       console.log(`Extra SEED Balance for: ${account.ethAddress}: ${G.sub(seedsMinted, seedsBalance)}`);
       transferAmount = seedsBalance;
     }
-    ledger.activate(account.identity.id);
-    ledger.transferGrain({
-      from: account.identity.id,
-      to: ETH_MAIN_NET_IDENTITY_ID,
-      amount: transferAmount,
-      memo: `Minted SEED on chain to ${account.ethAddress} on ${MINT_DATE} (${MINT_TX_HASH})`,
-    });
+    if (seedsBalance > 0) {
+      ledger.activate(account.identity.id);
+      ledger.transferGrain({
+        from: account.identity.id,
+        to: ETH_MAIN_NET_IDENTITY_ID,
+        amount: transferAmount,
+        memo: `Minted SEED on chain to ${account.ethAddress} on ${MINT_DATE} (${MINT_TX_HASH})`,
+      });
+    }
   }
 }
 
