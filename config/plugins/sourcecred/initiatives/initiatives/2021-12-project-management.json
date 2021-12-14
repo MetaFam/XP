@@ -1,0 +1,21 @@
+[
+  {
+    "type": "sourcecred/initiativeFile",
+    "version": "0.2.0"
+  },
+  {
+    "title": "Leading Design Guild",
+    "timestampIso": "2021-12-01T10:00:00.000Z",
+    "weight": {
+      "incomplete": 13,
+      "complete": 13
+    },
+    "completed": true,
+    "champions": ["@Davor"],
+    "dependencies": {},
+    "references": {},
+    "contributions": {
+      "entries": []
+    }
+  }
+]
