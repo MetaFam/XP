@@ -13,8 +13,47 @@ const NodeAddress = sc.core.address.makeAddressModule({
   otherNonces: new Map().set("E", "EdgeAddress"),
 });
 
+const MINT_TX_HASH = "https://polygonscan.com/tx/0xc67d316e622245603ebfaec12794e86d88016e25f367ae22366c4c5e4494d371";
+const MINT_DATE = "Dec 20 2021";
+
 const LEDGER_PATH = 'data/ledger.json';
 const MINT_AMOUNTS_PATH = './scripts/toMint12Disburse.json';
+const ETH_MAIN_NET_IDENTITY_ID = "igdEDIOoos50r4YUKKRQxg";
+
+async function deductSeedsAlreadyMinted(accounts, ledger) {
+  const LAST_MINTING =  JSON.parse(await fs.readFile(MINT_AMOUNTS_PATH));
+  
+  for (const address in LAST_MINTING) {
+    
+    const amount = LAST_MINTING[address];
+  
+    const account = accounts.find(a => a.ethAddress.toLowerCase() === address.toLowerCase());
+    if (!account) {
+      console.warn('Missing account for: ', address);
+    }
+
+    const seedsMinted = G.fromApproximateFloat(amount);
+    const seedsBalance = G.fromString(account.balance);
+    // console.log({ seedsBalance, seedsMinted, mint });
+    // console.log({ address, amount, seedsMinted });
+  
+    let transferAmount = seedsMinted;
+    // Only transfer up to max balance
+    if (G.lt(seedsBalance, seedsMinted)) {
+      console.log(`Extra SEED Balance for: ${account.ethAddress}: ${G.sub(seedsMinted, seedsBalance)}`);
+      transferAmount = seedsBalance;
+    }
+    if (seedsBalance > 0) {
+      //ledger.activate(account.identity.id);
+      ledger.transferGrain({
+        from: account.identity.id,
+        to: ETH_MAIN_NET_IDENTITY_ID,
+        amount: transferAmount,
+        memo: `Minted SEED on chain to ${account.ethAddress} on ${MINT_DATE} (${MINT_TX_HASH})`,
+      });
+    }
+  }
+}
 
 (async function () {
   const ledgerJSON = (await fs.readFile(LEDGER_PATH)).toString();
@@ -44,6 +83,9 @@ const MINT_AMOUNTS_PATH = './scripts/toMint12Disburse.json';
       ethAddress: ethAddress,
     };
   }).filter(Boolean);
+
+  // await deductSeedsAlreadyMinted([...accountsWithAddress], ledger);
+  // await fs.writeFile(LEDGER_PATH, ledger.serialize());
   
   const addressAccounts = _.keyBy(accountsWithAddress, 'ethAddress')
   const newMintAmounts = {};
