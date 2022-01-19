@@ -3,12 +3,12 @@
   "allocationPolicies": [
     {
       "policyType": "BALANCED",
-      "budget": 106,
+      "budget": 90,
       "numIntervalsLookback": 24
     },
     {
       "policyType": "RECENT",
-      "budget": 318,
+      "budget": 270,
       "discount":0.4
     }
   ]
