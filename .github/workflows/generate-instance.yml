@@ -6,7 +6,7 @@ on:
       - master
   # As well as every 24 hours (at 0:00 UTC).
   schedule:
-    - cron: 0 3 * * *
+    - cron: 0 */8 * * * # every 8 hours temporarily
 
 jobs:
   GenerateCredInstance:
