@@ -6,12 +6,12 @@ on:
       - master
   # As well as every 24 hours (at 0:00 UTC).
   schedule:
-    - cron: 0 13 * * *
+    - cron: 0 3 * * *
 
 jobs:
   GenerateCredInstance:
     runs-on: ubuntu-latest
-    timeout-minutes: 720
+    timeout-minutes: 360
     env:
       NODE_OPTIONS: --max_old_space_size=8192
     steps:
@@ -20,7 +20,7 @@ jobs:
           persist-credentials: false # Required to make github pages deployment work correctly
 
       - name: Cache Data # Cache SourceCred Data, invalidating if any of the config changes or the SC version is updated
-        uses: actions/cache@v2
+        uses: actions/always-upload-cache@v2
         with:
           path: '**/cache'
           key: SC-${{ runner.os }}-${{ hashFiles('**/config.json', '**/sourcecred.json', '**/yarn.lock') }}
