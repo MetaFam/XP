@@ -84,8 +84,8 @@ async function deductSeedsAlreadyMinted(accounts, ledger) {
     };
   }).filter(Boolean);
 
-  // await deductSeedsAlreadyMinted([...accountsWithAddress], ledger);
-  // await fs.writeFile(LEDGER_PATH, ledger.serialize());
+  await deductSeedsAlreadyMinted([...accountsWithAddress], ledger);
+  await fs.writeFile(LEDGER_PATH, ledger.serialize());
   
   const addressAccounts = _.keyBy(accountsWithAddress, 'ethAddress')
   const newMintAmounts = {};
