@@ -6,12 +6,12 @@ on:
       - master
   # As well as every 24 hours (at 0:00 UTC).
   schedule:
-    - cron: 0 */12 * * * # every 12 hours temporarily
+    - cron: 0 0 * * *
 
 jobs:
   GenerateCredInstance:
     runs-on: self-hosted
-    timeout-minutes: 360
+    timeout-minutes: 1440
     env:
       NODE_OPTIONS: --max_old_space_size=8192
     steps:
