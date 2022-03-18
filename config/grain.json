@@ -1,15 +1,15 @@
 {
-  "maxSimultaneousDistributions": 20,
   "allocationPolicies": [
     {
-      "policyType": "BALANCED",
       "budget": 90,
-      "numIntervalsLookback": 24
+      "numIntervalsLookback": 24,
+      "policyType": "BALANCED"
     },
     {
-      "policyType": "RECENT",
       "budget": 270,
-      "discount":0.4
+      "discount": 0.4,
+      "policyType": "RECENT"
     }
-  ]
+  ],
+  "maxSimultaneousDistributions": 20
 }
