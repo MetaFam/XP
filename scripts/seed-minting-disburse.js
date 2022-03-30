@@ -14,7 +14,7 @@ const NodeAddress = sc.core.address.makeAddressModule({
 });
 
 const MINT_TX_HASH = "https://polygonscan.com/tx/0xc67d316e622245603ebfaec12794e86d88016e25f367ae22366c4c5e4494d371";
-const MINT_DATE = "Mar 29 2022";
+const MINT_DATE = "Mar 30 2022";
 
 const LEDGER_PATH = 'data/ledger.json';
 const MINT_AMOUNTS_PATH = './scripts/toMint15Disburse.json';
