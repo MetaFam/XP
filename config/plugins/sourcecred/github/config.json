@@ -10,6 +10,7 @@
     "MetaFam/skill-bot",
     "MetaFam/assets",
     "MetaFam/chievemints",
-    "MetaFam/MetaFest2"
+    "MetaFam/MetaFest2",
+    "MetaFam/infrastructure"
   ]
 }
