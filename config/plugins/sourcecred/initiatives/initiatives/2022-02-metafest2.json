@@ -1,0 +1,310 @@
+[
+  {
+    "type": "sourcecred/initiativeFile",
+    "version": "0.2.0"
+  },
+  {
+    "title": "MetaFest2",
+    "timestampIso": "2022-06-09T10:00:00.000Z",
+    "weight": {
+      "incomplete": 0,
+      "complete": 34
+    },
+    "completed": true,
+    "champions": [],
+    "dependencies": {},
+    "references": {},
+    "contributions": {
+      "entries": [
+        {
+          "weight": 13,
+          "title": "Planning - Misanth",
+          "timestampIso": "2022-01-14T10:00:00.000Z",
+          "contributors": ["@Misanth"]
+        },
+        {
+          "weight": 13,
+          "title": "Planning - tommy",
+          "timestampIso": "2022-01-14T10:00:00.000Z",
+          "contributors": ["@tomi"]
+        },
+        {
+          "weight": 5,
+          "title": "Planning - Musashi",
+          "timestampIso": "2022-01-14T10:00:00.000Z",
+          "contributors": ["@Musashi13"]
+        },
+        {
+          "weight": 5,
+          "title": "Planning - scone",
+          "timestampIso": "2022-04-03T10:00:00.000Z",
+          "contributors": ["@prettyscone-shans"]
+        },
+        {
+          "weight": 3,
+          "title": "Planning - tenfinney",
+          "timestampIso": "2022-01-14T10:00:00.000Z",
+          "contributors": ["@tenfinney"]
+        },
+        {
+          "weight": 1,
+          "title": "Planning - penguin",
+          "timestampIso": "2022-02-14T10:00:00.000Z",
+          "contributors": ["@penguin"]
+        },
+        {
+          "weight": 1,
+          "title": "Planning - peth",
+          "timestampIso": "2022-02-14T10:00:00.000Z",
+          "contributors": ["@peth"]
+        },
+        {
+          "weight": 1,
+          "title": "Planning - Unipuff",
+          "timestampIso": "2022-01-14T10:00:00.000Z",
+          "contributors": ["@P-V-F"]
+        },
+        {
+          "weight": 1,
+          "title": "Planning - luxumbra",
+          "timestampIso": "2022-01-143T10:00:00.000Z",
+          "contributors": ["@luxumbra"]
+        },
+        {
+          "weight": 8,
+          "title": "Discord - Misanth",
+          "timestampIso": "2022-03-03T10:00:00.000Z",
+          "contributors": ["@Misanth"]
+        },
+        {
+          "weight": 5,
+          "title": "Discord - tommy",
+          "timestampIso": "2022-03-03T10:00:00.000Z",
+          "contributors": ["@tomi"]
+        },
+        {
+          "weight": 8,
+          "title": "Videos - b0gie",
+          "timestampIso": "2022-05-03T10:00:00.000Z",
+          "contributors": ["@b0gie"]
+        },
+        {
+          "weight": 5,
+          "title": "Videos - tenfinney",
+          "timestampIso": "2022-05-03T10:00:00.000Z",
+          "contributors": ["@tenfinney"]
+        }
+        {
+          "weight": 5,
+          "title": "Videos - tommy",
+          "timestampIso": "2022-05-03T10:00:00.000Z",
+          "contributors": ["@tomi"]
+        },
+        {
+          "weight": 5,
+          "title": "Videos - Unipuff",
+          "timestampIso": "2022-05-03T10:00:00.000Z",
+          "contributors": ["@P-V-F"]
+        },
+        {
+          "weight": 3,
+          "title": "Videos - lanmower",
+          "timestampIso": "2022-05-03T10:00:00.000Z",
+          "contributors": ["@your-mom-----"]
+        },
+        {
+          "weight": 1,
+          "title": "Videos - Musashi",
+          "timestampIso": "2022-05-03T10:00:00.000Z",
+          "contributors": ["@Musashi13"]
+        },
+        {
+          "weight": 8,
+          "title": "Banners & Graphics - eowulia",
+          "timestampIso": "2022-06-09T10:00:00.000Z",
+          "contributors": ["@eowulia"]
+        },
+        {
+          "weight": 3,
+          "title": "Website - luxumbra",
+          "timestampIso": "2022-04-09T10:00:00.000Z",
+          "contributors": ["@luxumbra"]
+        },
+        {
+          "weight": 1,
+          "title": "Website - tommy",
+          "timestampIso": "2022-06-03T10:00:00.000Z",
+          "contributors": ["@tomi"]
+        },
+        {
+          "weight": 1,
+          "title": "Website - Unipuff",
+          "timestampIso": "2022-06-03T10:00:00.000Z",
+          "contributors": ["@P-V-F"]
+        },
+        {
+          "weight": 13,
+          "title": "Booking - peth",
+          "timestampIso": "2022-05-03T10:00:00.000Z",
+          "contributors": ["@peth"]
+        },
+        {
+          "weight": 13,
+          "title": "Booking - penguin",
+          "timestampIso": "2022-05-03T10:00:00.000Z",
+          "contributors": ["@penguin"]
+        },
+        {
+          "weight": 13,
+          "title": "Booking - tommy",
+          "timestampIso": "2022-05-03T10:00:00.000Z",
+          "contributors": ["@tomi"]
+        },
+        {
+          "weight": 3,
+          "title": "Booking - Unipuff",
+          "timestampIso": "2022-05-03T10:00:00.000Z",
+          "contributors": ["@P-V-F"]
+        },
+        {
+          "weight": 3,
+          "title": "Booking - Musashi",
+          "timestampIso": "2022-05-03T10:00:00.000Z",
+          "contributors": ["@Musashi13"]
+        },
+        {
+          "weight": 1,
+          "title": "Booking - anna",
+          "timestampIso": "2022-05-03T10:00:00.000Z",
+          "contributors": ["@AnnaKaic"]
+        },
+        {
+          "weight": 1,
+          "title": "Booking - fearless",
+          "timestampIso": "2022-05-03T10:00:00.000Z",
+          "contributors": ["@FearlessThompson--"]
+        },
+        {
+          "weight": 1,
+          "title": "Booking - hbesso",
+          "timestampIso": "2022-05-03T10:00:00.000Z",
+          "contributors": ["@HBesso31"]
+        },
+        {
+          "weight": 5,
+          "title": "Treasure Hunt - tenfinney",
+          "timestampIso": "2022-04-03T10:00:00.000Z",
+          "contributors": ["@tenfinney"]
+        },
+        {
+          "weight": 1,
+          "title": "Treasure Hunt - Musashi",
+          "timestampIso": "2022-04-03T10:00:00.000Z",
+          "contributors": ["@Musashi13"]
+        },
+        {
+          "weight": 8,
+          "title": "Tweeting - peth",
+          "timestampIso": "2022-06-09T10:00:00.000Z",
+          "contributors": ["@peth"]
+        },
+        {
+          "weight": 8,
+          "title": "Tweeting - anna",
+          "timestampIso": "2022-06-09T10:00:00.000Z",
+          "contributors": ["@AnnaKaic"]
+        },
+        {
+          "weight": 3,
+          "title": "Tweeting - scone",
+          "timestampIso": "2022-06-09T10:00:00.000Z",
+          "contributors": ["@prettyscone-shans"]
+        },
+        {
+          "weight": 3,
+          "title": "Tweeting - Unipuff",
+          "timestampIso": "2022-06-09T10:00:00.000Z",
+          "contributors": ["@P-V-F"]
+        },
+        {
+          "weight": 13,
+          "title": "Streaming - b0gie",
+          "timestampIso": "2022-06-09T10:00:00.000Z",
+          "contributors": ["@b0gie"]
+        },
+        {
+          "weight": 1,
+          "title": "Streaming - wonfiddy",
+          "timestampIso": "2022-06-09T10:00:00.000Z",
+          "contributors": ["@wonfiddy"]
+        },
+        {
+          "weight": 8,
+          "title": "Backstage - Unipuff",
+          "timestampIso": "2022-06-09T10:00:00.000Z",
+          "contributors": ["@P-V-F"]
+        },
+        {
+          "weight": 5,
+          "title": "Backstage - b0gie",
+          "timestampIso": "2022-06-09T10:00:00.000Z",
+          "contributors": ["@b0gie"]
+        },
+        {
+          "weight": 5,
+          "title": "Backstage - penguin",
+          "timestampIso": "2022-06-09T10:00:00.000Z",
+          "contributors": ["@penguin"]
+        },
+        {
+          "weight": 5,
+          "title": "Backstage - Misanth",
+          "timestampIso": "2022-06-09T10:00:00.000Z",
+          "contributors": ["@Misanth"]
+        },
+        {
+          "weight": 1,
+          "title": "Backstage - anna",
+          "timestampIso": "2022-06-09T10:00:00.000Z",
+          "contributors": ["@AnnaKaic"]
+        },
+        {
+          "weight": 1,
+          "title": "Backstage - Musashi",
+          "timestampIso": "2022-06-09T10:00:00.000Z",
+          "contributors": ["@Musashi13"]
+        },
+        {
+          "weight": 1,
+          "title": "Backstage - hbesso",
+          "timestampIso": "2022-06-09T10:00:00.000Z",
+          "contributors": ["@HBesso31"]
+        },
+        {
+          "weight": 1,
+          "title": "Backstage - luxumbra",
+          "timestampIso": "2022-06-09T10:00:00.000Z",
+          "contributors": ["@luxumbra"]
+        },
+        {
+          "weight": 13,
+          "title": "Hosting - penguin",
+          "timestampIso": "2022-06-09T10:00:00.000Z",
+          "contributors": ["@penguin"]
+        },
+        {
+          "weight": 3,
+          "title": "Hosting - Unipuff",
+          "timestampIso": "2022-06-09T10:00:00.000Z",
+          "contributors": ["@P-V-F"]
+        },
+        {
+          "weight": 3,
+          "title": "Hosting - tommy",
+          "timestampIso": "2022-06-09T10:00:00.000Z",
+          "contributors": ["@tomi"]
+        }
+      ]
+    }
+  }
+]
