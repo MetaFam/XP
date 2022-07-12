@@ -44,7 +44,7 @@
           "weight": 3,
           "title": "Planning - tenfinney",
           "timestampIso": "2022-01-14T10:00:00.000Z",
-          "contributors": ["@tenfinney"]
+          "contributors": ["@tenfinney-discord"]
         },
         {
           "weight": 1,
@@ -56,13 +56,13 @@
           "weight": 1,
           "title": "Planning - peth",
           "timestampIso": "2022-02-14T10:00:00.000Z",
-          "contributors": ["@peth"]
+          "contributors": ["@peth-yursick"]
         },
         {
           "weight": 1,
           "title": "Planning - Unipuff",
           "timestampIso": "2022-01-14T10:00:00.000Z",
-          "contributors": ["@P-V-F"]
+          "contributors": ["@Pvblick-Vniversal-Friend"]
         },
         {
           "weight": 1,
@@ -92,7 +92,7 @@
           "weight": 5,
           "title": "Videos - tenfinney",
           "timestampIso": "2022-05-03T10:00:00.000Z",
-          "contributors": ["@tenfinney"]
+          "contributors": ["@tenfinney-discord"]
         },
         {
           "weight": 5,
@@ -104,7 +104,7 @@
           "weight": 5,
           "title": "Videos - Unipuff",
           "timestampIso": "2022-05-03T10:00:00.000Z",
-          "contributors": ["@P-V-F"]
+          "contributors": ["@Pvblick-Vniversal-Friend"]
         },
         {
           "weight": 3,
@@ -140,13 +140,13 @@
           "weight": 1,
           "title": "Website - Unipuff",
           "timestampIso": "2022-06-03T10:00:00.000Z",
-          "contributors": ["@P-V-F"]
+          "contributors": ["@Pvblick-Vniversal-Friend"]
         },
         {
           "weight": 13,
           "title": "Booking - peth",
           "timestampIso": "2022-05-03T10:00:00.000Z",
-          "contributors": ["@peth"]
+          "contributors": ["@peth-yursick"]
         },
         {
           "weight": 13,
@@ -164,7 +164,7 @@
           "weight": 3,
           "title": "Booking - Unipuff",
           "timestampIso": "2022-05-03T10:00:00.000Z",
-          "contributors": ["@P-V-F"]
+          "contributors": ["@Pvblick-Vniversal-Friend"]
         },
         {
           "weight": 3,
@@ -194,7 +194,7 @@
           "weight": 5,
           "title": "Treasure Hunt - tenfinney",
           "timestampIso": "2022-04-03T10:00:00.000Z",
-          "contributors": ["@tenfinney"]
+          "contributors": ["@tenfinney-discord"]
         },
         {
           "weight": 1,
@@ -206,7 +206,7 @@
           "weight": 8,
           "title": "Tweeting - peth",
           "timestampIso": "2022-06-09T10:00:00.000Z",
-          "contributors": ["@peth"]
+          "contributors": ["@peth-yursick"]
         },
         {
           "weight": 8,
@@ -224,7 +224,7 @@
           "weight": 3,
           "title": "Tweeting - Unipuff",
           "timestampIso": "2022-06-09T10:00:00.000Z",
-          "contributors": ["@P-V-F"]
+          "contributors": ["@Pvblick-Vniversal-Friend"]
         },
         {
           "weight": 13,
@@ -242,7 +242,7 @@
           "weight": 8,
           "title": "Backstage - Unipuff",
           "timestampIso": "2022-06-09T10:00:00.000Z",
-          "contributors": ["@P-V-F"]
+          "contributors": ["@Pvblick-Vniversal-Friend"]
         },
         {
           "weight": 5,
@@ -296,7 +296,7 @@
           "weight": 3,
           "title": "Hosting - Unipuff",
           "timestampIso": "2022-06-09T10:00:00.000Z",
-          "contributors": ["@P-V-F"]
+          "contributors": ["@Pvblick-Vniversal-Friend"]
         },
         {
           "weight": 3,
