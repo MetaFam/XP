@@ -56,7 +56,7 @@
           "weight": 1,
           "title": "Planning - peth",
           "timestampIso": "2022-02-14T10:00:00.000Z",
-          "contributors": ["@peth"]
+          "contributors": ["@peth-yursick"]
         },
         {
           "weight": 1,
@@ -146,7 +146,7 @@
           "weight": 13,
           "title": "Booking - peth",
           "timestampIso": "2022-05-03T10:00:00.000Z",
-          "contributors": ["@peth"]
+          "contributors": ["@peth-yursick"]
         },
         {
           "weight": 13,
@@ -206,7 +206,7 @@
           "weight": 8,
           "title": "Tweeting - peth",
           "timestampIso": "2022-06-09T10:00:00.000Z",
-          "contributors": ["@peth"]
+          "contributors": ["@peth-yursick"]
         },
         {
           "weight": 8,
