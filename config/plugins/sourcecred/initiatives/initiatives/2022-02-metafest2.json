@@ -44,7 +44,7 @@
           "weight": 3,
           "title": "Planning - tenfinney",
           "timestampIso": "2022-01-14T10:00:00.000Z",
-          "contributors": ["@tenfinney"]
+          "contributors": ["@tenfinney-discord"]
         },
         {
           "weight": 1,
@@ -92,7 +92,7 @@
           "weight": 5,
           "title": "Videos - tenfinney",
           "timestampIso": "2022-05-03T10:00:00.000Z",
-          "contributors": ["@tenfinney"]
+          "contributors": ["@tenfinney-discord"]
         },
         {
           "weight": 5,
@@ -194,7 +194,7 @@
           "weight": 5,
           "title": "Treasure Hunt - tenfinney",
           "timestampIso": "2022-04-03T10:00:00.000Z",
-          "contributors": ["@tenfinney"]
+          "contributors": ["@tenfinney-discord"]
         },
         {
           "weight": 1,
