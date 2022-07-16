@@ -303,6 +303,66 @@
           "title": "Hosting - tommy",
           "timestampIso": "2022-06-09T10:00:00.000Z",
           "contributors": ["@tomi"]
+        },
+        {
+          "weight": 1,
+          "title": "Hosting - Anna",
+          "timestampIso": "2022-06-09T10:00:00.000Z",
+          "contributors": ["@AnnaKaic"]
+        },
+        {
+          "weight": 3,
+          "title": "Hosting - peth",
+          "timestampIso": "2022-06-09T10:00:00.000Z",
+          "contributors": ["@peth-yursick"]
+        },
+        {
+          "weight": 1,
+          "title": "Hosting - Musashi",
+          "timestampIso": "2022-06-09T10:00:00.000Z",
+          "contributors": ["@Musashi13"]
+        },
+        {
+          "weight": 1,
+          "title": "Hosting - wonfiddy",
+          "timestampIso": "2022-06-09T10:00:00.000Z",
+          "contributors": ["@wonfiddy"]
+        },
+        {
+          "weight": 1,
+          "title": "Hosting - scone",
+          "timestampIso": "2022-06-09T10:00:00.000Z",
+          "contributors": ["@prettyscone-shans"]
+        },
+        {
+          "weight": 1,
+          "title": "Helping Out - lanmower",
+          "timestampIso": "2022-06-09T10:00:00.000Z",
+          "contributors": ["@your-mom-----"]
+        },
+        {
+          "weight": 3,
+          "title": "Helping Out - wonfiddy",
+          "timestampIso": "2022-06-09T10:00:00.000Z",
+          "contributors": ["@wonfiddy"]
+        },
+        {
+          "weight": 3,
+          "title": "Engagement - TYMED",
+          "timestampIso": "2022-06-09T10:00:00.000Z",
+          "contributors": ["@Disciple-TYMED"]
+        },
+        {
+          "weight": 3,
+          "title": "Engagement - Bagsy",
+          "timestampIso": "2022-06-09T10:00:00.000Z",
+          "contributors": ["@Bagholder-McFomo-III"]
+        },
+        {
+          "weight": 1,
+          "title": "Engagement - Apeiron",
+          "timestampIso": "2022-06-09T10:00:00.000Z",
+          "contributors": ["@Apeiron"]
         }
       ]
     }
