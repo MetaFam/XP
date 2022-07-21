@@ -17,16 +17,16 @@ const MINT_TX_HASH = "https://polygonscan.com/tx/0xc67d316e622245603ebfaec12794e
 const MINT_DATE = "May 19 2022";
 
 const LEDGER_PATH = 'data/ledger.json';
-const MINT_AMOUNTS_PATH = './scripts/toMint16_17Disburse.json';
+const MINT_AMOUNTS_PATH = './scripts/toMint18Disburse.json';
 const ETH_MAIN_NET_IDENTITY_ID = "igdEDIOoos50r4YUKKRQxg";
 
 async function deductSeedsAlreadyMinted(accounts, ledger) {
   const LAST_MINTING =  JSON.parse(await fs.readFile(MINT_AMOUNTS_PATH));
-  
+
   for (const address in LAST_MINTING) {
-    
+
     const amount = LAST_MINTING[address];
-  
+
     const account = accounts.find(a => a.ethAddress.toLowerCase() === address.toLowerCase());
     if (!account) {
       console.warn('Missing account for: ', address);
@@ -36,7 +36,7 @@ async function deductSeedsAlreadyMinted(accounts, ledger) {
     const seedsBalance = G.fromString(account.balance);
     // console.log({ seedsBalance, seedsMinted, mint });
     // console.log({ address, amount, seedsMinted });
-  
+
     let transferAmount = seedsMinted;
     // Only transfer up to max balance
     if (G.lt(seedsBalance, seedsMinted)) {
@@ -57,23 +57,23 @@ async function deductSeedsAlreadyMinted(accounts, ledger) {
 
 (async function () {
   const ledgerJSON = (await fs.readFile(LEDGER_PATH)).toString();
-  
+
   const ledger = Ledger.parse(ledgerJSON);
   const accounts = ledger.accounts();
-  
+
   const accountsWithAddress = accounts.map(a => {
     if (a.identity.subtype === 'BOT') return null;
     if (!a.active) return null
-    
+
     const ethAliases = a.identity.aliases.filter(alias => {
       const parts = NodeAddress.toParts(alias.address);
       return parts.indexOf('ethereum') > 0;
     });
-    
+
     if (!ethAliases.length) return null;
-    
+
     let ethAddress = null;
-    
+
     ethAliases.forEach(alias => {
       ethAddress = NodeAddress.toParts(alias.address)[2];
     });
@@ -84,9 +84,9 @@ async function deductSeedsAlreadyMinted(accounts, ledger) {
     };
   }).filter(Boolean);
 
-  await deductSeedsAlreadyMinted([...accountsWithAddress], ledger);
+  // await deductSeedsAlreadyMinted([...accountsWithAddress], ledger);
   await fs.writeFile(LEDGER_PATH, ledger.serialize());
-  
+
   const addressAccounts = _.keyBy(accountsWithAddress, 'ethAddress')
   const newMintAmounts = {};
   let total = 0;
@@ -106,6 +106,6 @@ async function deductSeedsAlreadyMinted(accounts, ledger) {
     return `${acc && acc.identity.name},${address},${amount}`
   }).join('\n'));
   console.log({ total });
-  
+
   fs.writeFile(MINT_AMOUNTS_PATH, JSON.stringify(newMintAmounts));
 })();
