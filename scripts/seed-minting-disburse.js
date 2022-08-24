@@ -13,8 +13,8 @@ const NodeAddress = sc.core.address.makeAddressModule({
   otherNonces: new Map().set("E", "EdgeAddress"),
 });
 
-const MINT_TX_HASH = "https://polygonscan.com/tx/0xc67d316e622245603ebfaec12794e86d88016e25f367ae22366c4c5e4494d371";
-const MINT_DATE = "May 19 2022";
+const MINT_TX_HASH = "https://polygonscan.com/tx/0xec7d162aa4cfc1eb28732a1f8d9af323bc7ee75053d90863260232f27f2f17fd";
+const MINT_DATE = "July 21 2022";
 
 const LEDGER_PATH = 'data/ledger.json';
 const MINT_AMOUNTS_PATH = './scripts/toMint18Disburse.json';
@@ -84,8 +84,9 @@ async function deductSeedsAlreadyMinted(accounts, ledger) {
     };
   }).filter(Boolean);
 
+  // Uncomment these two lines below and rerun script after distribution is on chain and MINT_TX_HASH + MINT_DATE is updated.
   // await deductSeedsAlreadyMinted([...accountsWithAddress], ledger);
-  await fs.writeFile(LEDGER_PATH, ledger.serialize());
+  // await fs.writeFile(LEDGER_PATH, ledger.serialize());
 
   const addressAccounts = _.keyBy(accountsWithAddress, 'ethAddress')
   const newMintAmounts = {};

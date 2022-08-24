@@ -12,46 +12,34 @@
 9. Exit the running SC instance (CTRL+C in terminal) and run `yarn start` again to recalculate XP scores based on the merged accounts.
 10. Check the leaderboard in the UI to ensure the XP amounts for the distribution period make sense.
 11. In a new terminal window, run `yarn grain` to do the distribution.
-12. Refresh the admin page and go to the SEED Accounts page to see the new SEED balance for each player, ensure these amounts make sense and any issues with the distribution raised by the community have been addressed. If you need to re-run a distribution, delete the new entries in ledger.json that start with `{"action":{"distribution"` before running `yarn grain` again.
-13. In the `scripts/seed-minting.js` file, change the filename in `MINT_AMOUNTS_PATH` to be 1 higher than the highest existing filename (e.g. if `toMint9Merkle.json` is the latest file in the scripts folder, change the path to `./scripts/toMint10Merkle.json`)
-14. Run `node ./scripts/seed-minting.js` in a terminal to generate the JSON file of ETH addresses and SEED amounts to mint for the current distribution.
-15. Write down / keep track of the total amount of SEEDs to mint as outputted by the script in the previous step. This value will be used to do the merkle distribution.
-16. Commit and push all changes to Github and make a PR to merge them into master. You should make sure there have been no new changes to master since you first started doing the distribution otherwise there will be merge conflicts. If there are merge conflicts, you may need to run the `rebase-ledger.js` script.
-17. Make a proposal in the [Aragon DAO](https://client.aragon.org/#/metafam/0x3066195dc63c4b8c8e1dc4e1aba031d7f36e933c/) to mint the number of SEEDs from step 15 to the MetaFam Multisig address (`0x3455FbB4D34C6b47999B66c83aA7BD8FDDade638`)
+12. Refresh the admin page and go to the SEED Accounts page to see the new SEED balance for each player, ensure these amounts make sense.
+13. In the `scripts/seed-minting-disburse.js` file, change the filename in `MINT_AMOUNTS_PATH` to be 1 higher than the highest existing filename (e.g. if `toMint18Disburse.json` is the latest file in the scripts folder, change the path to `./scripts/toMint19Disburse.json`)
+> ℹ️ At this point, *make sure to check lines 88 & 89 in `seed-minting-disburse.js` and comment out the lines that call `deductSeedsAlreadyMinted`, if they aren't already*.
+14. Run `node ./scripts/seed-minting-disburse.js` in a terminal to generate the JSON file of ETH addresses and SEED amounts to mint for the current distribution.
+15. Write down / keep track of the total amount of SEEDs to mint as output by the script in the previous step. This value will be used later when verifying data for deducting from the ledger in Step C.
+16. Now you'll want to post the distribution to the community (posted to #seed-minting) using [this Google Sheet](https://docs.google.com/spreadsheets/d/1m8XGjFnTpozt5BBlCZgHen09msimS3HHIT2Sb5Shuro/edit?usp=sharing) (ask @luxumbra for edit access). Make sure any issues with the distribution raised by the community have been addressed. We usually give 48 hours to raise issues with a dist. If you need to re-run a distribution, delete the new entries in ledger.json that start with `{"action":{"distribution"` before running `yarn grain` again.
+17. Once any/all issues are resolved, put the Mint up for vote in #voting (Discord) linking to the Google Sheet for reference.
+18. Once the vote has passed, commit and push all changes to Github and make a PR to merge them into master.
+> ⚠️ *You should make sure there have been no new changes to master since you first started doing the distribution otherwise there will be merge conflicts*. If there are merge conflicts, you may need to run the `rebase-ledger.js` script.
 
-## B. Calculating Merkle Root
-1. Clone the [Merkle distribution repo](https://github.com/MetaFam/erc20-redeemable) and run `yarn`
-2. `cd merkle` to go into the merkle folder and run `yarn` again.
-3. Copy the `.env.example` file to a `.env` file and update the LIVE_NETWORK value with an Infura key (create one if you dont have one)
-4. Copy the `toMintXMerkle.json` file from the steps above into the `merkle/test/data` folder and name it `seedMerkleX.json` where X is one higher than the last file already there.
-5. Run `yarn disburse ./test/data/seedMerkleX.json <blocknum> --network live`. Replace `<blocknum>` with the [latest blocknumber ](https://etherscan.io/blocks), e.g. `13306106`.
-6. The script will output the merkle root hash in the last line: `await redeem.seedAllocations(weekNum, "<merkle root hash>")`. Copy / save that hash as you will need it when calling the merkle contract.
+## B. Airdrop Distribution
+> ⚠️ *This step requires you to be a signer on the Polygon multisig.*
 
-## C. Executing the Merkle distribution
+1. Reformat the final [Google Sheet](https://docs.google.com/spreadsheets/d/1m8XGjFnTpozt5BBlCZgHen09msimS3HHIT2Sb5Shuro/edit?usp=sharing) to match the same headings & columns as seen in `scripts/toMint18DisburseAirdrop.csv`. **Note the addition of `token_type` and `token_address` columns**. *You'll need this file to upload to the Airdrop app in Gnosis.*
+2. Go to [the gnosis safe](https://gnosis-safe.io/app/matic:0xbaF60086Da36033B458B892e2432958e219F4Ed6) and sign in with your registered wallet. And head to Apps > CSV Airdrop and upload the `.csv` file from the previous step. All going well, there wont be any errors and you should see the contents of the file in the textfield.
+3. Verify the data looks good and clean up any extraneous lines (sometimes the CSV file has extra lines at the end). When you're happy, submit and sign the transaction.
+4. Once the transaction is confirmed, grab the transaction URL from the page and post it in #multisig, rememering to pester the signers until it is done. (actually, they don't take too much pestering these days 😅)
+5. Relax...until the drop is done and you then need to move to step C - soon after or at latest, before the next mint!
 
-1. Ensure that the vote to mint SEEDs to the multisig has passed and enacted (from step A.17 above) 
-2. Open the "Write Contract" page for the [merkle contract on etherscan](https://etherscan.io/address/0x3bf5c0a496E95Be000C724Bc580343Ff2DB346CB#writeContract) and click "Connect to Web3"
-3. Select WalletConnect and click "copy to clipboard"
-4. Open the "Apps" page in the [MetaFam Gnosis Safe](https://gnosis-safe.io/app/#/safes/0x3455FbB4D34C6b47999B66c83aA7BD8FDDade638/apps) and click on WalletConnect. Paste the copied code from your clipboard to connect Gnosis to Etherscan (you might have to click "Connect to Web3" again in Etherscan before it connects).
-5. Open the `seedAllocation` method and fill out the values
-   1. set `_week` to the same number as X in `seedMerkleX.json`. e.g. seedMerkle6.json -> use `6`
-   2. set `_merkleRoot` to the value copied in step 6
-   3. paste in the total amount from step A.15 above. Then click the "+" button beside the field name and add 10^18 zeroes.
-6. Click the "Write" button and go to the Gnosis Safe tab to Submit the transaction.
-7. Get the multisig signers to approve and execute the transaction. 
-8. While you are waiting for that, upload the `seedMerkleX.json` file to the [Fleek storage space](https://app.fleek.co/). Click on the file in Fleek and copy the "Current IPFS Hash".
-9. Add a new entry to the `test/data/snapshot.json` file with the next number as the key and the IPFS hash you copied as the value.
-10. Once the `seedAllocations` transaction has executed, upload the `snapshot.json` to the Fleek storage.
-11. The distribution should now be claimable. Test out if it works by going to [claim.metagame.wtf](https://claim.metagame.wtf). You might need to force refresh the page if the latest distribution doesnt show up right away (SHIFT + click refresh).
-12. Commit and push these changes to master.
 
-## D. Deducting minted SEEDs from ledger
 
-1. In the XP repo, make the following changes to the `scripts/seed-minting.js` file:
+## C. Deducting minted SEEDs from ledger
+
+1. In the XP repo, make the following changes to the `scripts/seed-minting-disburse.js` file:
    1. set `MINT_TX_HASH` to the etherscan link for the `seedAllocations` transaction from step C.10 above.
-   2. set `MINT_DATE` to the date of the said transaction 
-   3. Uncomment the lines that call `deductSeedsAlreadyMinted` (currently lines 116 and 117).
-2. Run `node ./scripts/seed-minting.js` again and ensure there's no major errors or large "Extra SEED Balance" messages logged.
-3. Ensure that the `toMintXMerkle.json` file for the current distribution did not have any changes. This ensures that the on chain distribution exactly matches the ledger state.
-4. Run `yarn serve` and double check that the current balance in SEED Accounts is 0 for people in the distribution. 
+   2. set `MINT_DATE` to the date of the said transaction
+   3. Uncomment the lines that call `deductSeedsAlreadyMinted` (currently line 88 and 89).
+2. Run `node ./scripts/seed-minting-disburse.js` again and ensure there's no major errors or large "Extra SEED Balance" messages logged.
+3. Ensure that the `toMintXDisburse.json` file for the current distribution did not have any changes. This ensures that the on chain distribution exactly matches the ledger state.
+4. Run `yarn serve` and double check that the current balance in SEED Accounts is 0 for people in the distribution.
 5. Commit the updates to `ledger.json` and push them to master with a PR.
