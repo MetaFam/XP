@@ -3,7 +3,13 @@
 ## A. Calculating distribution + updating ledger
 1. Fork the repo locally and follow the instructions in the main readme to load the SourceCred instance (you will need API keys for Github and Discord)
 2. If you already forked the repo, make sure to pull any changes from the master branch (since the discord bot updates ETH addresses in the ledger programmatically)
-3. Run `yarn load` to load the latest contribution data.
+3. Due to painfully long and unreliable method of loading contribution data locally using `yarn load`, we now use the following method from within the root of the XP repo, [as advised by SC](https://discord.com/channels/453243919774253079/718263631158050896/778428725570174986):
+    1. Fetch the latest updates from origin and checkout the `gh-pages` branch:  `git fetch && git checkout origin/gh-pages`
+    2. Remove the output directory from tmp (if it exists from a prev mint): `rm -rf /tmp/sc-output`
+    3. Copy the `output` directory (this is what is on [xp.metagame.wtf](https://xp.metagame.wtf/#/) with the graph data from the last run) to a temp directory: `cp -r output /tmp/sc-output`
+    4. `git checkout origin/master` and delete the output directory `rm -rf output`
+    5. Move the `sc-output` directory from `tmp` to this branch `mv /tmp/sc-output output`
+    6. Run `yarn site` to fire up the explorer on your local machine with the latest data from production.
 4. Check [this Observable notebook](https://observablehq.com/@hammadj/metagame-active-contributors) to see how many `seedsToMintForCurrentInterval`. This is based on 20 SEEDs per week per active contributor (players that earned at least 20 XP)
 5. Update the config/grain.json file with ~75% of the amount going to RECENT policy and ~25% going to the BALANCED policy (e.g. if the number in Observable is 400, put 300 in Recent and 100 in Balanced)
 6. Run `yarn start` to run SC. Then, `git commit` the updated ledger file which contains new identities / users from the data loaded.
@@ -23,14 +29,13 @@
 > ⚠️ *You should make sure there have been no new changes to master since you first started doing the distribution otherwise there will be merge conflicts*. If there are merge conflicts, you may need to run the `rebase-ledger.js` script.
 
 ## B. Airdrop Distribution
-> ⚠️ *This step requires you to be a signer on the Polygon multisig.*
+> ⚠️ *This step requires you to be a signer on the [Polygon multisig](https://gnosis-safe.io/app/matic:0xbaF60086Da36033B458B892e2432958e219F4Ed6).*
 
 1. Reformat the final [Google Sheet](https://docs.google.com/spreadsheets/d/1m8XGjFnTpozt5BBlCZgHen09msimS3HHIT2Sb5Shuro/edit?usp=sharing) to match the same headings & columns as seen in `scripts/toMint18DisburseAirdrop.csv`. **Note the addition of `token_type` and `token_address` columns**. *You'll need this file to upload to the Airdrop app in Gnosis.*
 2. Go to [the gnosis safe](https://gnosis-safe.io/app/matic:0xbaF60086Da36033B458B892e2432958e219F4Ed6) and sign in with your registered wallet. And head to Apps > CSV Airdrop and upload the `.csv` file from the previous step. All going well, there wont be any errors and you should see the contents of the file in the textfield.
 3. Verify the data looks good and clean up any extraneous lines (sometimes the CSV file has extra lines at the end). When you're happy, submit and sign the transaction.
 4. Once the transaction is confirmed, grab the transaction URL from the page and post it in #multisig, rememering to pester the signers until it is done. (actually, they don't take too much pestering these days 😅)
 5. Relax...until the drop is done and you then need to move to step C - soon after or at latest, before the next mint!
-
 
 
 ## C. Deducting minted SEEDs from ledger
