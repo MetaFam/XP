@@ -9,21 +9,23 @@
     3. Copy the `output` directory (this is what is on [xp.metagame.wtf](https://xp.metagame.wtf/#/) with the graph data from the last run) to a temp directory: `cp -r output /tmp/sc-output`
     4. `git checkout origin/master` and delete the output directory `rm -rf output`
     5. Move the `sc-output` directory from `tmp` to this branch `mv /tmp/sc-output output`
-    6. Run `yarn site` to fire up the explorer on your local machine with the latest data from production.
-4. Check [this Observable notebook](https://observablehq.com/@hammadj/metagame-active-contributors) to see how many `seedsToMintForCurrentInterval`. This is based on 20 SEEDs per week per active contributor (players that earned at least 20 XP)
-5. Update the config/grain.json file with ~75% of the amount going to RECENT policy and ~25% going to the BALANCED policy (e.g. if the number in Observable is 400, put 300 in Recent and 100 in Balanced)
-6. Run `yarn start` to run SC. Then, `git commit` the updated ledger file which contains new identities / users from the data loaded.
-7. Open the admin interface at `localhost:6006` in your browser and go to the "Identities" tab. Search for any users that need their accounts to be merged across platforms.
-8. Then, in the "Add Alias" field search and click on all the accounts to merge into the selected user. Once you are done, click "Save ledger to disk" to persist the changes.
-9. Exit the running SC instance (CTRL+C in terminal) and run `yarn start` again to recalculate XP scores based on the merged accounts.
-10. Check the leaderboard in the UI to ensure the XP amounts for the distribution period make sense.
-11. In a new terminal window, run `yarn grain` to do the distribution.
-12. Refresh the admin page and go to the SEED Accounts page to see the new SEED balance for each player, ensure these amounts make sense.
+    7. Run `yarn serve` to fire up the explorer on your local machine with the latest data from production.
+4. Open the admin interface at `localhost:6006` in your browser and go to the "Identities" tab. Search in 'Filter list' for any users that need their accounts to be merged across platforms. For each user, use the "Add Alias" field to search for their aliases. Click on all the accounts needing to be merged into the selected user. Repeat the process for any other users and once you are done, click "Save ledger to disk" to persist the changes.
+5. Exit the running SC instance (`CTRL+C` in terminal)
+6. *If you do need to activate players, you will want to commit the ledger, push changes and create a PR before progressing with Step 7, otherwise skip the rest of this step.* Create a new branch along the lines of `git checkout -b feat/player-activations-month-year`, commit changes to `ledger.json`, push and open a PR. Once merged, we need to wait overnight for the runners to run again with the newly activated players. Then proceed to Step 7.
+> If you activated players, confirm the GitHub actions have run  (sometimes they fail) since your PR was merged. You will need to repeat Steps 3.1 through 3.6 again to get the latest data before moving to Step 7 .
+7. Check [this Observable notebook](https://observablehq.com/@hammadj/metagame-active-contributors) to see how many `seedsToMintForCurrentInterval`. This is based on 20 SEEDs per week per active contributor (players that earned at least 20 XP)
+8. Update the `config/grain.json` file with ~75% of the amount going to `RECENT` policy and ~25% going to the `BALANCED` policy (e.g. if the number in Observable is 400, put 300 in Recent and 100 in Balanced)
+9. Check the leaderboard in the UI to ensure the XP amounts for the distribution period make sense.
+10. In a new terminal window, run `yarn grain` to do the distribution.
+11. Refresh the admin page and go to the SEED Accounts page to see the new SEED balance for each player, ensure these amounts make sense.
+12. Create a new branch at this point and name it something sane like `git checkout -b dist/month-year`.
 13. In the `scripts/seed-minting-disburse.js` file, change the filename in `MINT_AMOUNTS_PATH` to be 1 higher than the highest existing filename (e.g. if `toMint18Disburse.json` is the latest file in the scripts folder, change the path to `./scripts/toMint19Disburse.json`)
 > ℹ️ At this point, *make sure to check lines 88 & 89 in `seed-minting-disburse.js` and comment out the lines that call `deductSeedsAlreadyMinted`, if they aren't already*.
 14. Run `node ./scripts/seed-minting-disburse.js` in a terminal to generate the JSON file of ETH addresses and SEED amounts to mint for the current distribution.
 15. Write down / keep track of the total amount of SEEDs to mint as output by the script in the previous step. This value will be used later when verifying data for deducting from the ledger in Step C.
-16. Now you'll want to post the distribution to the community (posted to #seed-minting) using [this Google Sheet](https://docs.google.com/spreadsheets/d/1m8XGjFnTpozt5BBlCZgHen09msimS3HHIT2Sb5Shuro/edit?usp=sharing) (ask @luxumbra for edit access). Make sure any issues with the distribution raised by the community have been addressed. We usually give 48 hours to raise issues with a dist. If you need to re-run a distribution, delete the new entries in ledger.json that start with `{"action":{"distribution"` before running `yarn grain` again.
+> 😎 Pro-tip: At this point, run `node ./scripts/seed-minting-disburse.js > ./scripts/toMint19Disburse.csv` to make life easier in the next step.
+16. Now you'll want to post the distribution to the community (posted to #seed-minting) using [this Google Sheet](https://docs.google.com/spreadsheets/d/1m8XGjFnTpozt5BBlCZgHen09msimS3HHIT2Sb5Shuro/edit?usp=sharing) (ask @luxumbra for edit access). Refer to previous sheets for formatting convention. Make sure any issues with the distribution raised by the community have been addressed. We usually give 48 hours to raise issues with a dist. If you need to re-run a distribution, delete the new entries in ledger.json that start with `{"action":{"distribution"` before running `yarn grain` again.
 17. Once any/all issues are resolved, put the Mint up for vote in #voting (Discord) linking to the Google Sheet for reference.
 18. Once the vote has passed, commit and push all changes to Github and make a PR to merge them into master.
 > ⚠️ *You should make sure there have been no new changes to master since you first started doing the distribution otherwise there will be merge conflicts*. If there are merge conflicts, you may need to run the `rebase-ledger.js` script.
