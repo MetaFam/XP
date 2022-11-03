@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - master
+      - dist/19-aug-2022
   # As well as every 24 hours (at 0:00 UTC).
   schedule:
     - cron: 0 0 * * *
