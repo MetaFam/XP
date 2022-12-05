@@ -47,4 +47,4 @@
 4. Run `node ./scripts/seed-minting-disburse.js` again and ensure there's no major errors or large "Extra SEED Balance" messages logged.
 5. Ensure that the `toMintXDisburse.json` file for the current distribution did not have any changes. This ensures that the on chain distribution exactly matches the ledger state.
 6. Run `yarn serve` and double check that the current balance in SEED Accounts is 0 for people in the distribution.
-7. Commit the updates to `ledger.json` and push them to origin and make a new PR to master.
+7. Commit the updates to `ledger.json`, push them to origin, and make a new PR to master.
