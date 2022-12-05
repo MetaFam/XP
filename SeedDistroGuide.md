@@ -33,16 +33,18 @@
 2. Go to [the gnosis safe](https://gnosis-safe.io/app/matic:0xbaF60086Da36033B458B892e2432958e219F4Ed6) and sign in with your registered wallet. And head to Apps > CSV Airdrop and upload the `.csv` file from the previous step. All going well, there wont be any errors and you should see the contents of the file in the textfield.
 3. Verify the data looks good and clean up any extraneous lines (sometimes the CSV file has extra lines at the end). When you're happy, submit and sign the transaction.
 4. Once the transaction is confirmed, grab the transaction URL from the page and post it in #multisig, rememering to pester the signers until it is done. (actually, they don't take too much pestering these days 😅)
-5. Relax...until the drop is done and you then need to move to step C - soon after or at latest, before the next mint!
+5. Relax...until the drop is done and you then need to move to step C - as soon as possible post distribution (after your distro branch has been merged) to avoid any ledger conflicts!
 
 
 ## C. Deducting minted SEEDs from ledger
 
-1. In the XP repo, make the following changes to the `scripts/seed-minting-disburse.js` file:
+1. Pull down the latest changes from origin (with data from the latest dist)
+2. Create a new branch from master and give it a sensible name eg: `dist/20_deduct-seed-from-ledger`
+3. In the XP repo, make the following changes to the `scripts/seed-minting-disburse.js` file:
    1. set `MINT_TX_HASH` to the etherscan link for the `seedAllocations` transaction from step C.10 above.
    2. set `MINT_DATE` to the date of the said transaction
    3. Uncomment the lines that call `deductSeedsAlreadyMinted` (currently line 88 and 89).
-2. Run `node ./scripts/seed-minting-disburse.js` again and ensure there's no major errors or large "Extra SEED Balance" messages logged.
-3. Ensure that the `toMintXDisburse.json` file for the current distribution did not have any changes. This ensures that the on chain distribution exactly matches the ledger state.
-4. Run `yarn serve` and double check that the current balance in SEED Accounts is 0 for people in the distribution.
-5. Commit the updates to `ledger.json` and push them to master with a PR.
+4. Run `node ./scripts/seed-minting-disburse.js` again and ensure there's no major errors or large "Extra SEED Balance" messages logged.
+5. Ensure that the `toMintXDisburse.json` file for the current distribution did not have any changes. This ensures that the on chain distribution exactly matches the ledger state.
+6. Run `yarn serve` and double check that the current balance in SEED Accounts is 0 for people in the distribution.
+7. Commit the updates to `ledger.json` and push them to origin ans make a new PR to master.
