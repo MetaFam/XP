@@ -13,11 +13,11 @@ const NodeAddress = sc.core.address.makeAddressModule({
   otherNonces: new Map().set("E", "EdgeAddress"),
 });
 
-const MINT_TX_HASH = "https://polygonscan.com/tx/0x4e544370a25dda862278631f0f49294b8d7b387f0a49cfcf5fe5849303f26c95";
-const MINT_DATE = "Dec 5 2022";
+const MINT_TX_HASH = "https://polygonscan.com/tx/0x51a120fb7f167d4c611a6e0ca1c8105e921977efe16066190a313df3b271538d";
+const MINT_DATE = "Jan 15 2023";
 
 const LEDGER_PATH = 'data/ledger.json';
-const MINT_AMOUNTS_PATH = './scripts/toMint20Disburse.json';
+const MINT_AMOUNTS_PATH = './scripts/toMint21Disburse.json';
 const ETH_MAIN_NET_IDENTITY_ID = "igdEDIOoos50r4YUKKRQxg";
 
 async function deductSeedsAlreadyMinted(accounts, ledger) {
@@ -93,6 +93,12 @@ async function deductSeedsAlreadyMinted(accounts, ledger) {
   let total = 0;
   accountsWithAddress.forEach(acc => {
     const amountToMint = G.format(acc.balance, 9, '');
+
+    // ignore players with zero to mint. They just get removed from the csv later anyway.
+    if (parseFloat(amountToMint) <= parseFloat(0.000000000)) {
+      return null;
+    }
+
     newMintAmounts[acc.ethAddress] = amountToMint;
     if (!isValidAddress(acc.ethAddress)) {
       console.log('INVALID ADD for acc: ', acc);
