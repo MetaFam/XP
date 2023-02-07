@@ -11,6 +11,7 @@
     "MetaFam/assets",
     "MetaFam/chievemints",
     "MetaFam/MetaFest2",
-    "MetaFam/infrastructure"
+    "MetaFam/infrastructure",
+    "MetaFam/rewards"
   ]
 }
