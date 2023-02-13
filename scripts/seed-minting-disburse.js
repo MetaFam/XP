@@ -17,7 +17,7 @@ const MINT_TX_HASH = "https://polygonscan.com/tx/0x51a120fb7f167d4c611a6e0ca1c81
 const MINT_DATE = "Jan 15 2023";
 
 const LEDGER_PATH = 'data/ledger.json';
-const MINT_AMOUNTS_PATH = './scripts/toMint21Disburse.json';
+const MINT_AMOUNTS_PATH = './scripts/toMint22Disburse.json';
 const ETH_MAIN_NET_IDENTITY_ID = "igdEDIOoos50r4YUKKRQxg";
 
 async function deductSeedsAlreadyMinted(accounts, ledger) {
