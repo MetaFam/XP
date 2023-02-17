@@ -13,8 +13,8 @@ const NodeAddress = sc.core.address.makeAddressModule({
   otherNonces: new Map().set("E", "EdgeAddress"),
 });
 
-const MINT_TX_HASH = "https://polygonscan.com/tx/0x51a120fb7f167d4c611a6e0ca1c8105e921977efe16066190a313df3b271538d";
-const MINT_DATE = "Jan 15 2023";
+const MINT_TX_HASH = "https://polygonscan.com/tx/0xdcd91e73907279e500fafd2703f7f29cc30c160d122a064b3d2673725a4a10a2";
+const MINT_DATE = "Feb 14 2023";
 
 const LEDGER_PATH = 'data/ledger.json';
 const MINT_AMOUNTS_PATH = './scripts/toMint22Disburse.json';
