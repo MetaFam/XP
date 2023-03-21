@@ -22,18 +22,17 @@
 14. Write down / keep track of the total amount of SEEDs to mint as output by the script in the previous step. This value will be used later when verifying data for deducting from the ledger in Step C.
 > 😎 Pro-tip: At this point, run `node ./scripts/seed-minting-disburse.js > ./scripts/toMint19Disburse.csv` to make life easier in the next step.
 15. Now you'll want to post the distribution to the community (posted to #seed-minting) using [this Google Sheet](https://docs.google.com/spreadsheets/d/1m8XGjFnTpozt5BBlCZgHen09msimS3HHIT2Sb5Shuro/edit?usp=sharing) (ask @luxumbra for edit access). Refer to previous sheets for formatting convention. Make sure any issues with the distribution raised by the community have been addressed. We usually give 48 hours to raise issues with a dist. If you need to re-run a distribution, delete the new entries in ledger.json that start with `{"action":{"distribution"` before running `yarn grain` again.
-16. Once any/all issues are resolved, put the Mint up for vote in #voting (Discord) linking to the Google Sheet for reference.
-17. Once the vote has passed, commit and push all changes to Github and make a PR to merge them into master.
+16. Once discussion has concluded, commit and push all changes to Github, and make a PR to merge them into master.
 > ⚠️ *You should make sure there have been no new changes to master since you first started doing the distribution otherwise there will be merge conflicts*. If there are merge conflicts, you may need to run the `rebase-ledger.js` script.
 
 ## B. Airdrop Distribution
 > ⚠️ *This step requires you to be a signer on the [Polygon multisig](https://gnosis-safe.io/app/matic:0xbaF60086Da36033B458B892e2432958e219F4Ed6).*
 
 1. Reformat the final [Google Sheet](https://docs.google.com/spreadsheets/d/1m8XGjFnTpozt5BBlCZgHen09msimS3HHIT2Sb5Shuro/edit?usp=sharing) to match the same headings & columns as seen in `scripts/toMint18DisburseAirdrop.csv`. **Note the addition of `token_type` and `token_address` columns**. *You'll need this file to upload to the Airdrop app in Gnosis.*
-2. Go to [the gnosis safe](https://gnosis-safe.io/app/matic:0xbaF60086Da36033B458B892e2432958e219F4Ed6) and sign in with your registered wallet. And head to Apps > CSV Airdrop and upload the `.csv` file from the previous step. All going well, there wont be any errors and you should see the contents of the file in the textfield.
+2. Go to [the gnosis safe](https://gnosis-safe.io/app/matic:0xbaF60086Da36033B458B892e2432958e219F4Ed6) and sign in with your registered wallet. And head to Apps → CSV Airdrop and upload the `.csv` file from the previous step. All going well, there wont be any errors and you should see the contents of the file in the textfield.
 3. Verify the data looks good and clean up any extraneous lines (sometimes the CSV file has extra lines at the end). When you're happy, submit and sign the transaction.
-4. Once the transaction is confirmed, grab the transaction URL from the page and post it in #multisig, rememering to pester the signers until it is done. (actually, they don't take too much pestering these days 😅)
-5. Relax...until the drop is done and you then need to move to step C - as soon as possible post distribution (after your distro branch has been merged) to avoid any ledger conflicts!
+4. Once the transaction is confirmed, grab the transaction URL from the page and post it in #multisig, remembering to pester the signers until it is done. (actually, they don't take too much pestering these days 😅)
+5. Relax… until the drop is done and you then need to move to step C — as soon as possible post distribution (after your distro branch has been merged) to avoid any ledger conflicts!
 
 
 ## C. Deducting minted SEEDs from ledger
@@ -41,8 +40,8 @@
 1. Pull down the latest changes from origin (with data from the latest dist)
 2. Create a new branch from master and give it a sensible name eg: `dist/20_deduct-seed-from-ledger`
 3. In the XP repo, make the following changes to the `scripts/seed-minting-disburse.js` file:
-   1. set `MINT_TX_HASH` to the etherscan link for the `seedAllocations` transaction from step C.10 above.
-   2. set `MINT_DATE` to the date of the said transaction
+   1. Set `MINT_TX_HASH` to the etherscan link for the `seedAllocations` transaction from step A    .10 above.
+   2. Set `MINT_DATE` to the date of the said transaction
    3. Uncomment the lines that call `deductSeedsAlreadyMinted` (currently line 88 and 89).
 4. Run `node ./scripts/seed-minting-disburse.js` again and ensure there's no major errors or large "Extra SEED Balance" messages logged.
 5. Ensure that the `toMintXDisburse.json` file for the current distribution did not have any changes. This ensures that the on chain distribution exactly matches the ledger state.
