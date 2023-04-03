@@ -220,7 +220,7 @@ async function deductSeedsAlreadyMinted({ accounts, ledger }) {
         address,
         amount.toLocaleString(
           'en-US',
-          { useGrouping: false, maximumFractionDigits: 21 },
+          { useGrouping: false, maximumFractionDigits: 20 },
         )
       ].join(',')
     }).join('\n')
