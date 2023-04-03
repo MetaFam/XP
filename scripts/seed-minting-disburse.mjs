@@ -19,6 +19,14 @@ const processArgs = async (defaults = {
   dryRun: false,
 }) => {
   const args = yargs(process.argv.slice(2))
+  .usage(
+    '$0 [options]',
+    'Generate disbursal JSON/CSV to files based on'
+    + ' `output-pattern`. If `tx-url` & `tx-date` &'
+    + ' `overwrite` are provided, then the most recently'
+    + ' generated disbursal will be overwritten, and that'
+    + ' disbursal will be written to the ledger.',
+  )
   .option('tx-url', {
     type: 'string',
     default: process.env.SC_TX_URL ?? defaults.txUrl,
@@ -53,7 +61,7 @@ const processArgs = async (defaults = {
       process.env.SC_DISBURSAL ?? defaults.outputPattern
     ),
     alias: 'p',
-    description: 'Path to generate JSON to (`SC_DISBURSAL`)'
+    description: 'Path to generate JSON/CSV to (`SC_DISBURSAL`)'
   })
   .option('mainnet-id', {
     type: 'string',
