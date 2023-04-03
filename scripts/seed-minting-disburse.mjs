@@ -14,7 +14,7 @@ const processArgs = async (defaults = {
   txDate: null,
   overwrite: false,
   ledger: 'data/ledger.json',
-  outputPattern: 'distros/Disbursal #${index}.SourceCred Airdrop',
+  outputPattern: 'distros/Disbursal #${index}.SourceCred',
   mainnetId: 'igdEDIOoos50r4YUKKRQxg',
   dryRun: false,
 }) => {
