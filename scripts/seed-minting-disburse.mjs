@@ -92,12 +92,9 @@ do {
   base = argv.outputPattern.replace(
     /\${index}/g, (index++).toString()
   )
-  console.debug({ b: argv.outputPattern, base, e: fs.existsSync(`${base}.json`) })
 } while(fs.existsSync(`${base}.json`))
 
 const outputBase = overwrite ? prev : base
-
-console.info({ ov: argv.overwrite, outputBase, overwrite, base })
 
 const Ledger = sc.ledger.ledger.Ledger
 const G = sc.ledger.grain
@@ -110,6 +107,8 @@ const NodeAddress = sc.core.address.makeAddressModule({
 
 async function deductSeedsAlreadyMinted({ accounts, ledger }) {
   const lastDisburse = JSON.parse((await fs.readFile(`${outputBase}.json`)).toString())
+
+  let total = 0n
 
   Object.entries(lastDisburse).forEach(([address, amount]) => {
     const account = accounts.find(({ ethAddress: a }) => (
@@ -142,13 +141,14 @@ async function deductSeedsAlreadyMinted({ accounts, ledger }) {
         to: argv.mainnetId,
         amount: transfer,
         memo: (
-          `Disbursed ${transfer.toFixed(3)}`
-          + ` SEED on Polygon to ${account.ethAddress}`
+          `Disbursed SEED on Polygon to ${account.ethAddress}`
           + ` on ${argv.txDate} (${argv.txUrl})`
         ),
       })
+      total += BigInt(transfer)
     }
   })
+  console.info({ 'total disbursed': total })
 }
 
 (async () => {
