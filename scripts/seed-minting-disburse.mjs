@@ -215,7 +215,14 @@ async function deductSeedsAlreadyMinted({ accounts, ledger }) {
   const csv = (
     Object.entries(newMintAmounts).map(([address, amount]) => {
       const acc = addressAccounts[address]
-      return [acc?.identity?.name, address, amount].join(',')
+      return [
+        acc?.identity?.name,
+        address,
+        amount.toLocaleString(
+          'en-US',
+          { useGrouping: false, maximumFractionDigits: 21 },
+        )
+      ].join(',')
     }).join('\n')
   )
 
