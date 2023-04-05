@@ -32,7 +32,8 @@
 ## B. Airdrop Distribution
 > ⚠️ *This step requires you to be a signer on the [Polygon multisig](https://gnosis-safe.io/app/matic:0xbaF60086Da36033B458B892e2432958e219F4Ed6).*
 
-1. Reformat the final [Google Sheet](https://docs.google.com/spreadsheets/d/1m8XGjFnTpozt5BBlCZgHen09msimS3HHIT2Sb5Shuro/) to match the same headings & columns as seen in `distros/Disbursal #23.SourceCred Airdrop.csv`. **Note the addition of the leading  `token_type` (`erc20`) and `token_address` (`0xEAeCC18198a475c921B24b8A6c1C1f0f5F3F7EA0`) columns.** 2. Go to [the gnosis safe](https://gnosis-safe.io/app/matic:0xbaF60086Da36033B458B892e2432958e219F4Ed6) and sign in. Head to Apps → CSV Airdrop and upload the `.csv` file from the previous step. Next, you should see the contents of the file in the textfield.
+1. Reformat the final [Google Sheet](https://docs.google.com/spreadsheets/d/1m8XGjFnTpozt5BBlCZgHen09msimS3HHIT2Sb5Shuro/) to match the same headings & columns as seen in `distros/Disbursal #23.SourceCred Airdrop.csv`. **Note the addition of the leading  `token_type` (`erc20`) and `token_address` (`0xEAeCC18198a475c921B24b8A6c1C1f0f5F3F7EA0`) columns.**
+2. Go to [the gnosis safe](https://gnosis-safe.io/app/matic:0xbaF60086Da36033B458B892e2432958e219F4Ed6) and sign in. Head to Apps → CSV Airdrop and upload the `.csv` file from the previous step. Next, you should see the contents of the file in the textfield.
 3. Verify the data looks good, submit, and sign the transaction.
 4. Once the transaction is confirmed, grab the transaction URL, and post it in #multisig, pestering the signers until it's done.
 5. Relax… until the drop is done and you then need to move to step C — as soon as possible post distribution (after your distro branch has been merged) to avoid any ledger conflicts!
