@@ -42,7 +42,7 @@ const address_book_file = "https://raw.githubusercontent.com/MetaFam/TheSource/m
     discordAliases.forEach(alias => {
       discordId = NodeAddress.toParts(alias.address)[4];
       
-      if (AddressMap[discordId]) {
+      if(AddressMap[discordId]) {
         user = AddressMap[discordId]
       }
     })
@@ -50,7 +50,7 @@ const address_book_file = "https://raw.githubusercontent.com/MetaFam/TheSource/m
     return {
       ...a,
       discordId,
-      ethAddress: user && user.address,
+      ethAddress: user?.address,
     }
   }).filter(Boolean);
   
